@@ -1,0 +1,11 @@
+.image {
+    max-width: 274px;
+    max-height: 269px;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 38px;
+}

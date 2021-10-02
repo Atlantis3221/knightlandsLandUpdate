@@ -1,0 +1,12 @@
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}

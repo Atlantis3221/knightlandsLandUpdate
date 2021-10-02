@@ -1,0 +1,52 @@
+.titleSmall {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8A978C;
+    margin-bottom: 16px;
+}
+
+.titleBig {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 49px;
+}
+
+.notWalletContainer {
+    margin-top: 16px;
+}
+
+.noWallet {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8A978C;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFEB3D;
+    margin-right: 8px;
+}

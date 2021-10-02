@@ -9,8 +9,9 @@ body,
   height: 100vh;
   flex-direction: column;
   display: flex;
+  height: calc((var(--vh, 1vh) * 100));
   color: #FFF;
-  font-family: Poppins, serif;
+  font-family: "Poppins";
   font-style: normal;
 }
 
