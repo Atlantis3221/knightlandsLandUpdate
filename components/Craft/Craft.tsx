@@ -1,13 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
+
 import styles from './Craft.module.css';
 import commonStyles from '/styles/common.module.css';
-import Image from 'next/image';
-import craft1 from '/public/craft1.png';
-import craft2 from '/public/craft2.png';
-import craft3 from '/public/craft3.png';
-import Craft1 from "/svg/Craft1";
-import Craft2 from "/svg/Craft2";
-import Craft3 from "/svg/Craft3";
+import craft1 from '/public/craft/craft1.png';
+import craft2 from '/public/craft/craft2.png';
+import craft3 from '/public/craft/craft3.png';
+import CraftBoard from "./Board/CraftBoard";
 
 const Craft = () => {
   return (
@@ -22,7 +21,7 @@ const Craft = () => {
             <Image src={craft1} />
           </div>
           <div className="relative -top-16">
-            <Craft1/>
+            <CraftBoard bigText="300+ soldiers" smallText="to collect and combine"/>
           </div>
         </div>
 
@@ -31,7 +30,7 @@ const Craft = () => {
             <Image src={craft2}/>
           </div>
           <div className="relative -top-16">
-            <Craft2/>
+            <CraftBoard bigText="1000+ items" smallText="to gather and craft"/>
           </div>
         </div>
 
@@ -40,7 +39,7 @@ const Craft = () => {
             <Image src={craft3}/>
           </div>
           <div className="relative -top-16">
-            <Craft3/>
+            <CraftBoard bigText="10 ways" smallText="of crafting items"/>
           </div>
         </div>
       </div>

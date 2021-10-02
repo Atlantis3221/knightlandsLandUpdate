@@ -7,7 +7,7 @@ import Scarlet from "./parts/Scarlet";
 
 const Army = () => {
   return (
-    <div className={commonStyles.board + ' flex items-center'}>
+    <div className={commonStyles.board + ' flex items-center'} id="autoScrollDestination">
       <div className="pl-12 max-w-sm ml-2">
         <div className={styles.title}>Build your army</div>
         <div className={styles.description}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from "react";
 import Image from 'next/image'
 
 import styles from './MainInfo.module.css'
@@ -6,6 +6,10 @@ import Heroes from '/public/heroes.png'
 import PlayNow from "../common/PlayNow";
 
 const MainInfo = () => {
+  const smoothAutoScroll = useCallback(() => {
+    return document.getElementById('autoScrollDestination')?.scrollIntoView({behavior: 'smooth'});
+  }, []);
+
   return (
     <div className="flex w-full">
       <div className="flex flex-col justify-center">
@@ -14,7 +18,9 @@ const MainInfo = () => {
         <div className={styles.text}>Online browser role-playing game with integrated blockchain technology</div>
         <div className="flex flex-row">
           <PlayNow/>
-          <PlayNow/>
+          <div className={styles.learnMoreButton + ' flex justify-center items-center'} onClick={smoothAutoScroll}>
+            LEARN MORE
+          </div>
         </div>
         <div className={styles.notWalletContainer + ' flex flex-row items-center'}>
           <div className={styles.dot}/>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import image from "/public/scarlet.png";
+import image from "/public/army/scarlet.png";
 import styles from "../Army.module.css";
 import Damage from "/svg/Damage/Damage";
 
