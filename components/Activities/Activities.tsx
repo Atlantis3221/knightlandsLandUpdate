@@ -16,8 +16,8 @@ const Activities = () => {
         Take part in everyday activities
       </div>
       <div className="flex justify-between">
-        {activities.map(activity => (
-          <div className={styles.image}>
+        {activities.map((activity, i) => (
+          <div key={i} className={styles.image}>
             <Image src={activity}/>
           </div>
         ))}

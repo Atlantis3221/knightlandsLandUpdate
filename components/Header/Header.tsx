@@ -1,19 +1,21 @@
-import React from 'react';
-import Image from 'next/image';
-import Logo from '/svg/Logo';
-import styles from './Header.module.css'
-import PlayNow from '../common/PlayNow';
-import discord from '/public/contact/discord.svg';
-import medium from '/public/contact/medium.svg';
-import telegram from '/public/contact/telegram.svg';
-import twitter from '/public/contact/twitter.svg';
+import React from "react";
+
+import styles from "./Header.module.css";
+import PlayNow from "../common/PlayNow";
+
+const contacts = [
+  {href: 'discord', src: '/contact/discord.svg'},
+  {href: 'medium', src: '/contact/medium.svg'},
+  {href: 'telegram', src: '/contact/telegram.svg'},
+  {href: 'twitter', src: '/contact/twitter.svg'},
+];
 
 const Header = () => {
   return (
     <div className="flex w-full justify-between flex-row">
       <div className="flex justify-center items-center">
         <div className={styles.logo}>
-          <Logo/>
+          <img src="/logo.svg" />
         </div>
         <div className={styles.links + ' flex'}>
           <a href="/">Gameplay</a>
@@ -22,18 +24,11 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.contact + ' flex items-center'}>
-        <a href="/">
-          <Image src={discord}/>
-        </a>
-        <a href="/">
-          <Image src={medium}/>
-        </a>
-        <a href="/">
-          <Image src={telegram}/>
-        </a>
-        <a href="/">
-          <Image src={twitter}/>
-        </a>
+        {contacts.map((contact, i) => (
+          <a key={i} href={contact.href}>
+            <img src={contact.src} />
+          </a>
+        ))}
       <PlayNow/>
         </div>
     </div>
