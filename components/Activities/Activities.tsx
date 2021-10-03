@@ -1,13 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
 
-import styles from './Activities.module.css'
-import activity1 from '/public/acitvities/activity1.png';
-import activity2 from '/public/acitvities/activity2.png';
-import activity3 from '/public/acitvities/activity3.png';
-import activity4 from '/public/acitvities/activity4.png';
+import styles from "./Activities.module.css";
 
-const activities = [activity1, activity2, activity3, activity4];
+const activities = [
+  '/acitvities/activity1.png',
+  '/acitvities/activity2.png',
+  '/acitvities/activity3.png',
+  '/acitvities/activity4.png',
+];
 
 const Activities = () => {
   return (
@@ -18,7 +18,7 @@ const Activities = () => {
       <div className="flex justify-between">
         {activities.map((activity, i) => (
           <div key={i} className={styles.image}>
-            <Image src={activity}/>
+            <img src={activity}/>
           </div>
         ))}
       </div>

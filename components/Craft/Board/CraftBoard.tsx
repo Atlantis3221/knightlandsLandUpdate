@@ -1,8 +1,5 @@
-import React from 'react';
-import Image from "next/image";
-
-import CraftBoardSvg from '/public/craft/craftBoard.svg';
-import styles from './CraftBoard.module.css'
+import React from "react";
+import styles from "./CraftBoard.module.css";
 
 interface IProps {
   bigText: string;
@@ -14,7 +11,7 @@ const CraftBoard = (props: IProps) => {
 
   return (
     <div className="relative">
-      <Image src={CraftBoardSvg} />
+      <img src="/craft/craftBoard.svg" />
       <div className="flex flex-col items-center justify-center absolute top-0 w-full h-4/5">
         <div className={styles.title}>{bigText}</div>
         <div className={styles.text}>{smallText}</div>

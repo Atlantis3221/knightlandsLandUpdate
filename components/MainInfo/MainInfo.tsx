@@ -1,8 +1,6 @@
 import React, { useCallback } from "react";
-import Image from 'next/image'
 
-import styles from './MainInfo.module.css'
-import Heroes from '/public/heroes.png'
+import styles from "./MainInfo.module.css";
 import PlayNow from "../common/PlayNow";
 
 const MainInfo = () => {
@@ -28,7 +26,7 @@ const MainInfo = () => {
         </div>
       </div>
       <div className="flex w-full h-full justify-center self-center items-center relative -top-8">
-        <Image src={Heroes}/>
+        <img src="/heroes.png"/>
       </div>
     </div>
   );

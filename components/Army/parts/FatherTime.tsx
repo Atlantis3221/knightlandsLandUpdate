@@ -1,14 +1,11 @@
 import React from "react";
-import Image from "next/image";
-
-import image from "/public/army/fatherTime.png";
 import styles from "../Army.module.css";
 import Damage from "/svg/Damage/Damage";
 
 const FatherTime = () => {
   return (
     <div className="relative -top-20">
-      <Image src={image}/>
+      <img src="/army/fatherTime.png"/>
       <div className={styles.monster + ' flex justify-center'}>FATHER TIME</div>
       <div className="flex mb-1.5 items-center">
         <Damage value="9"/>

@@ -1,14 +1,11 @@
 import React from "react";
-import Image from "next/image";
-
-import image from "/public/army/scarlet.png";
 import styles from "../Army.module.css";
 import Damage from "/svg/Damage/Damage";
 
 const Scarlet = () => {
   return (
     <div className="relative -top-16">
-      <Image src={image}/>
+      <img src="/army/scarlet.png"/>
       <div className={styles.monster + ' flex justify-center'}>SCARLET</div>
       <div className="flex mb-1.5 items-center">
         <Damage value="9"/>
