@@ -1,24 +1,28 @@
-import React from "react";
-import "tailwindcss/tailwind.css";
+import React, { useEffect } from "react";
 import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
 
-import Header from '../components/Header/Header';
-import MainInfo from '../components/MainInfo/MainInfo';
-import Army from "../components/Army/Army";
-import Craft from "../components/Craft/Craft";
-import Activities from "../components/Activities/Activities";
+interface IProps {
+  Component: React.ComponentType;
+  pageProps: any;
+}
 
+const MyApp = (props: IProps) => {
+  const {Component, pageProps} = props;
 
-const MyApp = () => {
-  return (
-    <div className="flex flex-col self-center w-4/5" style={{padding: '36px 0'}}>
-      <Header/>
-      <MainInfo/>
-      <Army/>
-      <Craft/>
-      <Activities/>
-    </div>
-  );
+  useEffect(() => {
+    const appHeight = () => {
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty("--vh", `${vh}px`)
+    }
+    window.addEventListener("resize", appHeight)
+    appHeight()
+    return () => {
+      window.removeEventListener("resize", appHeight)
+    }
+  }, [])
+
+  return <Component {...pageProps} />
 };
 
 export default MyApp;
