@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Army.module.css";
-import Damage from "/svg/Damage/Damage";
+import Damage from "../../svg/Damage/Damage";
 
 const Gigad = () => {
   return (
