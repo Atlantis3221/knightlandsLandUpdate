@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 import styles from "./Header.module.css";
 import PlayNow from "../common/PlayNow";
+import { HeaderLinks } from "../../common/constants/HeaderLinks";
+import UserMenu from "./UserMenu/UserMenu";
 
 const contacts = [
   {href: 'discord', src: '/contact/discord.svg'},
@@ -11,27 +13,56 @@ const contacts = [
 ];
 
 const Header = () => {
+  const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
+
+  const openUserMenu = useCallback(() => {
+    if(typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
+    setIsActiveUserMenu(true);
+  }, [setIsActiveUserMenu])
+
+  const closeUserMenu = useCallback(() => setIsActiveUserMenu(false), [setIsActiveUserMenu]);
+
+  const toggleUserMenu = useCallback(() => {
+    isActiveUserMenu ? closeUserMenu() : openUserMenu();
+  }, [isActiveUserMenu, openUserMenu, closeUserMenu]);
+
+  const onClickToLink = useCallback((id) => {
+    closeUserMenu();
+    return document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
+  }, [closeUserMenu]);
+
   return (
-    <div className="flex w-full justify-between flex-row pb-14 lg:pb-0">
-      <div className="flex justify-center items-center">
-        <div className={styles.logo}>
-          <img src="/logo.svg" />
+    <>
+      {isActiveUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
+
+      <div className="flex w-full justify-between flex-row pb-14 lg:pb-0">
+        <div className="flex items-center">
+          <div className="w-28 md:w-48 mr-7">
+            <img src="/logo.svg" className="mr-0"/>
+          </div>
+          <div className={styles.links + ' hidden lg:flex'}>
+            {HeaderLinks.map((item, i) => (
+              <a key={i} href="/">{item.title}</a>
+            ))}
+          </div>
         </div>
-        <div className={styles.links + ' flex'}>
-          <a href="/">Gameplay</a>
-          <a href="/">Play to earn</a>
-          <a href="/">Updates</a>
+        <div className={styles.contact + ' flex items-center'}>
+          <div className="hidden md:flex">
+            {contacts.map((contact, i) => (
+              <a className="w-10" key={i} href={contact.href}>
+                <img src={contact.src} />
+              </a>
+            ))}
+          </div>
+          <PlayNow />
+          <div className="flex cursor-pointer lg:hidden ml-7 w-5 z-1" onClick={toggleUserMenu}>
+            <img src={isActiveUserMenu ? '/cross.svg' : '/menu.svg'}/>
+          </div>
         </div>
       </div>
-      <div className={styles.contact + ' flex items-center'}>
-        {contacts.map((contact, i) => (
-          <a key={i} href={contact.href}>
-            <img src={contact.src} />
-          </a>
-        ))}
-      <PlayNow/>
-        </div>
-    </div>
+    </>
   );
 }
 

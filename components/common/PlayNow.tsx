@@ -4,11 +4,9 @@ import styles from "./styles.module.css";
 
 const PlayNow = () => {
   return (
-    <div>
-      <Link href="/">
-        <div className={styles.container + ' flex justify-center items-center self-center'}>Play now</div>
-      </Link>
-    </div>
+    <Link href="/">
+      <div className={styles.container + ' w-28 h-14 cursor-pointer flex justify-center items-center self-center'}>Play now</div>
+    </Link>
   )
 }
 

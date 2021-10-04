@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 
 import styles from "./MainInfo.module.css";
 import PlayNow from "../common/PlayNow";
+import Dot from "../../components/common/Dot";
 
 const MainInfo = () => {
   const smoothAutoScroll = useCallback(() => {
@@ -28,7 +29,7 @@ const MainInfo = () => {
           </div>
         </div>
         <div className={styles.notWalletContainer + ' flex flex-row items-center'}>
-          <div className={styles.dot}/>
+          <Dot color="#FFEB3D"/>
           <div className={styles.noWallet}>No wallet needed</div>
         </div>
       </div>

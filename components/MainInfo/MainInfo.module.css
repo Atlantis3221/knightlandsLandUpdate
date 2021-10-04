@@ -39,14 +39,6 @@
     color: #8A978C;
 }
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #FFEB3D;
-    margin-right: 8px;
-}
-
 .learnMoreButton {
     margin-left: 16px;
     cursor: pointer;
