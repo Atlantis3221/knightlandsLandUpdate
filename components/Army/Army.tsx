@@ -4,10 +4,11 @@ import commonStyles from '/styles/common.module.css';
 import FatherTime from "./parts/FatherTime";
 import Gigad from "./parts/Gigad";
 import Scarlet from "./parts/Scarlet";
+import { GAMEPLAY } from "../../common/constants/HeaderLinks";
 
 const Army = () => {
   return (
-    <div className={commonStyles.board + ' flex items-center'} id="autoScrollDestination">
+    <div className={commonStyles.board + ' flex items-center'} id={GAMEPLAY}>
       <div className="pl-12 max-w-sm ml-2">
         <div className={styles.title}>Build your army</div>
         <div className={styles.description}>

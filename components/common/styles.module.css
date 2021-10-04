@@ -1,4 +1,5 @@
 .container {
+    overflow: overlay;
     background: #FFEB3D;
     border-radius: 40px;
     font-style: normal;
