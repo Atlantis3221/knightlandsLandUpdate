@@ -12,7 +12,7 @@ const contacts = [
 
 const Header = () => {
   return (
-    <div className="flex w-full justify-between flex-row">
+    <div className="flex w-full justify-between flex-row pb-14 lg:pb-0">
       <div className="flex justify-center items-center">
         <div className={styles.logo}>
           <img src="/logo.svg" />

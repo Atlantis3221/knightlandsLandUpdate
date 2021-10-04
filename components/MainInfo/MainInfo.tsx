@@ -9,11 +9,18 @@ const MainInfo = () => {
   }, []);
 
   return (
-    <div className="flex w-full">
-      <div className="flex flex-col justify-center">
-        <div className={styles.titleSmall}>IDLE ONLINE RPG</div>
-        <div className={styles.titleBig}>Win group raids, craft items and earn crypto</div>
-        <div className={styles.text}>Online browser role-playing game with integrated blockchain technology</div>
+    <>
+      <div className="flex flex-col lg:flex-row w-full text-center sm:text-left">
+        <div className="flex flex-col justify-center" style={{maxWidth: 500}}>
+          <div className={styles.titleSmall}>IDLE ONLINE RPG</div>
+          <div className={styles.titleBig}>Win group raids, craft items and earn crypto</div>
+          <div className={styles.text}>Online browser role-playing game with integrated blockchain technology</div>
+        </div>
+        <div className="flex w-full h-full justify-center self-center items-center lg:-mt-8">
+          <img src="/heroes.png"/>
+        </div>
+      </div>
+      <div className="flex flex-col items-center sm:items-start md:-mt-0 lg:-mt-30 xl:-mt-32">
         <div className="flex flex-row">
           <PlayNow/>
           <div className={styles.learnMoreButton + ' flex justify-center items-center'} onClick={smoothAutoScroll}>
@@ -25,10 +32,7 @@ const MainInfo = () => {
           <div className={styles.noWallet}>No wallet needed</div>
         </div>
       </div>
-      <div className="flex w-full h-full justify-center self-center items-center relative -top-8">
-        <img src="/heroes.png"/>
-      </div>
-    </div>
+    </>
   );
 }
 
