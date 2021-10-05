@@ -6,7 +6,18 @@
     color: #FFFFFF;
 }
 
-.image {
-    width: 250px;
-    height: 250px;
+.img {
+    width: 162px;
+}
+
+@media (min-width: 768px) {
+    .img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img {
+        width: 240px;
+    }
 }

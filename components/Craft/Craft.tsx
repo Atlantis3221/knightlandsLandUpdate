@@ -12,22 +12,24 @@ const crafts = [
 
 const Craft = () => {
   return (
-    <div className={commonStyles.board + ' flex items-center pl-12 pr-12'}>
-      <div className="pl-12 max-w-sm ml-2">
-        <div className={styles.title}>Gather and craft hundreds of items</div>
+    <div className={commonStyles.board + ' flex w-full flex-col items-center py-16 xl:flex-row xl:px-4 xxl:px-12 xl:py-0'}>
+      <div className="w-full text-center xl:text-left lg:mr-4">
+        <div className={styles.title + " xl:w-40"}>Gather and craft hundreds of items</div>
       </div>
 
-      <div className="flex w-full justify-between">
-        {crafts.map((craft, i) => (
-          <div key={i} className="relative -top-12">
-            <div className={styles.image}>
+
+      <div className="flex w-full flex-wrap pt-3 sm:pt-10 sm:flex-nowrap justify-center xl:pt-0 xl:-mt-16">
+        {crafts.map((craft, i) => {
+          const lastElement = i === crafts.length - 1;
+          const rootClass = `${styles.img} flex flex-col relative ${lastElement ? 'mr-0' : 'mr-3'}`;
+          return (
+            <div key={i} className={rootClass}>
               <img src={craft.src} />
+              <div className="relative flex justify-center w-full -top-6 md:-top-8">
+                <CraftBoard bigText={craft.bigText} smallText={craft.smallText}/>
+              </div>
             </div>
-            <div className="relative -top-16">
-              <CraftBoard bigText={craft.bigText} smallText={craft.smallText}/>
-            </div>
-          </div>
-        ))}
+        )})}
       </div>
     </div>
   )

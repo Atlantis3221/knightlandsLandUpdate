@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    .root {
+        padding: 36px 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .root {
+        padding: 36px 143px;
+    }
+}

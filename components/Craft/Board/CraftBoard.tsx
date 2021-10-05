@@ -10,9 +10,9 @@ const CraftBoard = (props: IProps) => {
   const {bigText, smallText} = props;
 
   return (
-    <div className="relative">
+    <div className="flex relative">
       <img src="/craft/craftBoard.svg" />
-      <div className="flex flex-col items-center justify-center absolute top-0 w-full h-4/5">
+      <div className="flex flex-col items-center justify-center absolute w-full h-full md:h-4/5">
         <div className={styles.title}>{bigText}</div>
         <div className={styles.text}>{smallText}</div>
       </div>
