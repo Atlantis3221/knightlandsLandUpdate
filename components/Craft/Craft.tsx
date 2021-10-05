@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Craft.module.css";
 import commonStyles from "/styles/common.module.css";
 import CraftBoard from "./Board/CraftBoard";
+import Breakpoints from "../../common/constants/Breakpoints";
 
 const crafts = [
   {src: '/craft/craft1.png', bigText: '"300+ soldiers', smallText: 'to collect and combine'},
@@ -18,18 +19,15 @@ const Craft = () => {
       </div>
 
 
-      <div className="flex w-full flex-wrap pt-3 sm:pt-10 sm:flex-nowrap justify-center xl:pt-0 xl:-mt-16">
-        {crafts.map((craft, i) => {
-          const lastElement = i === crafts.length - 1;
-          const rootClass = `${styles.img} flex flex-col relative ${lastElement ? 'mr-0' : 'mr-3'}`;
-          return (
-            <div key={i} className={rootClass}>
-              <img src={craft.src} />
-              <div className="relative flex justify-center w-full -top-6 md:-top-8">
-                <CraftBoard bigText={craft.bigText} smallText={craft.smallText}/>
-              </div>
+      <div className="flex w-full flex-wrap pt-3 sm:pt-10 sm:flex-nowrap justify-around xl:pt-0 xl:-mt-16">
+        {crafts.map((craft, i) => (
+          <div key={i} className={`${styles.img} flex flex-col relative md:mx-1.5`}>
+            <img src={craft.src} />
+            <div className="relative flex justify-center w-full -top-6 md:-top-8">
+              <CraftBoard bigText={craft.bigText} smallText={craft.smallText}/>
             </div>
-        )})}
+          </div>
+        ))}
       </div>
     </div>
   )
