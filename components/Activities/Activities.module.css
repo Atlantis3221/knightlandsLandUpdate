@@ -6,6 +6,18 @@
 }
 
 .image {
-    max-width: 274px;
-    max-height: 269px;
+    max-width: 343px;
+    max-height: 354px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.textSmall {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 }

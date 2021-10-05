@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./Craft.module.css";
 import commonStyles from "/styles/common.module.css";
 import CraftBoard from "./Board/CraftBoard";
-import Breakpoints from "../../common/constants/Breakpoints";
 
 const crafts = [
   {src: '/craft/craft1.png', bigText: '"300+ soldiers', smallText: 'to collect and combine'},
