@@ -5,16 +5,25 @@ import MainInfo from '../components/MainInfo/MainInfo';
 import Army from "../components/Army/Army";
 import Craft from "../components/Craft/Craft";
 import Activities from "../components/Activities/Activities";
-import styles from './index.module.css'
+import Footer from "../components/Footer/Footer";
+import BaseLayout from "../components/BaseLayout/BaseLayout";
 
 export default function Home() {
   return (
-    <div className={styles.root + " flex flex-col self-center sm:max-w-8xl"}>
-      <Header/>
-      <MainInfo/>
+    <>
+      <BaseLayout>
+        <Header/>
+        <MainInfo/>
+      </BaseLayout>
+
       <Army/>
-      <Craft/>
-      <Activities/>
-    </div>
+
+      <BaseLayout>
+        <Craft/>
+        <Activities/>
+      </BaseLayout>
+
+      <Footer/>
+    </>
   )
 }

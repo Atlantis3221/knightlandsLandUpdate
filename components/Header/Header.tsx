@@ -37,7 +37,7 @@ const Header = () => {
     <>
       {isActiveUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
 
-      <div className="flex w-full justify-between flex-row pb-14 lg:pb-0">
+      <div className="flex w-full justify-between flex-row pb-14 px-8 md:px-0 lg:pb-0">
         <div className="flex items-center">
           <div className="w-28 md:w-48 mr-7">
             <img src="/logo.svg" className="mr-0"/>

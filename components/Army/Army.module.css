@@ -1,13 +1,10 @@
 .title {
-    font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
-    color: #FFFFFF;
 }
 
 .description {
-    font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
@@ -15,12 +12,13 @@
 }
 
 .monster {
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
 }
+
+.removeScrollbar::-webkit-scrollbar { width: 0; }
+.removeScrollbar { -ms-overflow-style: none; }
 
 .damageDescription {
     max-width: 140px;
@@ -30,4 +28,14 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #8A978C;
+}
+
+.img {
+    min-width: 146px;
+}
+
+@media (min-width: 768px) {
+    .img {
+        width: 213px;
+    }
 }

@@ -1,3 +1,7 @@
+.root {
+    padding: 36px 0;
+}
+
 @media (min-width: 768px) {
     .root {
         padding: 36px 48px;

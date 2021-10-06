@@ -9,7 +9,7 @@ import { GAMEPLAY } from "../../common/constants/HeaderLinks";
 const MainInfo = () => {
   return (
     <div className="flex flex-col items-center mb-36">
-      <div className="flex flex-col lg:flex-row w-full text-center sm:text-left">
+      <div className="flex flex-col lg:flex-row w-full text-center md:text-left">
         <div className="flex flex-col justify-center max-w-xl">
           <div className={styles.titleSmall}>IDLE ONLINE RPG</div>
           <div className={styles.titleBig}>Win group raids, craft items and earn crypto</div>
@@ -32,21 +32,31 @@ const MainInfo = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row w-full xl:max-w-screen-xxl">
-        <div className={styles.usdc + ' w-full lg:w-3/5 mr-5 mb-8'}>
-          <div className={styles.h2}>30 000 USDC</div>
-          <div className={styles.text2}>
-            Become one of a Top 100 Knights in Grand Royale and win prize pool on 1st December!
-            <span className={styles.text2 + ' ' + styles.yellow}>
-              Read Terms
-            </span>
+      <div className="flex flex-col xl:flex-row w-full xl:max-w-screen-xxl">
+        <div className={styles.usdc + ' flex flex-col sm:flex-row w-full xl:w-3/5 mr-5 mb-8'}>
+          <div className="flex flex-col w-full h-full">
+            <div className={styles.h2}>30 000 USDC</div>
+            <div className={styles.text2}>
+              Become one of a Top 100 Knights in Grand Royale and win prize pool on 1st December!
+              <span className={styles.text2 + ' ' + styles.yellow}>
+                Read Terms
+              </span>
+            </div>
+          </div>
+          <div className="flex w-full justify-end sm:-mt-24">
+            <img src="/box.png" className="w-32 sm:w-full object-contain" />
           </div>
         </div>
 
-        <div className={styles.usdc + ' w-full lg:w-2/5'}>
-          <div>Earn FLESH token</div>
-          <div className={styles.text2}>
-            Daily prize for participate in Raids, even for free-to-pay users
+        <div className={styles.usdc + ' flex flex-col sm:flex-row w-full xl:w-2/5 mr-5 mb-8'}>
+          <div className="flex flex-col w-full h-full">
+            <div>Earn FLESH token</div>
+            <div className={styles.text2}>
+              Daily prize for participate in Raids, even for free-to-pay users
+            </div>
+          </div>
+          <div className="flex w-full justify-end sm:-mt-16 sm:-mr-20">
+            <img src="/prize.png" className="w-32 sm:w-full object-contain" />
           </div>
         </div>
       </div>
