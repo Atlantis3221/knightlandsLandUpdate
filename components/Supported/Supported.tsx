@@ -5,9 +5,9 @@ import styles from './Supported.module.css';
 const Supported = () => {
   return (
     <div className="">
-      <div className={commonStyles.board + "  mt-36 px-12 pb-12 sm:pb-12 pt-2"} style={{marginBottom: 0}}>
+      <div className={commonStyles.board + " mt-36 px-6 md:px-12 pb-12 sm:pb-12 pt-2"} style={{marginBottom: 0}}>
         <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="sm:col-span-2 self-center text-center sm:text-left mt-12 mr-8 mb-10 md:mb-4">
+          <div className="sm:col-span-2 self-center text-center sm:text-left mt-12 md:mr-8 mb-10 md:mb-4">
             <div className={styles.text}>You dont need a wallet to play, unless you want to sell FLESH on DEX</div>
           </div>
           <div className="flex justify-center col-span-1 xl:row-span-2 xl:-mt-24">
