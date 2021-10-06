@@ -18,8 +18,6 @@ const Supported = () => {
           </div>
           <div className={styles.text2 + ' col-span-1 sm:col-span-2 mt-6'}>Supported Blockchains</div>
         </div>
-
-
       </div>
       <div className="flex justify-center sm:justify-start sm:pl-12 -mt-8">
         <img className="w-40 h-44 mr-4" src="/ethereum.svg" />
