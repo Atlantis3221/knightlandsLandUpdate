@@ -27,13 +27,15 @@ const Army = () => {
           <div className="mx-2 lg:mx-0">
             <img className={styles.img} src={monster.src}/>
             <div className={styles.monster + ' flex justify-center mt-6 mb-4'}>{monster.title}</div>
-            <div className="flex mb-1.5 items-center">
-              <Damage value="9"/>
-              <div className={styles.damageDescription}>damage for each general 1⭐</div>
-            </div>
-            <div className="flex">
-              <Damage value="33" isPercent={true}/>
-              <div className={styles.damageDescription}>damage when Gsorc is in legion</div>
+            <div className="ml-3 lg:ml-4">
+              <div className="flex mb-1.5 items-center">
+                <Damage value="9"/>
+                <div className={styles.damageDescription}>damage for each general 1⭐</div>
+              </div>
+              <div className="flex">
+                <Damage value="33" isPercent={true}/>
+                <div className={styles.damageDescription}>damage when Gsorc is in legion</div>
+              </div>
             </div>
           </div>
         ))}
