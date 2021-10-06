@@ -46,7 +46,7 @@ const Roadmap = () => {
   const onClickHandler = useCallback(() => setShowAllElements(true), []);
 
   return (
-    <div className="w-full mt-24">
+    <div className="flex flex-col justify-center w-full my-24">
       <div className={styles.header}>Roadmap</div>
       <div className="flex justify-center items-baseline self-center flex-wrap">
         {road.map((item, i) => {

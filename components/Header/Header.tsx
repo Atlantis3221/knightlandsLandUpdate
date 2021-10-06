@@ -4,13 +4,7 @@ import styles from "./Header.module.css";
 import PlayNow from "../common/PlayNow";
 import { HeaderLinks } from "../../common/constants/HeaderLinks";
 import UserMenu from "./UserMenu/UserMenu";
-
-const contacts = [
-  {href: 'discord', src: '/contact/discord.svg'},
-  {href: 'medium', src: '/contact/medium.svg'},
-  {href: 'telegram', src: '/contact/telegram.svg'},
-  {href: 'twitter', src: '/contact/twitter.svg'},
-];
+import { Contacts } from "../../common/constants/Contacts";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
@@ -50,7 +44,7 @@ const Header = () => {
         </div>
         <div className={styles.contact + ' flex items-center'}>
           <div className="hidden md:flex">
-            {contacts.map((contact, i) => (
+            {Contacts.map((contact, i) => (
               <a className="w-10" key={i} href={contact.href}>
                 <img src={contact.src} />
               </a>
