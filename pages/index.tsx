@@ -7,6 +7,7 @@ import Craft from "../components/Craft/Craft";
 import Activities from "../components/Activities/Activities";
 import Footer from "../components/Footer/Footer";
 import BaseLayout from "../components/BaseLayout/BaseLayout";
+import Supported from "../components/Supported/Supported";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <BaseLayout>
         <Craft/>
         <Activities/>
+        <Supported/>
       </BaseLayout>
 
       <Footer/>

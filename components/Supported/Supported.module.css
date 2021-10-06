@@ -1,0 +1,19 @@
+.text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.description {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #8A978C;
+}
+
+.text2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 36px;
+    color: #8A978C;
+}
