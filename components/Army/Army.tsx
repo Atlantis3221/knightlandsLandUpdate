@@ -23,8 +23,8 @@ const Army = () => {
         </div>
       </div>
       <div className={styles.removeScrollbar + " flex w-full justify-start overflow-scroll md:justify-center"}>
-        {army.map(monster => (
-          <div className="mx-2 lg:mx-0">
+        {army.map((monster, i) => (
+          <div key={i} className="mx-2 lg:mx-0">
             <img className={styles.img} src={monster.src}/>
             <div className={styles.monster + ' flex justify-center mt-6 mb-4'}>{monster.title}</div>
             <div className="ml-3 lg:ml-4">
