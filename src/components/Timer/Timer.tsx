@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'src/components/Timer/Timer.module.css'
+import styles from 'components/Timer/Timer.module.css'
 
 import { CountdownCircleTimer, CountdownCircleTimerProps} from "react-countdown-circle-timer";
 

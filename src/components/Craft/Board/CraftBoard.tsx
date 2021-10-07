@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "src/components/Craft/Board/CraftBoard.module.css";
+import styles from "components/Craft/Board/CraftBoard.module.css";
 
 interface IProps {
   bigText: string;

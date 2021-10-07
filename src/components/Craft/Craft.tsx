@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "src/components/Craft/Craft.module.css";
-import commonStyles from "/styles/common.module.css";
-import CraftBoard from "src/components/Craft/Board/CraftBoard";
+import styles from "components/Craft/Craft.module.css";
+import commonStyles from "styles/common.module.css";
+import CraftBoard from "components/Craft/Board/CraftBoard";
 
 const crafts = [
   {src: '/craft/craft1.png', bigText: '"300+ soldiers', smallText: 'to collect and combine'},

@@ -1,11 +1,11 @@
 import React from "react";
 
-import styles from "src/components/MainInfo/MainInfo.module.css";
-import PlayNow from "src/components/common/PlayNow";
-import Dot from "src/components/common/Dot";
-import { smoothAutoScroll } from "src/common/helpers/smoothAutoScroll";
-import { GAMEPLAY } from "src/common/constants/HeaderLinks";
-import Prizes from "src/components/MainInfo/Prizes";
+import styles from "components/MainInfo/MainInfo.module.css";
+import PlayNow from "components/common/PlayNow";
+import Dot from "components/common/Dot";
+import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
+import { GAMEPLAY } from "common/constants/HeaderLinks";
+import Prizes from "components/MainInfo/Prizes";
 
 const MainInfo = () => {
   return (

@@ -3,7 +3,7 @@
 html,
 body,
 #__next {
-  background: no-repeat top/100% url(../public/background.png) #102918;
+  background: no-repeat top/100% url(../../public/background.png) #102918;
   padding: 0;
   margin: 0;
   height: 100vh;

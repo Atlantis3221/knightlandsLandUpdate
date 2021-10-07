@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from "react";
 
-import styles from "src/components/Header/Header.module.css";
-import PlayNow from "src/components/common/PlayNow";
-import { HeaderLinks } from "src/common/constants/HeaderLinks";
-import UserMenu from "src/components/Header/UserMenu/UserMenu";
-import { Contacts } from "src/common/constants/Contacts";
+import styles from "components/Header/Header.module.css";
+import PlayNow from "components/common/PlayNow";
+import { HeaderLinks } from "common/constants/HeaderLinks";
+import UserMenu from "components/Header/UserMenu/UserMenu";
+import { Contacts } from "common/constants/Contacts";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);

@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "src/components/Footer/Footer.module.css";
-import BaseLayout from "src/components/BaseLayout/BaseLayout";
-import { HeaderLinks } from "src/common/constants/HeaderLinks";
-import PlayNow from "src/components/common/PlayNow";
-import { Contacts } from "src/common/constants/Contacts";
+import styles from "components/Footer/Footer.module.css";
+import BaseLayout from "components/BaseLayout/BaseLayout";
+import { HeaderLinks } from "common/constants/HeaderLinks";
+import PlayNow from "components/common/PlayNow";
+import { Contacts } from "common/constants/Contacts";
 
 const Footer = () => {
   return (

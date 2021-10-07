@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
-import styles from "src/components/Roadmap/Roadmap.module.css";
-import { useMediaQuery } from "src/common/helpers/useMediaQuery";
+import styles from "components/Roadmap/Roadmap.module.css";
+import { useMediaQuery } from "common/helpers/useMediaQuery";
 
 interface IRoad {
   title: string;

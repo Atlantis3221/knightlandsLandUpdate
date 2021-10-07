@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "src/components/Activities/Activities.module.css";
+import styles from "components/Activities/Activities.module.css";
 
 const activities = [
   {src: '/activities/activity1.png', title: 'Champion tourney'},

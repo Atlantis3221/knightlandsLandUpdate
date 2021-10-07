@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from "src/components/MainInfo/MainInfo.module.css";
-import Timer from "src/components/Timer/Timer";
+import styles from "components/MainInfo/MainInfo.module.css";
+import Timer from "components/Timer/Timer";
 
 const Prizes = () => {
   return (

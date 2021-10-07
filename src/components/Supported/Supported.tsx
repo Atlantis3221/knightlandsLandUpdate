@@ -1,6 +1,6 @@
 import React from 'react';
-import commonStyles from "/styles/common.module.css";
-import styles from 'src/components/Supported/Supported.module.css';
+import commonStyles from "styles/common.module.css";
+import styles from 'components/Supported/Supported.module.css';
 
 const Supported = () => {
   return (

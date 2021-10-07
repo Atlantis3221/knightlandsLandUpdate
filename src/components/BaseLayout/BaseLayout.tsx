@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'src/components/BaseLayout/BaseLayout.module.css'
+import styles from 'components/BaseLayout/BaseLayout.module.css'
 
 interface IProps {
   disableVerticalPadding?: boolean;

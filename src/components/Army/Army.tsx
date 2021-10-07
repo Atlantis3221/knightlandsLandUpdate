@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "src/components/Army/Army.module.css";
-import { GAMEPLAY } from "src/common/constants/HeaderLinks";
-import Damage from "src/components/svg/Damage/Damage";
+import styles from "components/Army/Army.module.css";
+import { GAMEPLAY } from "common/constants/HeaderLinks";
+import Damage from "components/svg/Damage/Damage";
 
 const army = [
   {src: '/army/gigad.png', title: 'GIGAD'},

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "src/components/common/styles.module.css";
+import styles from "components/common/styles.module.css";
 
 const PlayNow = () => {
   return (

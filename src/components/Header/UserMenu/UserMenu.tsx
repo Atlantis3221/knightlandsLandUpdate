@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from "react";
-import { HeaderLinks } from "src/common/constants/HeaderLinks";
-import { disableScrolling, enableScrolling } from "src/common/helpers/operateWithScroll";
-import Dot from "src/components/common/Dot";
-import styles from "src/components/Header/UserMenu/UserMenu.module.css";
+import { HeaderLinks } from "common/constants/HeaderLinks";
+import { disableScrolling, enableScrolling } from "common/helpers/operateWithScroll";
+import Dot from "components/common/Dot";
+import styles from "components/Header/UserMenu/UserMenu.module.css";
 
 const UserMenu = ({onClickToLink}) => {
 

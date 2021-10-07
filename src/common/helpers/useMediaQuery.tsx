@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import { Breakpoints } from "src/common/constants/Breakpoints";
+import { Breakpoints } from "common/constants/Breakpoints";
 
 const MOBILE_QUERY = `(max-width: ${Breakpoints.md}px)`;
 const TABLET_QUERY = `(min-width: ${Breakpoints.md}px) and (max-width: ${Breakpoints.lg}px)`;
