@@ -1,14 +1,14 @@
 import React from "react";
 
-import Header from "../components/Header/Header";
-import MainInfo from "../components/MainInfo/MainInfo";
-import Army from "../components/Army/Army";
-import Craft from "../components/Craft/Craft";
-import Activities from "../components/Activities/Activities";
-import Footer from "../components/Footer/Footer";
-import BaseLayout from "../components/BaseLayout/BaseLayout";
-import Supported from "../components/Supported/Supported";
-import Roadmap from "../components/Roadmap/Roadmap";
+import Header from "../src/components/Header/Header";
+import MainInfo from "../src/components/MainInfo/MainInfo";
+import Army from "../src/components/Army/Army";
+import Craft from "../src/components/Craft/Craft";
+import Activities from "../src/components/Activities/Activities";
+import Footer from "../src/components/Footer/Footer";
+import BaseLayout from "../src/components/BaseLayout/BaseLayout";
+import Supported from "../src/components/Supported/Supported";
+import Roadmap from "../src/components/Roadmap/Roadmap";
 
 export default function Home() {
   return (
