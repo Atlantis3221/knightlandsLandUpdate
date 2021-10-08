@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "components/common/styles.module.css";
+import Button from "components/common/Button/Button";
 
 const PlayNow = () => {
   return (
     <a href="https://play.knightlands.com" target="_blank">
-      <div className={styles.container + ' w-28 h-14 cursor-pointer flex justify-center items-center self-center'}>Play now</div>
+      <Button className="w-28 h-14 cursor-pointer flex justify-center items-center self-center">PLAY NOW</Button>
     </a>
   )
 }

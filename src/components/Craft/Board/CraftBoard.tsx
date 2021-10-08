@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/Craft/Board/CraftBoard.module.css";
+import Text from "components/common/Text/Text";
 
 interface IProps {
   bigText: string;
@@ -13,8 +13,8 @@ const CraftBoard = (props: IProps) => {
     <div className="flex relative">
       <img src="/craft/craftBoard.svg" />
       <div className="flex flex-col items-center justify-center absolute w-full h-full md:h-4/5">
-        <div className={styles.title}>{bigText}</div>
-        <div className={styles.text}>{smallText}</div>
+        <Text type="h4" fontWeight="bold">{bigText}</Text>
+        <Text type="h5" className="text-center" opacity={0.4}>{smallText}</Text>
       </div>
     </div>
   )

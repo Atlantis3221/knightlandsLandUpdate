@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 
-import styles from "components/Header/Header.module.css";
+import styles from "components/Header/styles.module.css";
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/Header/UserMenu/UserMenu";
@@ -31,21 +31,21 @@ const Header = () => {
     <>
       {isActiveUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
 
-      <div className="flex w-full justify-between flex-row pb-14 px-8 md:px-0 lg:pb-0">
+      <div className="flex w-full justify-between flex-row mb-4 pb-14 px-8 md:px-0 lg:pb-0">
         <div className="flex items-center">
           <div className="w-28 md:w-48 mr-7">
             <img src="/logo.svg" className="mr-0"/>
           </div>
           <div className={styles.links + ' hidden lg:flex'}>
             {HeaderLinks.map((item, i) => (
-              <a key={i} href="/">{item.title}</a>
+              <a key={i} href="/" className="mr-3">{item.title}</a>
             ))}
           </div>
         </div>
         <div className={styles.contact + ' flex items-center'}>
           <div className="hidden md:flex">
             {Contacts.map((contact, i) => (
-              <a className="w-10" key={i} href={contact.href}>
+              <a className="w-10 mx-1" key={i} href={contact.href}>
                 <img src={contact.src} />
               </a>
             ))}

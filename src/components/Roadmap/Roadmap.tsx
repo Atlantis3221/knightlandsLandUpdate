@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
-import styles from "components/Roadmap/Roadmap.module.css";
+import styles from "components/Roadmap/styles.module.css";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
+import Text from "components/common/Text/Text";
+import Button, { ButtonType } from "components/common/Button/Button";
 
 interface IRoad {
   title: string;
@@ -47,7 +49,7 @@ const Roadmap = () => {
 
   return (
     <div className="flex flex-col justify-center w-full my-24">
-      <div className={styles.header}>Roadmap</div>
+      <Text type="h2" className="text-center">Roadmap</Text>
       <div className="flex justify-center items-baseline self-center flex-wrap">
         {road.map((item, i) => {
           const moreThanLastShownElement = i >= ((countPerRow) * 2);
@@ -66,7 +68,7 @@ const Roadmap = () => {
 
           return (
             <div key={i} className={styles.container + " flex flex-col justify-center items-center"}>
-              <div className={styles.date}>{item.date}</div>
+              <Text type="h5" fontWeight="bold" className="text-justify uppercase" color="#8A978C">{item.date}</Text>
               <div className={`flex w-full items-baseline ${justifyClassName}`}>
                 {!noLeftLine && <div className={styles.line}/>}
                 <div className={item.isChecked ? styles.checked : styles.notChecked}>
@@ -74,17 +76,17 @@ const Roadmap = () => {
                 </div>
                 {!noRightLine && <div className={styles.line}/>}
               </div>
-              <div className={styles.title}>{item.title}</div>
-              <div className={styles.description}>{item.description}</div>
+              <Text type="h3" className="text-center">{item.title}</Text>
+              <Text type="h4" className="text-center px-2" maxWidth={276}>{item.description}</Text>
             </div>
           )
         })}
       </div>
 
       {!isDesktop && !showAllElements && (
-        <div className={styles.button + " flex justify-center items-center self-center w-full"} onClick={onClickHandler}>
+        <Button type={ButtonType.SECONDARY} className="flex w-48 justify-center items-center self-center" onClick={onClickHandler}>
           SHOW ALL ROADMAP
-        </div>
+        </Button>
       )}
     </div>
   )

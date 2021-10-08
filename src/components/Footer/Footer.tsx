@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/Footer/Footer.module.css";
+import styles from "components/Footer/styles.module.css";
 import BaseLayout from "components/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";
@@ -7,7 +7,7 @@ import { Contacts } from "common/constants/Contacts";
 
 const Footer = () => {
   return (
-    <div className={styles.footer + ' flex-col md:pt-20'}>
+    <div className={styles.footer + ' flex w-full h-full flex-col md:pt-20'}>
       <BaseLayout disableVerticalPadding={true}>
         <div className="flex w-full justify-between flex-col items-center sm:flex-row pb-14 px-8 md:px-0 lg:pb-0">
           <div className="flex items-center mb-10 sm:mb-0">
@@ -16,11 +16,11 @@ const Footer = () => {
             </div>
             <div className={styles.links + ' hidden lg:flex'}>
               {HeaderLinks.map((item, i) => (
-                <a key={i} href="/">{item.title}</a>
+                <a key={i} href="/" className="mr-3">{item.title}</a>
               ))}
             </div>
           </div>
-          <div className={styles.contact + ' flex items-center'}>
+          <div className="flex items-center">
             <div className="flex mx-4 sm:mx-0">
               {Contacts.map((contact, i) => (
                 <a className="w-10 mx-1" key={i} href={contact.href}>

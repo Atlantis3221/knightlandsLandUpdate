@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'components/common/styles.module.css';
+import styles from './styles.module.css';
 
 interface IProps {
   color: string;
@@ -7,7 +7,7 @@ interface IProps {
 
 const Dot = ({color: backgroundColor}: IProps) => {
   return (
-    <div className={styles.dot} style={{backgroundColor}}/>
+    <div className={styles.root} style={{backgroundColor}}/>
   )
 }
 

@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from "react";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import { disableScrolling, enableScrolling } from "common/helpers/operateWithScroll";
-import Dot from "components/common/Dot";
-import styles from "components/Header/UserMenu/UserMenu.module.css";
+import Dot from "components/common/Dot/Dot";
+import Text from "components/common/Text/Text";
 
 const UserMenu = ({onClickToLink}) => {
 
@@ -23,9 +23,9 @@ const UserMenu = ({onClickToLink}) => {
         {HeaderLinks.map((item, i) => (
           <div key={i} className="flex items-center p-3 cursor-pointer">
             <Dot color="#A2921D"/>
-            <div className={styles.link} onClick={() => onClickToLinkHandler(item.id)}>
+            <Text type="h5" color="#A2921D" onClick={() => onClickToLinkHandler(item.id)}>
               {item.title}
-            </div>
+            </Text>
           </div>
         ))}
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
 
-import styles from "components/Craft/Craft.module.css";
+import styles from "components/Craft/styles.module.css";
 import commonStyles from "styles/common.module.css";
 import CraftBoard from "components/Craft/Board/CraftBoard";
+import Text from "components/common/Text/Text";
 
 const crafts = [
   {src: '/craft/craft1.png', bigText: '"300+ soldiers', smallText: 'to collect and combine'},
@@ -14,7 +15,7 @@ const Craft = () => {
   return (
     <div className={commonStyles.board + ' flex w-full flex-col items-center py-16 xl:flex-row xl:px-4 xxl:px-12 xl:py-0'}>
       <div className="w-full text-center xl:text-left lg:mr-4">
-        <div className={styles.title + " xl:w-40"}>Gather and craft hundreds of items</div>
+        <Text type="h2" className="xl:w-40">Gather and craft hundreds of items</Text>
       </div>
 
 
