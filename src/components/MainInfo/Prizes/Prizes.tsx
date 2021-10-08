@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "components/MainInfo/styles.module.css";
+import styles from "./styles.module.css";
+
 import Timer from "components/Timer/Timer";
 import Text from "components/common/Text/Text";
 

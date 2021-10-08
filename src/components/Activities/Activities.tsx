@@ -1,6 +1,6 @@
 import React from "react";
+import styles from "./styles.module.css";
 
-import styles from "components/Activities/styles.module.css";
 import Text from "components/common/Text/Text";
 
 const activities = [

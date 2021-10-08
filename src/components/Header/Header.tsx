@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
+import styles from "./styles.module.css";
 
-import styles from "components/Header/styles.module.css";
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/Header/UserMenu/UserMenu";

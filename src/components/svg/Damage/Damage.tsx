@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'components/svg/Damage/Damage.module.css'
+import styles from './styles.module.css'
 
 interface IProps {
   value: string;

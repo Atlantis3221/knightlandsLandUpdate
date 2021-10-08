@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "components/Footer/styles.module.css";
+import styles from "./styles.module.css";
+
 import BaseLayout from "components/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";

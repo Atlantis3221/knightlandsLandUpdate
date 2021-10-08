@@ -3,7 +3,7 @@ import PlayNow from "components/common/PlayNow";
 import Dot from "components/common/Dot/Dot";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 import { GAMEPLAY } from "common/constants/HeaderLinks";
-import Prizes from "components/MainInfo/Prizes";
+import Prizes from "components/MainInfo/Prizes/Prizes";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
 

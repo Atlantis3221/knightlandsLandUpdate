@@ -1,6 +1,6 @@
 import React from "react";
+import styles from "./styles.module.css";
 
-import styles from "components/Craft/styles.module.css";
 import commonStyles from "styles/common.module.css";
 import CraftBoard from "components/Craft/Board/CraftBoard";
 import Text from "components/common/Text/Text";

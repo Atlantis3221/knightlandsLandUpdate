@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
-import styles from "components/Roadmap/styles.module.css";
+import styles from "./styles.module.css";
+
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
