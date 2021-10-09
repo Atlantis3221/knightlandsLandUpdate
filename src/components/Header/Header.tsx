@@ -4,9 +4,9 @@ import styles from "./styles.module.css";
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/Header/UserMenu/UserMenu";
-import { Contacts } from "common/constants/Contacts";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
+import ContactMenu from "components/common/ContactMenu/ContactMenu";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
@@ -49,11 +49,7 @@ const Header = () => {
         </div>
         <div className={styles.contact + ' flex items-center'}>
           <div className="hidden md:flex">
-            {Contacts.map((contact, i) => (
-              <a className="w-10 mx-1" key={i} href={contact.href}>
-                <img src={contact.simpleSrc} />
-              </a>
-            ))}
+            <ContactMenu/>
           </div>
           <PlayNow />
           <div className="flex cursor-pointer lg:hidden ml-7 w-5 z-1" onClick={toggleUserMenu}>

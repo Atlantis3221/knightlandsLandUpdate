@@ -1,11 +1,10 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import styles from "./styles.module.css";
 import Text from "components/common/Text/Text";
 import Supported from "components/Supported/Supported";
 import Button from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
-import { isElement } from "react-dom/test-utils";
 
 const colStartBase = 8;
 

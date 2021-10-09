@@ -4,6 +4,7 @@ import { disableScrolling, enableScrolling } from "common/helpers/operateWithScr
 import Dot from "components/common/Dot/Dot";
 import Text from "components/common/Text/Text";
 import { Contacts } from "common/constants/Contacts";
+import ContactMenu from "components/common/ContactMenu/ContactMenu";
 
 const UserMenu = ({onClickToLink}) => {
 
@@ -34,11 +35,7 @@ const UserMenu = ({onClickToLink}) => {
           </div>
         ))}
         <div className="flex w-full h-full justify-center items-end">
-          {Contacts.map((contact, i) => (
-            <a className="w-10 mx-1" key={i} href={contact.href}>
-              <img src={contact.mobileSrc} />
-            </a>
-          ))}
+          <ContactMenu mobileMenu={true}/>
         </div>
       </div>
     </div>

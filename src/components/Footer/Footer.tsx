@@ -4,8 +4,8 @@ import styles from "./styles.module.css";
 import BaseLayout from "components/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";
-import { Contacts } from "common/constants/Contacts";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
+import ContactMenu from "components/common/ContactMenu/ContactMenu";
 
 const Footer = () => {
   return (
@@ -24,11 +24,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center">
             <div className="flex mx-4 sm:mx-0">
-              {Contacts.map((contact, i) => (
-                <a className="w-10 mx-1" key={i} href={contact.href}>
-                  <img src={contact.simpleSrc} />
-                </a>
-              ))}
+             <ContactMenu/>
             </div>
             <PlayNow />
           </div>
