@@ -1,12 +1,13 @@
 import React, { useCallback, useMemo, useState } from "react";
-import styles from "components/FleshToken/styles.module.css";
+import styles from "./styles.module.css";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
 import BaseLayout from "components/BaseLayout/BaseLayout";
 import Supported from "components/Supported/Supported";
-import FleshToken from "components/FleshToken/FleshToken";
-import KLToken from "components/FleshToken/KLToken";
+import FleshToken from "components/Token/parts/FleshToken";
+import KLToken from "components/Token/parts/KLToken";
+import { PLAY_TO_EARN } from "common/constants/HeaderLinks";
 
 enum Section {
   FLESH,
@@ -24,7 +25,7 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center col-start-1 col-span-full row-start-1">
+      <div className="flex justify-center col-start-1 col-span-full row-start-1" id={PLAY_TO_EARN}>
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => changeSection(Section.FLESH)}

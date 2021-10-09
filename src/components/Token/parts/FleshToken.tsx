@@ -1,10 +1,11 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import styles from "./styles.module.css";
 import Text from "components/common/Text/Text";
 import Supported from "components/Supported/Supported";
 import Button from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
+import { isElement } from "react-dom/test-utils";
 
 const colStartBase = 8;
 
@@ -40,7 +41,8 @@ const FleshToken = () => {
             return;
           }
 
-          const width = !isXl && 300;
+          const width = isXl ? 300 : item.mobileWidth || item.width;
+          console.log(isXl);
           return (
             <div key={i} className={`col-start-1 row-start-${i+3} flex xl:justify-end`} style={{width}}>
               <div className={styles.container + ' m-2 xl:m-0'} style={{width: item.width, height: item.height}}>
@@ -54,7 +56,7 @@ const FleshToken = () => {
         })}
       </>
     )
-  }, []);
+  }, [isXl]);
 
   const imageSection = useMemo(() => {
     return (
@@ -74,7 +76,7 @@ const FleshToken = () => {
           }
 
           const className = ` m-2 xl:m-0 self-center row-start-${i-1} ${item.columnStart} row-span-1`;
-          const width = !isXl && item.mobileWidth;
+          const width = !isXl ? item.mobileWidth : item.width || 240;
           return (
             <div key={i} className={styles.container + className} style={{width}}>
               <img src={item.src} style={{width: 50, height: 50, marginRight: 10}}/>
@@ -86,7 +88,7 @@ const FleshToken = () => {
         })}
       </>
     )
-  }, []);
+  }, [isXl]);
 
   if(isXl) {
     return (

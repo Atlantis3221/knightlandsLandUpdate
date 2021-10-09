@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
+import { ROADMAP } from "common/constants/HeaderLinks";
 
 interface IRoad {
   title: string;
@@ -49,7 +50,7 @@ const Roadmap = () => {
   const onClickHandler = useCallback(() => setShowAllElements(true), []);
 
   return (
-    <div className="flex flex-col justify-center w-full my-24">
+    <div className="flex flex-col justify-center w-full my-24" id={ROADMAP}>
       <Text type="h2" className="text-center">Roadmap</Text>
       <div className="flex justify-center items-baseline self-center flex-wrap">
         {road.map((item, i) => {

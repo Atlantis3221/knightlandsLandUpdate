@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="flex mx-4 sm:mx-0">
               {Contacts.map((contact, i) => (
                 <a className="w-10 mx-1" key={i} href={contact.href}>
-                  <img src={contact.src} />
+                  <img src={contact.simpleSrc} />
                 </a>
               ))}
             </div>

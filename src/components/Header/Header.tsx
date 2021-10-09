@@ -5,9 +5,12 @@ import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/Header/UserMenu/UserMenu";
 import { Contacts } from "common/constants/Contacts";
+import { useMediaQuery } from "common/helpers/useMediaQuery";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
+
+  const {isDesktop} = useMediaQuery();
 
   const openUserMenu = useCallback(() => {
     if(typeof window !== 'undefined') {
@@ -27,9 +30,10 @@ const Header = () => {
     return document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
   }, [closeUserMenu]);
 
+  const showUserMenu = isActiveUserMenu && !isDesktop
   return (
     <>
-      {isActiveUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
+      {showUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
 
       <div className="flex w-full justify-between flex-row mb-4 pb-14 px-8 md:px-0 lg:pb-0">
         <div className="flex items-center">
@@ -46,7 +50,7 @@ const Header = () => {
           <div className="hidden md:flex">
             {Contacts.map((contact, i) => (
               <a className="w-10 mx-1" key={i} href={contact.href}>
-                <img src={contact.src} />
+                <img src={contact.simpleSrc} />
               </a>
             ))}
           </div>
