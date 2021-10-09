@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Craft/styles.module.css";
 
 import commonStyles from "styles/common.module.css";
-import CraftBoard from "components/Craft/Board/CraftBoard";
+import CraftBoard from "components/sections/Craft/Board/CraftBoard";
 import Text from "components/common/Text/Text";
 
 const crafts = [

@@ -4,7 +4,7 @@ import { disableScrolling, enableScrolling } from "common/helpers/operateWithScr
 import Dot from "components/common/Dot/Dot";
 import Text from "components/common/Text/Text";
 import { Contacts } from "common/constants/Contacts";
-import ContactMenu from "components/common/ContactMenu/ContactMenu";
+import ContactMenu from "components/common/ContactMenu";
 
 const UserMenu = ({onClickToLink}) => {
 

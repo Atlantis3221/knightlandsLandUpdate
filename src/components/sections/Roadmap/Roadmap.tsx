@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Roadmap/styles.module.css";
 
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import Text from "components/common/Text/Text";

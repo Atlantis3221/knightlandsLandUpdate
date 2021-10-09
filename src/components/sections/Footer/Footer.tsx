@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Footer/styles.module.css";
 
-import BaseLayout from "components/BaseLayout/BaseLayout";
+import BaseLayout from "components/common/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
-import ContactMenu from "components/common/ContactMenu/ContactMenu";
+import ContactMenu from "components/common/ContactMenu";
 
 const Footer = () => {
   return (

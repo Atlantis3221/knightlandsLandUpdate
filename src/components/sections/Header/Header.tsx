@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Header/styles.module.css";
 
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
-import UserMenu from "components/Header/UserMenu/UserMenu";
+import UserMenu from "components/sections/Header/UserMenu/UserMenu";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
-import ContactMenu from "components/common/ContactMenu/ContactMenu";
+import ContactMenu from "components/common/ContactMenu";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);

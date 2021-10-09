@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Token/parts/styles.module.css";
 import Text from "components/common/Text/Text";
 import Button from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";

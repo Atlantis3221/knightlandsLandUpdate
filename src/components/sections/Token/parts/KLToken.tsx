@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from "components/common/Text/Text";
-import styles from './styles.module.css'
+import styles from 'components/sections/Token/parts/styles.module.css'
 import Button from "components/common/Button/Button";
 
 const data = [

@@ -1,12 +1,12 @@
 import React, { useCallback, useMemo, useState } from "react";
-import styles from "./styles.module.css";
+import styles from "components/sections/Token/styles.module.css";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
-import BaseLayout from "components/BaseLayout/BaseLayout";
-import Supported from "components/Supported/Supported";
-import FleshToken from "components/Token/parts/FleshToken";
-import KLToken from "components/Token/parts/KLToken";
+import BaseLayout from "components/common/BaseLayout/BaseLayout";
+import Supported from "components/sections/Token/parts/Supported";
+import FleshToken from "components/sections/Token/parts/FleshToken";
+import KLToken from "components/sections/Token/parts/KLToken";
 import { PLAY_TO_EARN } from "common/constants/HeaderLinks";
 
 enum Section {
