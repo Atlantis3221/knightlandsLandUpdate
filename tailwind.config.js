@@ -6,7 +6,10 @@ module.exports = {
     content: ["./src/**/*.{js,ts,jsx,tsx}"],
     options: {
       safelist: {
-        standard: [/^[\w:]*col-start-/]
+        standard: [
+          /^[\w:]*col-start-/,
+          /^[\w:]*row-start-/
+        ]
       }
     }
   },
