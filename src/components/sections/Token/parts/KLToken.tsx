@@ -6,12 +6,12 @@ import Button from "components/common/Button/Button";
 const data = [
   {title: 'Game rewards', percent: 29, width: 100},
   {title: 'Team', percent: 20, width: 90},
-  {title: 'Private round', percent: 16, width: 55},
-  {title: 'Private Liquidity, MM, and LP Incentives', percent: 15, width: 53},
-  {title: 'Marketing & Growth', percent: 8, width: 45},
-  {title: 'Strategic Round', percent: 5, width: 35},
-  {title: 'Partners', percent: 5, width: 35},
-  {title: 'Ido', percent: 2, width: 25},
+  {title: 'Private round', percent: 16, width: 57},
+  {title: 'Private Liquidity, MM, and LP Incentives', percent: 15, width: 55},
+  {title: 'Marketing & Growth', percent: 8, width: 47},
+  {title: 'Strategic Round', percent: 5, width: 40},
+  {title: 'Partners', percent: 5, width: 40},
+  {title: 'Ido', percent: 2, width: 30},
 ]
 
 const KLToken = () => {
@@ -31,7 +31,7 @@ const KLToken = () => {
         <div className="flex flex-col w-full">
           {data.map((item, i) => (
             <div key={i} className={styles.percent + ' flex justify-between my-1'} style={{width: `${item.width}%`}}>
-              <Text type="h5" className="uppercase break-all">{item.title}</Text>
+              <Text type="h5" className="uppercase break-words">{item.title}</Text>
               <Text type="h5" className="ml-4">{item.percent}%</Text>
             </div>
           ))}
