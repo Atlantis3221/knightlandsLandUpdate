@@ -42,7 +42,6 @@ const FleshToken = () => {
           }
 
           const width = isXl ? 300 : item.mobileWidth || item.width;
-          console.log(isXl);
           return (
             <div key={i} className={`col-start-1 row-start-${i+3} flex xl:justify-end`} style={{width}}>
               <div className={styles.container + ' m-2 xl:m-0'} style={{width: item.width, height: item.height}}>

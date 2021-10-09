@@ -6,6 +6,7 @@ import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/Header/UserMenu/UserMenu";
 import { Contacts } from "common/constants/Contacts";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
+import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
 
   const onClickToLink = useCallback((id) => {
     closeUserMenu();
-    return document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
+    smoothAutoScroll(id);
   }, [closeUserMenu]);
 
   const showUserMenu = isActiveUserMenu && !isDesktop
@@ -40,11 +41,11 @@ const Header = () => {
           <div className="w-28 md:w-48 mr-7">
             <img src="/logo.svg" className="mr-0"/>
           </div>
-          <div className={styles.links + ' hidden lg:flex'}>
-            {HeaderLinks.map((item, i) => (
-              <a key={i} href="/" className="mr-3">{item.title}</a>
-            ))}
-          </div>
+          {HeaderLinks.map((item, i) => (
+            <div key={i} className={styles.links + ' mr-3 hidden lg:flex'} onClick={() => onClickToLink(item.id)}>
+              {item.title}
+            </div>
+          ))}
         </div>
         <div className={styles.contact + ' flex items-center'}>
           <div className="hidden md:flex">

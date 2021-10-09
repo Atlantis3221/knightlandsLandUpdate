@@ -5,6 +5,7 @@ import BaseLayout from "components/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";
 import { Contacts } from "common/constants/Contacts";
+import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 
 const Footer = () => {
   return (
@@ -15,11 +16,11 @@ const Footer = () => {
             <div className="w-48 sm:mr-7">
               <img src="/logo.svg" className="mr-0"/>
             </div>
-            <div className={styles.links + ' hidden lg:flex'}>
-              {HeaderLinks.map((item, i) => (
-                <a key={i} href="/" className="mr-3">{item.title}</a>
-              ))}
-            </div>
+            {HeaderLinks.map((item, i) => (
+              <div key={i} className={styles.links + ' mr-3 hidden lg:flex'} onClick={() => smoothAutoScroll(item.id)}>
+                <div>{item.title}</div>
+              </div>
+            ))}
           </div>
           <div className="flex items-center">
             <div className="flex mx-4 sm:mx-0">
