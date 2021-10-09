@@ -90,15 +90,12 @@ const FleshToken = () => {
 
   if(isXl) {
     return (
-     <>
-        <div className="grid grid-cols-12 gap-2">
-          {infoSection}
-          {leftSection}
-          {imageSection}
-          {rightSection}
-        </div>
-        <Supported/>
-     </>
+      <div className="grid grid-cols-12 gap-2">
+        {infoSection}
+        {leftSection}
+        {imageSection}
+        {rightSection}
+      </div>
     )
   }
 
