@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import styles from "./styles.module.css";
 import Text from "components/common/Text/Text";
-import Supported from "components/Supported/Supported";
 import Button from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
@@ -43,7 +42,7 @@ const FleshToken = () => {
           const width = isXl ? 300 : item.mobileWidth || item.width;
           return (
             <div key={i} className={`col-start-1 row-start-${i+3} flex xl:justify-end`} style={{width}}>
-              <div className={styles.container + ' m-2 xl:m-0'} style={{width: item.width, height: item.height}}>
+              <div className={styles.containerLeft + ' m-2 xl:m-0'} style={{width: item.width, height: item.height}}>
                 <img src={item.src} style={{width: 50, height: 50, marginRight: 10}}/>
                 <Text type="h5">
                   {item.text}
@@ -76,7 +75,7 @@ const FleshToken = () => {
           const className = ` m-2 xl:m-0 self-center row-start-${i-1} ${item.columnStart} row-span-1`;
           const width = !isXl ? item.mobileWidth : item.width || 240;
           return (
-            <div key={i} className={styles.container + className} style={{width}}>
+            <div key={i} className={styles.containerRight + className} style={{width}}>
               <img src={item.src} style={{width: 50, height: 50, marginRight: 10}}/>
               <Text type="h5">
                 {item.text}
