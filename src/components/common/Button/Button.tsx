@@ -4,6 +4,13 @@ import styles from './styles.module.css'
 export enum ButtonType {
   PRIMARY = 'PRIMARY',
   SECONDARY = 'SECONDARY',
+  TERTIARY = 'TERTIARY'
+}
+
+const mapButtonTypeToStyle: Record<ButtonType, string> = {
+  [ButtonType.PRIMARY]: styles.primary,
+  [ButtonType.SECONDARY]: styles.secondary,
+  [ButtonType.TERTIARY]: styles.tertiary
 }
 
 interface IProps {
@@ -15,12 +22,10 @@ type AllProps = IProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivEle
 const Button = (props: AllProps) => {
   const {type = ButtonType.PRIMARY, ...rest} = props;
 
-  const buttonTypeClass = type === ButtonType.PRIMARY ? 'primary' : 'secondary'
-
   return (
     <div
       {...rest}
-      className={`${styles.root} ${styles[buttonTypeClass]} ${rest.className}`}
+      className={`${styles.root} ${mapButtonTypeToStyle[type]} ${rest.className}`}
     />
   )
 }

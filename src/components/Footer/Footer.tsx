@@ -8,7 +8,7 @@ import { Contacts } from "common/constants/Contacts";
 
 const Footer = () => {
   return (
-    <div className={styles.footer + ' flex w-full h-full flex-col md:pt-20'}>
+    <div className={styles.footer + ' flex w-full h-full flex-col self-center md:pt-20'}>
       <BaseLayout disableVerticalPadding={true}>
         <div className="flex w-full justify-between flex-col items-center sm:flex-row pb-14 px-8 md:px-0 lg:pb-0">
           <div className="flex items-center mb-10 sm:mb-0">

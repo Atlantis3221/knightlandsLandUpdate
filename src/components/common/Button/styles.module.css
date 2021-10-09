@@ -23,3 +23,16 @@
     border: 1px solid #FFEB3D;
     color: #FFEB3D;
 }
+
+.tertiary {
+    background: #576C5D;
+    border: 1px solid #8A978C;
+}
+
+.tertiary:hover {
+    background: #CDC89B;
+}
+
+.tertiary:active {
+    background: #A2921D;
+}

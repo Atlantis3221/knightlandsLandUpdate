@@ -4,7 +4,7 @@ import Text from "components/common/Text/Text";
 
 const Supported = () => {
   return (
-    <div className="">
+    <>
       <div className={commonStyles.board + " mt-36 px-6 md:px-12 pb-12 sm:pb-12 pt-2"} style={{marginBottom: 0}}>
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="sm:col-span-2 self-center text-center sm:text-left mt-12 md:mr-8 mb-10 md:mb-4">
@@ -23,7 +23,7 @@ const Supported = () => {
         <img className="w-40 h-44 mr-4" src="/ethereum.svg" />
         <img className="w-40 h-44" src="/polygon.svg"/>
       </div>
-    </div>
+    </>
   )
 }
 
