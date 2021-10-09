@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/sections/MainInfo/Prizes/styles.module.css";
+import styles from "./styles.module.css";
 
 import Timer from "components/common/Timer/Timer";
 import Text from "components/common/Text/Text";

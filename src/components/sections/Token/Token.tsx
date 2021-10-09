@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo, useState } from "react";
-import styles from "components/sections/Token/styles.module.css";
+import styles from "./styles.module.css";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";

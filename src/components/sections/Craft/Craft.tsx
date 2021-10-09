@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/sections/Craft/styles.module.css";
+import styles from "./styles.module.css";
 
 import commonStyles from "styles/common.module.css";
 import CraftBoard from "components/sections/Craft/Board/CraftBoard";

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/sections/Activities/styles.module.css";
+import styles from "./styles.module.css";
 
 import Text from "components/common/Text/Text";
 

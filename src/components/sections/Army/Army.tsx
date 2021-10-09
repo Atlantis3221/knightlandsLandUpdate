@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/sections/Army/styles.module.css";
+import styles from "./styles.module.css";
 
 import { GAMEPLAY } from "common/constants/HeaderLinks";
 import Damage from "components/svg/Damage/Damage";

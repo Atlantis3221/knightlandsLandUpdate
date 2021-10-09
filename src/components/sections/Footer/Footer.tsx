@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "components/sections/Footer/styles.module.css";
+import styles from "./styles.module.css";
 
 import BaseLayout from "components/common/BaseLayout/BaseLayout";
 import { HeaderLinks } from "common/constants/HeaderLinks";
