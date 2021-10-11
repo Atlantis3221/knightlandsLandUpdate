@@ -30,7 +30,7 @@ const Token = () => {
           <Button
             onClick={() => changeSection(Section.FLESH)}
             type={sectionType === Section.KL ? ButtonType.TERTIARY : ButtonType.PRIMARY}
-            className="flex mr-2 items-center px-4 pt-2.5 pb-2.5"
+            className="flex mr-2 items-center"
             style={{width: 'max-content'}}
           >
             <img src="/flesh.png" className="mr-2.5" style={{width: 32, height: 32}}/>
@@ -40,7 +40,7 @@ const Token = () => {
           <Button
             onClick={() => changeSection(Section.KL)}
             type={sectionType === Section.FLESH ? ButtonType.TERTIARY : ButtonType.PRIMARY}
-            className="flex items-center pt-2.5 pb-2.5"
+            className="flex items-center"
             style={{width: 'max-content'}}
           >
             <img src="/kl.png" className="mr-2.5" style={{width: 32, height: 32}}/>
