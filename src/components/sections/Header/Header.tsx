@@ -35,11 +35,11 @@ const Header = () => {
 
       <div className="flex w-full justify-between flex-row mb-4 pb-14 px-8 md:px-0 lg:pb-0">
         <div className="flex items-center">
-          <div className="w-28 md:w-48 mr-7">
+          <div className="w-28 md:w-48 mr-10">
             <img src="/common/logo.svg" className="mr-0"/>
           </div>
           {HeaderLinks.map((item, i) => (
-            <Text key={i} type="h5" className="mr-3 hidden lg:flex cursor-pointer" onClick={() => onClickToLink(item.id)}>
+            <Text key={i} type="h5" isLink={true} className="mr-5 hidden lg:flex cursor-pointer text-center" onClick={() => onClickToLink(item.id)}>
               {item.title}
             </Text>
           ))}

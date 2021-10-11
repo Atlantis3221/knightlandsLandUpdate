@@ -18,13 +18,13 @@ const Footer = () => {
               <img src="/common/logo.svg" className="mr-0"/>
             </div>
             {HeaderLinks.map((item, i) => (
-              <Text key={i} type="h5" className="mr-3 hidden lg:flex cursor-pointer" onClick={() => smoothAutoScroll(item.id)}>
-                <div>{item.title}</div>
+              <Text key={i} type="h5" isLink={true} className="mr-5 hidden lg:flex cursor-pointer text-center" onClick={() => smoothAutoScroll(item.id)}>
+                {item.title}
               </Text>
             ))}
           </div>
           <div className="flex items-center">
-            <div className="flex mx-4 sm:mx-0">
+            <div className="flex mx-6">
              <ContactMenu/>
             </div>
             <PlayNow />
