@@ -5,6 +5,7 @@ import Dot from "components/common/Dot/Dot";
 import Text from "components/common/Text/Text";
 import ContactMenu from "components/common/ContactMenu";
 import styles from "./styles.module.css";
+import { useHover } from "common/helpers/hooks/useHover";
 
 interface IProps {
   onClickToLink(id: string): void;
@@ -15,9 +16,7 @@ interface IProps {
 const UserMenu = (props: IProps) => {
   const {isShow, onClickToLink, onClose} = props;
 
-  const [currentHoverItem, setCurrentHoverItem] = useState<number | null>();
-  const enableHover = useCallback((index: number) => setCurrentHoverItem(index), []);
-  const disableHover = useCallback(() => setCurrentHoverItem(null), []);
+  const {disableHover, enableHover, currentHoverItem} = useHover();
 
   useEffect(() => {
     if (isShow) {

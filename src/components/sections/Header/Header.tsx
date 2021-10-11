@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import styles from "./styles.module.css";
 
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
@@ -45,7 +44,7 @@ const Header = () => {
           ))}
         </div>
         <div className="flex items-center">
-          <div className="hidden md:flex">
+          <div className="hidden md:flex mr-5">
             <ContactMenu/>
           </div>
           <PlayNow />
