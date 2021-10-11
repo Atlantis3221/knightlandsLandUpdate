@@ -14,7 +14,7 @@ const Layout = ({children}: React.PropsWithChildren<any>) => {
         <meta name="description" content="Online browser role-playing game with integrated blockchain technology" />
         <meta property="og:description" content="Online browser role-playing game with integrated blockchain technology" />
         <meta name="og:keywords" content="Crypto, online browser role-playing game, integrated blockchain technology"/>
-        <meta name="og:image" content={`${window.location.origin}/meta.png`} />
+        <meta name="og:image" content="/meta.png" />
       </Head>
       {children}
     </>
