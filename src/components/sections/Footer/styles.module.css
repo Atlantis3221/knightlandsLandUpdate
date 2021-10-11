@@ -9,10 +9,3 @@
         background-image: url(../../../../public/footer.svg);
     }
 }
-
-.links {
-    cursor: pointer;
-    font-family: Play;
-    font-weight: normal;
-    line-height: 19px;
-}

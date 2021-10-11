@@ -7,6 +7,7 @@ import UserMenu from "components/sections/Header/UserMenu/UserMenu";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 import ContactMenu from "components/common/ContactMenu";
+import Text from "components/common/Text/Text";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
@@ -42,9 +43,9 @@ const Header = () => {
             <img src="/logo.svg" className="mr-0"/>
           </div>
           {HeaderLinks.map((item, i) => (
-            <div key={i} className={styles.links + ' mr-3 hidden lg:flex'} onClick={() => onClickToLink(item.id)}>
+            <Text key={i} type="h5" className="mr-3 hidden lg:flex cursor-pointer" onClick={() => onClickToLink(item.id)}>
               {item.title}
-            </div>
+            </Text>
           ))}
         </div>
         <div className={styles.contact + ' flex items-center'}>
