@@ -5,17 +5,27 @@ import { GAMEPLAY } from "common/constants/HeaderLinks";
 import Damage from "components/svg/Damage/Damage";
 import Text from "components/common/Text/Text";
 
-const army = [
-  {src: '/army/gigad.png', title: 'GIGAD'},
-  {src: '/army/fatherTime.png', title: 'FATHER TIME'},
-  {src: '/army/scarlet.png', title: 'SCARLET WYRM'},
-  {src: '/army/gigad.png', title: 'GIGAD'},
-  {src: '/army/scarlet.png', title: 'SCARLET WYRM'},
+interface IArmy {
+  src: string;
+  title: string;
+  damage: {
+    value: number;
+    description: string;
+    isPercent?: boolean
+  }[]
+}
+
+const army:IArmy[] = [
+  {src: '/army/aphylia.png', title: 'Boss Life Titan Aphylia', damage: [{value: 3, isPercent: true, description: ' damage per Light troop'}, {value: 100, isPercent: true, description: 'when Skor is a general'}]},
+  {src: '/army/scor.png', title: 'King Of Dwarves Skor', damage: [{value: 300, isPercent: true, description: '300% to dwarf troops'}, {value: 500, description: 'damage'}]},
+  {src: '/army/dalton.png', title: 'Clairvoyant Dalton', damage: [{value: 45, description: 'Damage per Knight troop in reserve'}, {value: 50, description: 'damage to dark element generals'}]},
+  {src: '/army/orkgre.png', title: 'Forest Ogre Orkgre', damage: [{value: 40, description: 'damage to orcs per orc troop in reserve'}, {value: 78, isPercent: true, description: 'against Dream Slime raid'}]},
+  {src: '/army/lucius.png', title: 'Cosmic Lucius', damage: [{value: 20, description: 'damage to all troops per angel troop'}, {value: 100, isPercent: true, description: 'against Dream Slime raid'}]},
 ]
 
 const Army = () => {
   return (
-    <div className="flex w-full flex-col items-center mb-36" id={GAMEPLAY}>
+    <div className="flex w-full flex-col justify-center items-center mb-36" id={GAMEPLAY}>
       <div className="flex flex-col text-center max-w-3xl mb-5">
         <Text type="h2">Build your own Army and win raids</Text>
         <Text type="h4" color="#8A978C">
@@ -24,20 +34,20 @@ const Army = () => {
           joint it and defeat monsters
         </Text>
       </div>
-      <div className={styles.removeScrollbar + " flex w-full justify-start overflow-scroll md:justify-center"}>
+      <div className={styles.removeScrollbar + " flex w-full justify-start overflow-scroll md:justify-center max-w-8xl"}>
         {army.map((monster, i) => (
-          <div key={i} className="mx-2 lg:mx-0">
+          <div key={i} className="px-1 lg:mx-0">
             <img className={styles.img} src={monster.src}/>
-            <Text type="h5" fontWeight="bold" className="flex justify-center mt-6 mb-4">{monster.title}</Text>
-            <div className="ml-3 lg:ml-4">
-              <div className="flex mb-1.5 items-center">
-                <Damage value="9"/>
-                <div className={styles.damageDescription}>damage for each general 1⭐</div>
-              </div>
-              <div className="flex">
-                <Damage value="33" isPercent={true}/>
-                <div className={styles.damageDescription}>damage when Gsorc is in legion</div>
-              </div>
+            <Text type="h5" fontWeight="bold" className="flex justify-center text-center h-8 xl:h-auto xl:text-left mt-6 mb-4 uppercase">{monster.title}</Text>
+            <div className="ml-3 lg:ml-5">
+              {monster.damage.map((damage, i) => {
+                return (
+                  <div className={`flex ${i === 0 ? 'mb-1.5' : ''} items-start max-h-40`}>
+                    <Damage value={`${damage.value}`} isPercent={damage.isPercent}/>
+                    <div className={styles.damageDescription}>{damage.description}</div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         ))}
