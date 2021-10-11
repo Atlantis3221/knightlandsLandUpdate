@@ -20,10 +20,13 @@ const UserMenu = (props: IProps) => {
   const disableHover = useCallback(() => setCurrentHoverItem(null), []);
 
   useEffect(() => {
-    disableScrolling();
+    if (isShow) {
+      disableScrolling();
+      return;
+    }
 
-    return () => enableScrolling();
-  }, [disableScrolling, enableScrolling]);
+    enableScrolling();
+  }, [isShow, disableScrolling, enableScrolling]);
 
   const onClickToLinkHandler = useCallback((id) => {
     enableScrolling();
