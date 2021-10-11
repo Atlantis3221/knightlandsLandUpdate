@@ -26,7 +26,7 @@ const KLToken = () => {
           <div className={styles.coin}>
             <img src="/kl.png" />
           </div>
-          <Button className="absolute -bottom-4">Buy KL on dex</Button>
+          {/*<Button className="absolute -bottom-4">Buy KL on dex</Button>*/}
         </div>
         <div className="flex flex-col w-full">
           {data.map((item, i) => (
