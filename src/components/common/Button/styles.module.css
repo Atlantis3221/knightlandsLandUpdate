@@ -27,12 +27,15 @@
 .tertiary {
     background: #576C5D;
     border: 1px solid #8A978C;
+    color: #FFFFFF;
 }
 
 .tertiary:hover {
     background: #CDC89B;
+    color: #000000;
 }
 
 .tertiary:active {
     background: #A2921D;
+    color: #000000;
 }

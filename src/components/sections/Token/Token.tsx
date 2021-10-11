@@ -41,7 +41,7 @@ const Token = () => {
             onClick={() => changeSection(Section.KL)}
             type={sectionType === Section.FLESH ? ButtonType.TERTIARY : ButtonType.PRIMARY}
             className="flex mr-2 items-center px-4 pt-2.5 pb-2.5"
-            style={{width: 'max-content', color: '#000'}}
+            style={{width: 'max-content'}}
           >
             <img src="/kl.png" className="mr-2.5" style={{width: 32, height: 32}}/>
             KL TOKEN
