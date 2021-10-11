@@ -74,7 +74,7 @@ const Roadmap = () => {
               <div className={`flex w-full items-baseline ${justifyClassName}`}>
                 {!noLeftLine && <div className={styles.line}/>}
                 <div className={item.isChecked ? styles.checked : styles.notChecked}>
-                  <img src={item.isChecked && '/check.svg'} />
+                  <img src={item.isChecked && '/common/check.svg'} />
                 </div>
                 {!noRightLine && <div className={styles.line}/>}
               </div>

@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
-import BaseLayout from "components/common/BaseLayout/BaseLayout";
+import Container from "components/common/Container/Container";
 import Supported from "components/sections/Token/parts/Supported";
 import FleshToken from "components/sections/Token/parts/FleshToken";
 import KLToken from "components/sections/Token/parts/KLToken";
@@ -33,7 +33,7 @@ const Token = () => {
             className="flex mr-2 items-center"
             style={{width: 'max-content'}}
           >
-            <img src="/flesh.png" className="mr-2.5" style={{width: 32, height: 32}}/>
+            <img src="/common/flesh.png" className="mr-2.5" style={{width: 32, height: 32}}/>
             FLESH TOKEN
           </Button>
 
@@ -43,7 +43,7 @@ const Token = () => {
             className="flex items-center"
             style={{width: 'max-content'}}
           >
-            <img src="/kl.png" className="mr-2.5" style={{width: 32, height: 32}}/>
+            <img src="/common/kl.png" className="mr-2.5" style={{width: 32, height: 32}}/>
             KL TOKEN
           </Button>
         </div>
@@ -62,23 +62,23 @@ const Token = () => {
   if(isXl) {
     return (
       <div className={styles.root + ' justify-center items-center flex self-center'}>
-        <BaseLayout disableVerticalPadding={true}>
+        <Container disableVerticalPadding={true}>
           {buttons}
           {section}
           <Supported/>
-        </BaseLayout>
+        </Container>
       </div>
     )
   }
   return (
     <div className="justify-center items-center flex self-center py-48">
-      <BaseLayout disableVerticalPadding={true}>
+      <Container disableVerticalPadding={true}>
         <div className="flex flex-col">
           {buttons}
           {section}
         </div>
         <Supported/>
-      </BaseLayout>
+      </Container>
     </div>
   )
 }

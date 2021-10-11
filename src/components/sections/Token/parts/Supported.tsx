@@ -11,7 +11,7 @@ const Supported = () => {
             <Text type="h2">You dont need a wallet to play, unless you want to sell FLESH on DEX</Text>
           </div>
           <div className="flex justify-center col-span-1 xl:row-span-2 xl:-mt-24">
-            <img src="/gold.png" className="w-80 sm:w-56 md:w-80"/>
+            <img src="/common/gold.png" className="w-80 sm:w-56 md:w-80"/>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
             <Text type="h4" color="#8A978C">If you are new to crypto, register your wallet. It’s easy and takes 2 minutes</Text>
@@ -20,8 +20,8 @@ const Supported = () => {
         </div>
       </div>
       <div className="flex justify-center sm:justify-start sm:pl-12 -mt-8">
-        <img className="w-40 h-44 mr-4" src="/ethereum.svg" />
-        <img className="w-40 h-44" src="/polygon.svg"/>
+        <img className="w-40 h-44 mr-4" src="/common/ethereum.svg" />
+        <img className="w-40 h-44" src="/common/polygon.svg"/>
       </div>
     </>
   )

@@ -17,7 +17,7 @@ const MainInfo = () => {
           <Text type="h4" className="mb-12">Online browser role-playing game with integrated blockchain technology</Text>
         </div>
         <div className="flex w-full h-full justify-center self-center items-center lg:-mt-8">
-          <img src="/heroes.png"/>
+          <img src="/common/heroes.png"/>
         </div>
       </div>
       <div className="flex flex-col items-center lg:items-start w-full md:-mt-0 xl:-mt-24 mb-16">

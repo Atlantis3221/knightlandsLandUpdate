@@ -24,7 +24,7 @@ const KLToken = () => {
       <div className="flex justify-center items-center flex-col xl:flex-row">
         <div className="flex w-full relative justify-center mb-12 xl:mb-0">
           <div className={styles.coin}>
-            <img src="/kl.png" />
+            <img src="/common/kl.png" />
           </div>
           {/*<Button className="absolute -bottom-4">Buy KL on dex</Button>*/}
         </div>

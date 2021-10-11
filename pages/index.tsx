@@ -6,32 +6,33 @@ import Army from "components/sections/Army/Army";
 import Craft from "components/sections/Craft/Craft";
 import Activities from "components/sections/Activities/Activities";
 import Footer from "components/sections/Footer/Footer";
-import BaseLayout from "components/common/BaseLayout/BaseLayout";
+import Container from "components/common/Container/Container";
 import Roadmap from "components/sections/Roadmap/Roadmap";
 import Token from "components/sections/Token/Token";
+import Layout from "components/Layout";
 
 export default function Home() {
   return (
-    <>
-      <BaseLayout>
+    <Layout>
+      <Container>
         <Header/>
         <MainInfo/>
-      </BaseLayout>
+      </Container>
 
       <Army/>
 
-      <BaseLayout>
+      <Container>
         <Craft/>
         <Activities/>
-      </BaseLayout>
+      </Container>
 
       <Token/>
 
-      <BaseLayout>
+      <Container>
         <Roadmap/>
-      </BaseLayout>
+      </Container>
 
       <Footer/>
-    </>
+    </Layout>
   )
 }

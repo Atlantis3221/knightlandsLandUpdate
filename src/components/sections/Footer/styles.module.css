@@ -1,11 +1,11 @@
 .footer {
-    background-image: url(../../../../public/footer-mobile.svg);
+    background-image: url(../../../../public/common/footer-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media (min-width: 640px) {
     .footer {
-        background-image: url(../../../../public/footer.svg);
+        background-image: url(../../../../public/common/footer.svg);
     }
 }
