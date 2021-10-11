@@ -4,15 +4,16 @@ import { disableScrolling, enableScrolling } from "common/helpers/operateWithScr
 import Dot from "components/common/Dot/Dot";
 import Text from "components/common/Text/Text";
 import ContactMenu from "components/common/ContactMenu";
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
 interface IProps {
   onClickToLink(id: string): void;
+  onClose(): void;
   isShow?: boolean;
 }
 
 const UserMenu = (props: IProps) => {
-  const {isShow, onClickToLink} = props;
+  const {isShow, onClickToLink, onClose} = props;
 
   const [currentHoverItem, setCurrentHoverItem] = useState<number | null>();
   const enableHover = useCallback((index: number) => setCurrentHoverItem(index), []);
@@ -31,6 +32,9 @@ const UserMenu = (props: IProps) => {
 
   return (
     <div className={(isShow ? styles.visible : styles.hidden) + ' flex z-1 fixed top-0 bottom-0 right-0 overflow-hidden bg-white pt-32 pb-3 px-8'}>
+      <div className="flex absolute cursor-pointer lg:hidden top-16 right-9 md:right-12" onClick={onClose}>
+        <img src="/common/cross.svg"/>
+      </div>
       <div className="flex justify-start flex-col w-100 h-100">
         {HeaderLinks.map((item, i) => (
           <div key={i} className="flex items-center p-3 cursor-pointer" onMouseEnter={() => enableHover(i)} onMouseLeave={disableHover}>
