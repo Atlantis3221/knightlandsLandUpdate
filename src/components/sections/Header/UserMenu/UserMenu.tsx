@@ -3,10 +3,16 @@ import { HeaderLinks } from "common/constants/HeaderLinks";
 import { disableScrolling, enableScrolling } from "common/helpers/operateWithScroll";
 import Dot from "components/common/Dot/Dot";
 import Text from "components/common/Text/Text";
-import { Contacts } from "common/constants/Contacts";
 import ContactMenu from "components/common/ContactMenu";
+import styles from './styles.module.css';
 
-const UserMenu = ({onClickToLink}) => {
+interface IProps {
+  onClickToLink(id: string): void;
+  isShow?: boolean;
+}
+
+const UserMenu = (props: IProps) => {
+  const {isShow, onClickToLink} = props;
 
   const [currentHoverItem, setCurrentHoverItem] = useState<number | null>();
   const enableHover = useCallback((index: number) => setCurrentHoverItem(index), []);
@@ -24,12 +30,12 @@ const UserMenu = ({onClickToLink}) => {
   }, [enableScrolling]);
 
   return (
-    <div className="flex fixed top-0 left-0 z-1 bg-white w-full h-full overflow-hidden pt-32 pb-7 pr-8 pl-8">
+    <div className={(isShow ? styles.visible : styles.hidden) + ' flex z-1 fixed top-0 bottom-0 right-0 overflow-hidden bg-white pt-32 pb-3 px-8'}>
       <div className="flex justify-start flex-col w-100 h-100">
         {HeaderLinks.map((item, i) => (
           <div key={i} className="flex items-center p-3 cursor-pointer" onMouseEnter={() => enableHover(i)} onMouseLeave={disableHover}>
             {currentHoverItem === i && <Dot color="#A2921D"/>}
-            <Text type="h5" color="#A2921D" onClick={() => onClickToLinkHandler(item.id)}>
+            <Text type="h5" color={currentHoverItem === i ? "#A2921D" : '#000'} onClick={() => onClickToLinkHandler(item.id)}>
               {item.title}
             </Text>
           </div>

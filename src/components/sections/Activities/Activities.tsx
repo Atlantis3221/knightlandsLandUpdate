@@ -13,12 +13,12 @@ const activities = [
 const Activities = () => {
   return (
     <div className="flex flex-col xl:mb-12">
-      <Text type="h2" className="text-center mb-9">
+      <Text type="h2" className="text-center lg:mb-9">
         Take part in everyday activities
       </Text>
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         {activities.map((activity, i) => (
-          <div key={i} className={styles.image + ' flex flex-col mx-2 my-12 lg:my-0'}>
+          <div key={i} className={styles.image + ' flex flex-col mx-2 mt-10 mb-20 lg:my-0'}>
             <img src={activity.src} />
             <Text fontWeight="bold" type="h4" className="w-full text-center uppercase mt-6">{activity.title}</Text>
             <Text type="h5" className="w-full text-center mt-2">{activity.text}</Text>

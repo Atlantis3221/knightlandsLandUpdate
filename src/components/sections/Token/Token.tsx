@@ -71,7 +71,7 @@ const Token = () => {
     )
   }
   return (
-    <div className="justify-center items-center flex self-center py-48">
+    <div className="justify-center items-center flex self-center py-36">
       <Container disableVerticalPadding={true}>
         <div className="flex flex-col">
           {buttons}

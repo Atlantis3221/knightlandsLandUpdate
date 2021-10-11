@@ -35,7 +35,7 @@ const Header = () => {
   const showUserMenu = isActiveUserMenu && !isDesktop
   return (
     <>
-      {showUserMenu && <UserMenu onClickToLink={onClickToLink}/>}
+      <UserMenu onClickToLink={onClickToLink} isShow={showUserMenu}/>
 
       <div className="flex w-full justify-between flex-row mb-4 pb-14 px-8 md:px-0 lg:pb-0">
         <div className="flex items-center">
