@@ -1,5 +1,6 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
+import styles from './styles.module.css'
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/sections/Header/UserMenu/UserMenu";
@@ -14,9 +15,6 @@ const Header = () => {
   const {isDesktop} = useMediaQuery();
 
   const openUserMenu = useCallback(() => {
-    if(typeof window !== 'undefined') {
-      window.scrollTo(0, 0);
-    }
     setIsActiveUserMenu(true);
   }, [setIsActiveUserMenu])
 
@@ -27,12 +25,21 @@ const Header = () => {
     smoothAutoScroll(id);
   }, [closeUserMenu]);
 
+  const [scrollYPosition, setScrollYPosition] = useState(0);
+  useEffect(() => {
+    if(typeof window !== 'undefined') {
+      window.addEventListener('scroll', function(e) {
+        setScrollYPosition(window.scrollY);
+      })
+    }
+  }, []);
+
   const showUserMenu = isActiveUserMenu && !isDesktop
   return (
-    <>
-      <UserMenu onClickToLink={onClickToLink} isShow={showUserMenu} onClose={closeUserMenu}/>
+    <div className={(scrollYPosition === 0 ? styles.noBackground : styles.background) + ' flex z-1 justify-center fixed w-full py-5 px-10 lg:px-0'}>
+      <UserMenu onClickToLink={onClickToLink} onClose={closeUserMenu} isShow={showUserMenu}/>
 
-      <div className="flex w-full justify-between flex-row mb-4 pb-14 px-8 md:px-0 lg:pb-0">
+      <div className="flex w-full lg:w-3/4 justify-between max-w-6xl">
         <div className="flex items-center">
           <div className="w-28 md:w-48 mr-10">
             <img src="/common/logo.svg" className="mr-0"/>
@@ -53,7 +60,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

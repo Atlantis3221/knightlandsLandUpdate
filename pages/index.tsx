@@ -14,21 +14,22 @@ import Layout from "components/Layout";
 export default function Home() {
   return (
     <Layout>
+      <Header/>
+
       <Container>
-        <Header/>
         <MainInfo/>
       </Container>
 
       <Army/>
 
-      <Container>
+      <Container disableVerticalPadding={true}>
         <Craft/>
         <Activities/>
       </Container>
 
       <Token/>
 
-      <Container>
+      <Container disableVerticalPadding={true}>
         <Roadmap/>
       </Container>
 

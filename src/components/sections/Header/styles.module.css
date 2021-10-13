@@ -2,3 +2,17 @@
     width: 184px;
     margin-right: 28px;
 }
+
+.background {
+    background-color: #1F3F28;
+    -moz-transition: background-color 0.3s 0.1s ease;
+    -o-transition: background-color 0.3s 0.1s ease;
+    -webkit-transition: background-color 0.3s 0.1s ease;
+}
+
+.noBackground {
+    background-color: transparent;
+    -moz-transition: background-color 0.3s 0.1s ease;
+    -o-transition: background-color 0.3s 0.1s ease;
+    -webkit-transition: background-color 0.3s 0.1s ease;
+}
