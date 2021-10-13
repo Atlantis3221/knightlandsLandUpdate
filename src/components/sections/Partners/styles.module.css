@@ -1,4 +1,4 @@
 .root {
-    border: 3px solid #557960;
-    box-sizing: border-box;
+    background: radial-gradient(50% 50% at 50.04% 0%, rgba(85, 140, 101, 0.2) 0%, rgba(16, 40, 23, 0.2) 100%), #16321E;
+    border-radius: 16px;
 }

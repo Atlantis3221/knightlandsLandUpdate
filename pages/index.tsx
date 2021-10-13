@@ -11,6 +11,7 @@ import Roadmap from "components/sections/Roadmap/Roadmap";
 import Token from "components/sections/Token/Token";
 import Layout from "components/Layout";
 import Team from "components/sections/Team/Team";
+import Partners from "components/sections/Partners/Partners";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <Container disableVerticalPadding={true}>
         <Roadmap/>
         <Team/>
+        <Partners/>
       </Container>
 
       <Footer/>
