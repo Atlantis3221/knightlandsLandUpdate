@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 
 import styles from "./styles.module.css";
 import PlayNow from "components/common/PlayNow";
-import { HeaderLinks } from "common/constants/HeaderLinks";
+import { HeaderLink, HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/sections/Header/UserMenu/UserMenu";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
@@ -44,10 +44,11 @@ const Header = () => {
 
       <div className="flex w-full lg:w-3/4 justify-between max-w-6xl">
         <div className="flex items-center">
-          <div className="w-28 md:w-48 mr-10">
+          <div className="w-28 md:w-48 mr-10 cursor-pointer" onClick={() => onClickToLink(HeaderLink.MAIN)}>
             <img src="/common/logo.svg" className="mr-0"/>
           </div>
           {HeaderLinks.map((item, i) => {
+            if(!item.isVisible) return;
             const isCurrentSection = currentSectionId === item.id;
             return (
               <div className="mr-5 hidden lg:flex cursor-pointer items-baseline text-center" key={i}>

@@ -38,14 +38,17 @@ const UserMenu = (props: IProps) => {
         <img src="/common/cross.svg"/>
       </div>
       <div className="flex justify-start flex-col w-100 h-100">
-        {HeaderLinks.map((item, i) => (
-          <div key={i} className="flex items-center p-3 cursor-pointer" onMouseEnter={() => enableHover(i)} onMouseLeave={disableHover}>
-            {currentHoverItem === i && <Dot color="#A2921D"/>}
-            <Text type="h5" color={currentHoverItem === i ? "#A2921D" : '#000'} onClick={() => onClickToLinkHandler(item.id)}>
-              {item.title}
-            </Text>
-          </div>
-        ))}
+        {HeaderLinks.map((item, i) => {
+          if(!item.isVisible) return;
+          return (
+            <div key={i} className="flex items-center p-3 cursor-pointer" onMouseEnter={() => enableHover(i)} onMouseLeave={disableHover}>
+              {currentHoverItem === i && <Dot color="#A2921D"/>}
+              <Text type="h5" color={currentHoverItem === i ? "#A2921D" : '#000'} onClick={() => onClickToLinkHandler(item.id)}>
+                {item.title}
+              </Text>
+            </div>
+          )
+        })}
         <div className="flex w-full h-full justify-center items-end">
           <ContactMenu mobileMenu={true}/>
         </div>

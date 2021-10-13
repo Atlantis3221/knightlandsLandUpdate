@@ -17,11 +17,14 @@ const Footer = () => {
             <div className="w-48 sm:mr-7">
               <img src="/common/logo.svg" className="mr-0"/>
             </div>
-            {HeaderLinks.map((item, i) => (
-              <Text key={i} type="h5" isLink={true} className="mr-5 hidden lg:flex cursor-pointer text-center" onClick={() => smoothAutoScroll(item.id)}>
-                {item.title}
-              </Text>
-            ))}
+            {HeaderLinks.map((item, i) => {
+                if(!item.isVisible) return;
+                return (
+                <Text key={i} type="h5" isLink={true} className="mr-5 hidden lg:flex cursor-pointer text-center" onClick={() => smoothAutoScroll(item.id)}>
+                  {item.title}
+                </Text>
+              )
+            })}
           </div>
           <div className="flex items-center">
             <div className="flex mx-6">

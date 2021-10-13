@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { HeaderLink, HeaderLinks } from "common/constants/HeaderLinks";
 
 const initialState = [
+  {id: HeaderLink.MAIN, isShow: true},
   {id: HeaderLink.GAMEPLAY, isShow: false},
   {id: HeaderLink.PLAY_TO_EARN, isShow: false},
   {id: HeaderLink.ROADMAP, isShow: false},
@@ -37,7 +38,7 @@ export function useVisibleSection() {
 
   useEffect(() => {
     window.addEventListener('scroll', function() {
-      HeaderLinks.map((link, i) => {
+      HeaderLinks.map((link) => {
         const section = document.getElementById(link.id);
         checkSection(section)
       }, []);

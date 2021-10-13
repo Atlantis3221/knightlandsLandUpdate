@@ -9,7 +9,7 @@ import { HeaderLink } from "common/constants/HeaderLinks";
 
 const MainInfo = () => {
   return (
-    <div className="flex flex-col items-center mb-36">
+    <div className="flex flex-col items-center mb-36" id={HeaderLink.MAIN}>
       <div className="flex flex-col lg:flex-row w-full text-center md:text-left">
         <div className="flex flex-col justify-center max-w-xl">
           <Text className="mb-2" fontSize={18} lineHeight="24px" fontWeight="bold" letterSpacing="0.18em" color="#8A978C">IDLE ONLINE RPG</Text>
