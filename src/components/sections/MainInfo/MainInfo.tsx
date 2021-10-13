@@ -2,10 +2,10 @@ import React from "react";
 import PlayNow from "components/common/PlayNow";
 import Dot from "components/common/Dot/Dot";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
-import { GAMEPLAY } from "common/constants/HeaderLinks";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 const MainInfo = () => {
   return (
@@ -20,10 +20,10 @@ const MainInfo = () => {
           <img src="/common/heroes.png"/>
         </div>
       </div>
-      <div className="flex flex-col items-center lg:items-start w-full md:-mt-0 xl:-mt-24 mb-16">
+      <div className="flex flex-col items-center lg:items-start w-full md:-mt-0 xl:-mt-16 2xl:-mt-24 mb-16">
         <div className="flex flex-row">
           <PlayNow/>
-          <Button type={ButtonType.SECONDARY} className="flex justify-center items-center ml-4" onClick={() => smoothAutoScroll(GAMEPLAY)}>LEARN MORE</Button>
+          <Button type={ButtonType.SECONDARY} className="flex justify-center items-center ml-4" onClick={() => smoothAutoScroll(HeaderLink.GAMEPLAY)}>LEARN MORE</Button>
         </div>
         <div className="flex flex-row items-center mt-4">
           <Dot color="#FFEB3D"/>

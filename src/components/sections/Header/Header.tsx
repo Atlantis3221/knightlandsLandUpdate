@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 import PlayNow from "components/common/PlayNow";
 import { HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/sections/Header/UserMenu/UserMenu";
@@ -8,10 +8,13 @@ import { useMediaQuery } from "common/helpers/useMediaQuery";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 import ContactMenu from "components/common/ContactMenu";
 import Text from "components/common/Text/Text";
+import Dot from "components/common/Dot/Dot";
+import { useVisibleSection } from "common/helpers/hooks/useVisibleSection";
 
 const Header = () => {
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
 
+  const {currentSectionId} = useVisibleSection();
   const {isDesktop} = useMediaQuery();
 
   const openUserMenu = useCallback(() => {
@@ -44,11 +47,17 @@ const Header = () => {
           <div className="w-28 md:w-48 mr-10">
             <img src="/common/logo.svg" className="mr-0"/>
           </div>
-          {HeaderLinks.map((item, i) => (
-            <Text key={i} type="h5" isLink={true} className="mr-5 hidden lg:flex cursor-pointer text-center" onClick={() => onClickToLink(item.id)}>
-              {item.title}
-            </Text>
-          ))}
+          {HeaderLinks.map((item, i) => {
+            const isCurrentSection = currentSectionId === item.id;
+            return (
+              <div className="mr-5 hidden lg:flex cursor-pointer items-baseline text-center" key={i}>
+                {isCurrentSection && <Dot color="#A2921D"/>}
+                <Text type="h5" isLink={true} color={isCurrentSection && '#A2921D'} onClick={() => onClickToLink(item.id)}>
+                  {item.title}
+                </Text>
+              </div>
+            )
+          })}
         </div>
         <div className="flex items-center">
           <div className="hidden md:flex mr-5">

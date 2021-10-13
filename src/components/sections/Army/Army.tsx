@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-import { GAMEPLAY } from "common/constants/HeaderLinks";
 import Damage from "components/svg/Damage/Damage";
 import Text from "components/common/Text/Text";
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 interface IArmy {
   src: string;
@@ -25,7 +25,7 @@ const army:IArmy[] = [
 
 const Army = () => {
   return (
-    <div className="flex w-full flex-col justify-center items-center mb-36" id={GAMEPLAY}>
+    <div className="flex w-full flex-col justify-center items-center mb-36" id={HeaderLink.GAMEPLAY}>
       <div className="flex flex-col text-center max-w-3xl mb-5 mx-2">
         <Text type="h2">Build your own Army and win raids</Text>
         <Text type="h4" color="#8A978C">
