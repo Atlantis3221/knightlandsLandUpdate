@@ -6,11 +6,12 @@ interface IProps {
 }
 
 const Container = ({disableVerticalPadding, children, ...rest}: React.PropsWithChildren<IProps> & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => {
+  const paddings = disableVerticalPadding ? {paddingTop: 0, paddingBottom: 0} : {};
   return (
     <div
-      className={styles.root + " flex w-full flex-col self-center mx-auto sm:max-w-6xl"}
-      style={disableVerticalPadding && {paddingTop: 0, paddingBottom: 0}}
+      className={styles.root + " flex w-full flex-col self-center mx-auto sm:max-w-6xl relative z-30"}
       {...rest}
+      style={{...rest.style, ...paddings}}
     >
       {children}
     </div>

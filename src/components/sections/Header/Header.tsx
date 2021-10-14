@@ -40,7 +40,7 @@ const Header = () => {
   const showUserMenu = isActiveUserMenu && !isDesktop
   const visibilityClassName = scrollY > 80 && scrollY < 500 ? `${styles.noBackground} fixed` : scrollY >=500 ?  ` ${styles.background} fixed` : ' -mb-20';
   return (
-    <div className={visibilityClassName + ' top-0 left-0 flex z-30 justify-center w-full py-3 px-4 md:px-12 lg:px-16'}>
+    <div className={visibilityClassName + ' top-0 left-0 flex z-40 justify-center w-full py-3 px-4 md:px-12 lg:px-16'}>
       <UserMenu onClickToLink={onClickToLink} onClose={closeUserMenu} isShow={showUserMenu}/>
 
       <div className="flex w-full justify-between max-w-6xl">
