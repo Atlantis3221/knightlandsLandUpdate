@@ -2,7 +2,9 @@ export enum HeaderLink {
   MAIN = "0",
   GAMEPLAY = "1",
   PLAY_TO_EARN = "2",
-  ROADMAP = "3"
+  // ROADMAP = "3",
+  TEAM = "4",
+  PARTNERS = "5"
 }
 
 interface IHeaderLink {
@@ -15,6 +17,8 @@ interface IHeaderLink {
 export const HeaderLinks: IHeaderLink[]  = [
   {id: HeaderLink.MAIN, title: '', paddingTop: '-200px'},
   {id: HeaderLink.GAMEPLAY, title: 'Gameplay', paddingTop: '-140px', isVisible: true},
-  {id: HeaderLink.PLAY_TO_EARN, title: 'Play to earn', paddingTop: '-20px', isVisible: true},
-  {id: HeaderLink.ROADMAP, title: 'Roadmap', paddingTop: '-140px', isVisible: true},
+  {id: HeaderLink.PLAY_TO_EARN, title: 'Play to earn', paddingTop: '-150px', isVisible: true},
+  // {id: HeaderLink.ROADMAP, title: 'Roadmap', paddingTop: '-140px', isVisible: true},
+  {id: HeaderLink.TEAM, title: 'Team', paddingTop: '-400px', isVisible: true},
+  {id: HeaderLink.PARTNERS, title: 'Partners', paddingTop: '-140px', isVisible: true},
 ];

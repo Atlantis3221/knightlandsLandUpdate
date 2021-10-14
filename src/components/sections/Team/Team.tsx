@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import Text from "components/common/Text/Text";
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 const data = [
   {src: '/team/team1.png', name: 'Denis Ermolin', description: '10 years of experience. Animoca Brands. Coins & Steel. Polygon Technology'},
@@ -8,7 +9,7 @@ const data = [
 
 const Team = () => {
   return (
-    <div className="flex flex-col justify-start w-full px-12">
+    <div className="flex flex-col justify-start w-full px-12" id={HeaderLink.TEAM}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
       <div className="flex w-full justify-center flex-col items-center lg:justify-start md:flex-row">
         {data.map((item, i) => (

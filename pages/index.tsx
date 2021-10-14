@@ -4,7 +4,7 @@ import Header from "components/sections/Header/Header";
 import MainInfo from "components/sections/MainInfo/MainInfo";
 import Army from "components/sections/Army/Army";
 import Craft from "components/sections/Craft/Craft";
-import Activities from "components/sections/Activities/Activities";
+import Activities from "components/sections/Events/Events";
 import Footer from "components/sections/Footer/Footer";
 import Container from "components/common/Container/Container";
 import Roadmap from "components/sections/Roadmap/Roadmap";
@@ -32,7 +32,7 @@ export default function Home() {
       <Token/>
 
       <Container disableVerticalPadding={true}>
-        <Roadmap/>
+        {/*<Roadmap/>*/}
         <Team/>
         <Partners/>
       </Container>

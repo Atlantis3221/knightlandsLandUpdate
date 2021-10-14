@@ -42,7 +42,7 @@ const Army = () => {
             <div className="ml-3 lg:ml-5">
               {monster.damage.map((damage, i) => {
                 return (
-                  <div key={i} className={`flex ${i === 0 ? 'mb-1.5' : ''} items-start max-h-40`}>
+                  <div key={i} className="flex items-center h-12 lg:h-10">
                     <Damage value={`${damage.value}`} isPercent={damage.isPercent}/>
                     <div className={styles.damageDescription}>{damage.description}</div>
                   </div>

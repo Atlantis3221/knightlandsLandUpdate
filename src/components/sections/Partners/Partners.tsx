@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import Text from "components/common/Text/Text";
 import styles from './styles.module.css'
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 const data = [
   {src: '/partners/partner1.svg'},
@@ -9,7 +10,7 @@ const data = [
 
 const Partners = () => {
   return (
-    <div className="flex flex-col justify-start w-full px-12 py-10">
+    <div className="flex flex-col justify-start w-full px-12 py-10" id={HeaderLink.PARTNERS}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Partners</Text>
       <div className="flex w-full justify-center flex-col items-center lg:justify-start md:flex-row">
         {data.map((item, i) => (
