@@ -25,7 +25,7 @@ const Prizes = () => {
         </div>
       </div>
 
-      <div className={styles.usdc + " grid grid-cols-3 w-full xl:w-2/5 mr-5 mb-8"}>
+      <div className={styles.usdc + " grid grid-cols-3 w-full xl:w-2/5 mb-8"}>
         <div className="col-span-2">
           <Text type="h2">Earn FLESH token</Text>
         </div>
