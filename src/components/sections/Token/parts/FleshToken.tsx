@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
 import styles from "./styles.module.css";
 import Text from "components/common/Text/Text";
-import Button from "components/common/Button/Button";
 import { useMatchMediaQuery } from "common/helpers/useMediaQuery";
 import { Breakpoints } from "common/constants/Breakpoints";
+import FleshTokenBackground from "components/svg/FleshTokenBackground";
 
 const colStartBase = 8;
 
@@ -58,6 +58,7 @@ const FleshToken = () => {
   const imageSection = useMemo(() => {
     return (
       <div className="col-start-3 col-span-7 row-start-1 row-span-6 flex relative justify-center xl:ml-16">
+        <FleshTokenBackground />
         <img src="/common/earn-spend.svg" alt="" />
         {/*<Button className="absolute bottom-16">Buy Flesh on dex</Button>*/}
       </div>
