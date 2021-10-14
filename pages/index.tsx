@@ -16,6 +16,8 @@ import Partners from "components/sections/Partners/Partners";
 export default function Home() {
   return (
     <Layout>
+      <div className="w-full h-full">
+
       <Header/>
 
       <Container>
@@ -38,6 +40,7 @@ export default function Home() {
       </Container>
 
       <Footer/>
+      </div>
     </Layout>
   )
 }
