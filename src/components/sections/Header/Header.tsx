@@ -39,12 +39,12 @@ const Header = () => {
 
   const showUserMenu = isActiveUserMenu && !isDesktop
   return (
-    <div className={(scrollYPosition === 0 ? styles.noBackground : styles.background) + ' flex z-1 justify-center fixed w-full py-5 px-4 md:px-12 lg:px-16'}>
+    <div className={(scrollYPosition === 0 ? styles.noBackground : styles.background) + ' flex z-1 justify-center fixed w-full py-3 px-4 md:px-12 lg:px-16'}>
       <UserMenu onClickToLink={onClickToLink} onClose={closeUserMenu} isShow={showUserMenu}/>
 
       <div className="flex w-full justify-between max-w-6xl">
         <div className="flex items-center">
-          <div className="w-28 md:w-48 mr-10 cursor-pointer" onClick={() => onClickToLink(HeaderLink.MAIN)}>
+          <div className="w-28 md:w-30 mr-10 cursor-pointer" onClick={() => onClickToLink(HeaderLink.MAIN)}>
             <img src="/common/logo.svg" className="mr-0"/>
           </div>
           {HeaderLinks.map((item, i) => {
