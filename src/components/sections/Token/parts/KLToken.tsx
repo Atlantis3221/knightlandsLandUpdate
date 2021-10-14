@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import Text from "components/common/Text/Text";
-import styles from './styles.module.css'
-import Button from "components/common/Button/Button";
+import styles from "./styles.module.css";
 
 const data = [
   {title: 'Game rewards', percent: 29, width: 100},
@@ -22,10 +21,9 @@ const KLToken = () => {
         <Text type="h5" color="#8A978C" className="text-center max-w-lg">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
       </div>
       <div className="flex justify-center items-center flex-col xl:flex-row">
-        <div className="flex w-full relative justify-center mb-12 xl:mb-0">
-          <div className={styles.coin}>
-            <img src="/common/kl.png" />
-          </div>
+        <div className="flex w-full relative justify-center mb-40 xl:mb-20">
+          <img className="absolute" src="/common/coinBack.svg" style={{width: 373, height: 373}}/>
+          <img className="relative top-16" src="/common/kl.png" style={{width: 242, height: 242}}/>
           {/*<Button className="absolute -bottom-4">Buy KL on dex</Button>*/}
         </div>
         <div className="flex flex-col w-full">
