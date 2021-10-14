@@ -12,6 +12,7 @@ import Dot from "components/common/Dot/Dot";
 import { useVisibleSection } from "common/helpers/hooks/useVisibleSection";
 
 const Header = () => {
+  const [scrollY, setScrollY] = useState(0);
   const [isActiveUserMenu, setIsActiveUserMenu] = useState(false);
 
   const {currentSectionId} = useVisibleSection();
@@ -28,18 +29,18 @@ const Header = () => {
     smoothAutoScroll(id);
   }, [closeUserMenu]);
 
-  const [scrollYPosition, setScrollYPosition] = useState(0);
   useEffect(() => {
     if(typeof window !== 'undefined') {
       window.addEventListener('scroll', function(e) {
-        setScrollYPosition(window.scrollY);
+        setScrollY(window.scrollY);
       })
     }
   }, []);
 
   const showUserMenu = isActiveUserMenu && !isDesktop
+  const visibilityClassName = scrollY > 80 && scrollY < 500 ? `${styles.noBackground} fixed` : scrollY >=500 ?  ` ${styles.background} fixed` : ' -mb-20';
   return (
-    <div className={(scrollYPosition === 0 ? styles.noBackground : styles.background) + ' flex z-1 justify-center fixed w-full py-3 px-4 md:px-12 lg:px-16'}>
+    <div className={visibilityClassName + ' z-1 justify-center w-full py-3 px-4 md:px-12 lg:px-16'}>
       <UserMenu onClickToLink={onClickToLink} onClose={closeUserMenu} isShow={showUserMenu}/>
 
       <div className="flex w-full justify-between max-w-6xl">
