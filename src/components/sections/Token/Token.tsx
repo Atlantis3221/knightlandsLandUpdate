@@ -8,6 +8,7 @@ import Supported from "components/sections/Token/parts/Supported";
 import FleshToken from "components/sections/Token/parts/FleshToken";
 import KLToken from "components/sections/Token/parts/KLToken";
 import { HeaderLink } from "common/constants/HeaderLinks";
+import TokenBackground from "components/svg/TokenBackground/TokenBackground";
 
 enum Section {
   FLESH,
@@ -25,7 +26,7 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
+      <div className="flex justify-center relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => changeSection(Section.FLESH)}
@@ -61,7 +62,8 @@ const Token = () => {
 
   if(isXl) {
     return (
-      <div className={styles.root + ' justify-center items-center flex self-center'}>
+      <div className={'justify-center relative items-center flex self-center'}>
+        <TokenBackground/>
         <Container disableVerticalPadding={true}>
           {buttons}
           {section}
