@@ -11,9 +11,6 @@ const MyApp = (props: IProps) => {
   const {Component, pageProps} = props;
 
   useEffect(() => {
-    if(typeof document !== 'undefined') {
-      document.body.style.overflowX = 'hidden';
-    }
     const appHeight = () => {
       let vh = window.innerHeight * 0.01
       document.documentElement.style.setProperty("--vh", `${vh}px`)
