@@ -50,7 +50,7 @@ const Roadmap = () => {
   const onClickHandler = useCallback(() => setShowAllElements(true), []);
 
   return (
-    <div className="flex flex-col justify-center w-full my-24" id={HeaderLink.ROADMAP}>
+    <div className="flex flex-col justify-center w-full my-24" /*id={HeaderLink.ROADMAP}*/>
       <Text type="h2" className="text-center">Roadmap</Text>
       <div className="flex justify-center items-baseline self-center flex-wrap">
         {road.map((item, i) => {
