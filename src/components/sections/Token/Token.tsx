@@ -63,7 +63,7 @@ const Token = () => {
   if(isXl) {
     return (
       <div className={'justify-center relative items-center flex self-center'}>
-        <TokenBackground/>
+        {/*<TokenBackground/>*/}
         <Container disableVerticalPadding={true}>
           {buttons}
           {section}
