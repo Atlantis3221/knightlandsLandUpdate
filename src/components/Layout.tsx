@@ -15,6 +15,7 @@ const Layout = ({children}: React.PropsWithChildren<any>) => {
         <meta property="og:description" content="Online browser role-playing game with integrated blockchain technology" />
         <meta name="og:keywords" content="Crypto, online browser role-playing game, integrated blockchain technology"/>
         <meta name="og:image" content="https://knightland.vercel.app/meta.png" />
+        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"/>
       </Head>
       {children}
     </>
