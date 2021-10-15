@@ -26,7 +26,7 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
+      <div className="flex justify-center pt-40 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => changeSection(Section.FLESH)}
@@ -62,11 +62,11 @@ const Token = () => {
 
   if(isXl) {
     return (
-      <div className={'justify-center relative items-center self-center'}>
+      <div className="justify-center relative items-center self-center">
         <div className="overflow-hidden absolute">
           <TokenBackground/>
         </div>
-        <Container disableVerticalPadding={true} style={{zIndex: 20, position: 'relative'}}>
+        <Container disableVerticalPadding={true}>
           {buttons}
           {section}
           <Supported/>
