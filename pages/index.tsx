@@ -17,29 +17,28 @@ export default function Home() {
   return (
     <Layout>
       <div className="w-full h-full">
+        <Header/>
 
-      <Header/>
+        <Container>
+          <MainInfo/>
+        </Container>
 
-      <Container>
-        <MainInfo/>
-      </Container>
+        <Army/>
 
-      <Army/>
+        <Container disableVerticalPadding={true}>
+          <Craft/>
+          <Activities/>
+        </Container>
 
-      <Container disableVerticalPadding={true}>
-        <Craft/>
-        <Activities/>
-      </Container>
+        <Token/>
 
-      <Token/>
+        <Container disableVerticalPadding={true}>
+          {/*<Roadmap/>*/}
+          <Team/>
+          <Partners/>
+        </Container>
 
-      <Container disableVerticalPadding={true}>
-        {/*<Roadmap/>*/}
-        <Team/>
-        <Partners/>
-      </Container>
-
-      <Footer/>
+        <Footer/>
       </div>
     </Layout>
   )
