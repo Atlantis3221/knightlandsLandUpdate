@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./styles.module.css";
 
 import Container from "components/common/Container/Container";
-import { HeaderLinks } from "common/constants/HeaderLinks";
 import PlayNow from "components/common/PlayNow";
 import ContactMenu from "components/common/ContactMenu";
 import Text from "components/common/Text/Text";
@@ -16,11 +15,11 @@ const Footer = () => {
             <div className="w-48 sm:mr-7">
               <img src="/common/logo.svg" className="mr-0"/>
             </div>
-            {HeaderLinks.map((item, i) => (
-              <Text key={i} type="h5" className="mr-5 hidden lg:flex text-center">
-                {item.title}
+            <a href="https://knightlands.gitbook.io/knightlands/" target="_blank">
+              <Text type="h5" isLink={true} className="mr-5 hidden md:flex text-center">
+                Whitepaper
               </Text>
-            ))}
+            </a>
           </div>
           <div className="flex items-center">
             <div className="flex mx-6">
