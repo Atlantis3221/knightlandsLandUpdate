@@ -4,10 +4,10 @@
     align-items: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .container {
         flex-flow: column wrap;
-        height: 1100px;
+        height: 820px;
     }
 }
 

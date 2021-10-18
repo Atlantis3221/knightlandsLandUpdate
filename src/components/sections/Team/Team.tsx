@@ -22,9 +22,9 @@ const Team = () => {
   return (
     <div className="flex flex-col justify-start w-full pb-36" id={HeaderLink.TEAM}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
-      <div className="flex w-full justify-center sm:flex-wrap md:justify-start flex-col items-center sm:flex-row">
+      <div className="flex w-full justify-center sm:flex-wrap lg:flex-nowrap md:justify-start flex-col items-center sm:flex-row">
         {data.map((item, i) => (
-          <div key={i} className="flex flex-col w-80 md:w-52 items-center text-center mb-10 sm:mx-2">
+          <div key={i} className="flex flex-col w-80 md:w-52 self-start items-center text-center mb-10 sm:mx-2">
             <div className="relative">
               <img src={item.src} className="mb-6" />
               {item.url && (
@@ -34,7 +34,7 @@ const Team = () => {
               )}
             </div>
             <Text type="h4" className="mb-2 uppercase">{item.name}</Text>
-            <Text type="h5" className="mb-2">{item.role}</Text>
+            <Text type="h5" className="mb-2 flex justify-start ">{item.role}</Text>
             <Text fontSize={13} lineHeight="20px" color="#8A978C" className="h-20 md:h-40">{item.description}</Text>
           </div>
         ))}

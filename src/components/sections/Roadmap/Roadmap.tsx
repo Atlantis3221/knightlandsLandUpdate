@@ -60,21 +60,19 @@ const road: {year: string, items: IRoad[]}[] = [
 ]
 
 const Roadmap = () => {
-  const isXl = useMatchMediaQuery(`(min-width: ${Breakpoints.xl}px)`);
-
   return (
     <div className="flex flex-col justify-center w-full my-24 px-4 md:pl-0" id={HeaderLink.ROADMAP}>
       <Text type="h2" className="text-center">Roadmap</Text>
       <div className={styles.container + " flex mt-10 w-full"}>
         {road.map(({year, items}, i) => (
-          <div key={i} className="mb-14 flex flex-col items-start self-start w-full xl:w-auto">
+          <div key={i} className="mb-14 flex flex-col items-start self-start w-full md:w-auto">
             <div className="flex items-center">
               <div className={styles.line} style={{transform: 'rotate(180deg)'}}/>
               <Text type="h4" className="mx-4">{year}</Text>
               <div className={styles.line}/>
             </div>
             {items.map((item, j) => (
-              <div key={j} className="flex items-center my-2">
+              <div key={j} className="flex items-center my-2 lg:mx-2">
                 <div className="flex justify-center items-center h-full">
                   <div className={item.isChecked ? styles.checked : styles.notChecked}>
                     {item.isChecked && <img src={'/common/check.svg'} />}
@@ -82,7 +80,7 @@ const Roadmap = () => {
                 </div>
                 <div className="flex items-baseline">
                   <Text type="h5" fontWeight={700} color="#8A978C" className="mr-1">{item.step}</Text>
-                  <Text type="h5" maxWidth={isXl ? 510 : '100%'} height="100%">— {item.description}</Text>
+                  <Text type="h5" className="max-w-full lg:max-w-sm xl:max-w-md" height="100%">— {item.description}</Text>
                 </div>
               </div>
             ))}
