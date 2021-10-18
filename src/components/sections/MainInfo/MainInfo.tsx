@@ -6,7 +6,6 @@ import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { HeaderLink } from "common/constants/HeaderLinks";
-import styles from './styles.module.css';
 
 const MainInfo = () => {
   return (

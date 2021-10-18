@@ -29,8 +29,8 @@ export function useVisibleSection() {
         bottom: window.scrollY + document.documentElement.clientHeight
       };
 
-    if (targetPosition.bottom > windowPosition.top &&
-      targetPosition.top < windowPosition.bottom &&
+    if (targetPosition.bottom > windowPosition.top - 500 &&
+      targetPosition.top < windowPosition.bottom - 500 &&
       targetPosition.right > windowPosition.left &&
       targetPosition.left < windowPosition.right) {
       setCurrentSectionId(element.id);
