@@ -6,8 +6,8 @@ import Text from "components/common/Text/Text";
 
 const Prizes = () => {
   return (
-    <div className="flex flex-col xl:flex-row w-full xl:max-w-screen-xxl">
-      <div className={styles.usdc + " grid grid-cols-3 xl:w-3/5 mr-5 mb-8"}>
+    <div className="flex flex-col lg:flex-row w-full xl:max-w-screen-xxl">
+      <div className={styles.usdc + " grid grid-cols-3 lg:w-3/5 lg:mr-5 mb-8"}>
         <div className="col-span-2">
           <Text type="h2" className={styles.h2}>30 000 USDC</Text>
         </div>
@@ -25,7 +25,7 @@ const Prizes = () => {
         </div>
       </div>
 
-      <div className={styles.usdc + " grid grid-cols-3 w-full xl:w-2/5 mb-8"}>
+      <div className={styles.usdc + " grid grid-cols-3 w-full lg:w-2/5 mb-8"}>
         <div className="col-span-2">
           <Text type="h2">Earn FLESH token</Text>
         </div>
