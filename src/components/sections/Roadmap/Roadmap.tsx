@@ -63,7 +63,7 @@ const Roadmap = () => {
   const isXl = useMatchMediaQuery(`(min-width: ${Breakpoints.xl}px)`);
 
   return (
-    <div className="flex flex-col justify-center w-full my-24 px-4" id={HeaderLink.ROADMAP}>
+    <div className="flex flex-col justify-center w-full my-24 px-4 md:pl-0" id={HeaderLink.ROADMAP}>
       <Text type="h2" className="text-center">Roadmap</Text>
       <div className={styles.container + " flex mt-10 w-full"}>
         {road.map(({year, items}, i) => (
@@ -75,7 +75,7 @@ const Roadmap = () => {
             </div>
             {items.map((item, j) => (
               <div key={j} className="flex items-center my-2">
-                <div>
+                <div className="flex justify-center items-center h-full">
                   <div className={item.isChecked ? styles.checked : styles.notChecked}>
                     {item.isChecked && <img src={'/common/check.svg'} />}
                   </div>

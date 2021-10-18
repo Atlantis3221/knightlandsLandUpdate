@@ -11,7 +11,7 @@ const Container = ({disableVerticalPadding, children, ...rest}: React.PropsWithC
     <div
       {...rest}
       style={{...paddings}}
-      className={styles.root + " flex w-full relative flex-col self-center mx-auto sm:max-w-6xl relative z-10"}
+      className={styles.root + " flex w-full relative flex-col self-center mx-auto xl:max-w-6xl relative z-10"}
     >
       {children}
     </div>

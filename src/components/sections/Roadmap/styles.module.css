@@ -14,7 +14,7 @@
 .checked {
     width: 31px;
     height: 31px;
-    margin: 16px 16px 8px 0;
+    margin-right: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
 .notChecked {
     width: 31px;
     height: 31px;
-    margin: 16px 16px 8px 0;
+    margin-right: 16px;
     border: 1px solid #5E7565;
     display: flex;
     justify-content: center;
