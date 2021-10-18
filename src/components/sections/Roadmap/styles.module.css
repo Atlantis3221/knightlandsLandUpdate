@@ -1,25 +1,20 @@
 .container {
-    width: 171px;
-    flex-basis: 50%;
-    margin: 31px 0;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
     .container {
-        flex-basis: 33.333333%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        flex-basis: 25%;
+        flex-flow: column wrap;
+        height: 1100px;
     }
 }
 
 .checked {
     width: 31px;
     height: 31px;
-    margin: 16px 0 8px 0;
+    margin: 16px 16px 8px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +24,9 @@
 }
 
 .notChecked {
-    width: 39px;
-    height: 39px;
-    margin: 16px 0 8px 0;
+    width: 31px;
+    height: 31px;
+    margin: 16px 16px 8px 0;
     border: 1px solid #5E7565;
     display: flex;
     justify-content: center;
@@ -39,8 +34,15 @@
     border-radius: 50%;
 }
 
+
 .line {
-    background: radial-gradient(#22452C, #62866D);
-    height: 1px;
-    width: 45%;
+    width: 46px;
+    height: 3px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #8A978C), color-stop(100%, #132B1A));
+    background: -moz-linear-gradient(left, #8A978C 0%, #132B1A 100%);
+    background: -webkit-linear-gradient(left, #8A978C 0%, #132B1A 100%);
+    background: -o-linear-gradient(left, #8A978C 0%, #132B1A 100%);
+    background: -ms-linear-gradient(left, #8A978C 0%, #132B1A 100%);
+    background: linear-gradient(to right, #8A978C 0%, #132B1A 100%);
 }
+

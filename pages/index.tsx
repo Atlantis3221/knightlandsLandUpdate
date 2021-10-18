@@ -33,7 +33,7 @@ export default function Home() {
         <Token/>
 
         <Container disableVerticalPadding={true}>
-          {/*<Roadmap/>*/}
+          <Roadmap/>
           <Team/>
           <Partners/>
         </Container>

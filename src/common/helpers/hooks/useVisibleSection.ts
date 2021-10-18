@@ -5,7 +5,7 @@ const initialState: {id: HeaderLink; isShow: boolean}[] = [
   {id: HeaderLink.MAIN, isShow: true},
   {id: HeaderLink.GAMEPLAY, isShow: false},
   {id: HeaderLink.PLAY_TO_EARN, isShow: false},
-  // {id: HeaderLink.ROADMAP, isShow: false},
+  {id: HeaderLink.ROADMAP, isShow: false},
   {id: HeaderLink.TEAM, isShow: false},
   {id: HeaderLink.PARTNERS, isShow: false},
 ]

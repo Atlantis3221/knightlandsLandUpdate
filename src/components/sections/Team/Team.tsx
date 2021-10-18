@@ -20,7 +20,7 @@ const data: ITeamMember[] = [
 
 const Team = () => {
   return (
-    <div className="flex flex-col justify-start w-full py-36" id={HeaderLink.TEAM}>
+    <div className="flex flex-col justify-start w-full pb-36" id={HeaderLink.TEAM}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
       <div className="flex w-full justify-center sm:flex-wrap md:justify-start flex-col items-center sm:flex-row">
         {data.map((item, i) => (
