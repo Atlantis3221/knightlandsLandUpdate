@@ -78,9 +78,11 @@ const Roadmap = () => {
                     {item.isChecked && <img src={'/common/check.svg'} />}
                   </div>
                 </div>
-                <div className="flex items-baseline">
-                  <Text type="h5" fontWeight={700} color="#8A978C" className="mr-1">{item.step}</Text>
-                  <Text type="h5" className="max-w-full lg:max-w-sm xl:max-w-md" height="100%">— {item.description}</Text>
+                <div className="flex items-baseline ">
+                  <Text type="h5" fontWeight={700} color="#8A978C" className="mr-1 max-w-full lg:max-w-sm xl:max-w-md">
+                    {item.step}
+                    <Text fontWeight={400} color="#FFFFFF" isSpan={true}>— {item.description}</Text>
+                  </Text>
                 </div>
               </div>
             ))}
