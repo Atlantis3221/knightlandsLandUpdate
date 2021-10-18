@@ -12,7 +12,7 @@ const events = [
 
 const Activities = () => {
   return (
-    <div className="flex flex-col xl:mb-12">
+    <div className="flex flex-col xl:mb-12" data-aos="fade-up">
       <Text type="h2" className="text-center lg:mb-9">
         Take part in everyday events
       </Text>

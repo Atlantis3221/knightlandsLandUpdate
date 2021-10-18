@@ -13,7 +13,7 @@ const crafts = [
 
 const Craft = () => {
   return (
-    <div className={commonStyles.board + ' flex w-full flex-col items-center py-16 xl:flex-row xl:px-4 xxl:px-12 xl:py-0'}>
+    <div data-aos="fade-up" className={commonStyles.board + ' flex w-full flex-col items-center py-16 xl:flex-row xl:px-4 xxl:px-12 xl:py-0'}>
       <div className="w-full text-center xl:text-left lg:mr-4">
         <Text type="h2" className="xl:w-40">Gather and craft hundreds of items</Text>
       </div>

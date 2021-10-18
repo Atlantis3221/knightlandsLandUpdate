@@ -62,7 +62,7 @@ const Token = () => {
 
   if(isXl) {
     return (
-      <div className="justify-center relative items-center self-center">
+      <div data-aos="fade-up" className="justify-center relative items-center self-center">
         <div className="overflow-hidden absolute">
           <TokenBackground/>
         </div>
@@ -75,7 +75,7 @@ const Token = () => {
     )
   }
   return (
-    <div className="justify-center items-center flex self-center py-36">
+    <div data-aos="fade-up" className="justify-center items-center flex self-center py-36">
       <Container disableVerticalPadding={true}>
         <div className="flex flex-col">
           {buttons}

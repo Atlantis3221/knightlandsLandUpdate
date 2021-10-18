@@ -10,7 +10,7 @@ const data = [
 
 const Partners = () => {
   return (
-    <div className="flex flex-col justify-start w-full px-12 py-5" id={HeaderLink.PARTNERS}>
+    <div data-aos="fade-up" className="flex flex-col justify-start w-full px-12 py-5" id={HeaderLink.PARTNERS}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Partners</Text>
       <div className="flex w-full justify-center flex-col items-center lg:justify-start md:flex-row">
         {data.map((item, i) => (

@@ -61,7 +61,7 @@ const road: {year: string, items: IRoad[]}[] = [
 
 const Roadmap = () => {
   return (
-    <div className="flex flex-col justify-center w-full my-24 px-4 md:pl-0" id={HeaderLink.ROADMAP}>
+    <div data-aos="fade-up" className="flex flex-col justify-center w-full my-24 px-4 md:pl-0" id={HeaderLink.ROADMAP}>
       <Text type="h2" className="text-center">Roadmap</Text>
       <div className={styles.container + " flex mt-10 w-full"}>
         {road.map(({year, items}, i) => (
