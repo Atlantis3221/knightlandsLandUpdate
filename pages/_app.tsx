@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "styles/globals.css";
 import "tailwindcss/tailwind.css";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 interface IProps {
   Component: React.ComponentType;
@@ -9,6 +11,13 @@ interface IProps {
 
 const MyApp = (props: IProps) => {
   const {Component, pageProps} = props;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100
+    });
+  }, []);
 
   useEffect(() => {
     const appHeight = () => {
