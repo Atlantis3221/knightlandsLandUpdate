@@ -16,14 +16,14 @@ const Supported = () => {
           <div className="sm:col-span-3 lg:col-span-2">
             <Text type="h4" color="#8A978C">If you are new to crypto, register your wallet. It’s easy and takes 2 minutes</Text>
           </div>
-          <Text type="h3" color="#8A978C" className="col-span-1 sm:col-span-2 mt-6">Supported Blockchains</Text>
+          {/*<Text type="h3" color="#8A978C" className="col-span-1 sm:col-span-2 mt-6">Supported Blockchains</Text>*/}
         </div>
       </div>
-      <div className="flex flex-wrap justify-start pl-4 sm:pl-12 -mt-8">
-        <img className="w-40 h-44 mr-4" src="/supported/supported1.svg" />
-        <img className="w-40 h-44 mr-4" src="/supported/supported2.svg"/>
-        <img className="w-40 h-44" src="/supported/supported3.svg"/>
-      </div>
+      {/*<div className="flex flex-wrap justify-start pl-4 sm:pl-12 -mt-8">*/}
+      {/*  <img className="w-40 h-44 mr-4" src="/supported/supported1.svg" />*/}
+      {/*  <img className="w-40 h-44 mr-4" src="/supported/supported2.svg"/>*/}
+      {/*  <img className="w-40 h-44" src="/supported/supported3.svg"/>*/}
+      {/*</div>*/}
     </>
   )
 }
