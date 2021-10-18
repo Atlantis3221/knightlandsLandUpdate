@@ -24,7 +24,7 @@ const Team = () => {
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
       <div className="flex w-full justify-center sm:flex-wrap lg:flex-nowrap md:justify-start flex-col items-center sm:flex-row">
         {data.map((item, i) => (
-          <div key={i} className="flex flex-col w-80 md:w-52 self-start items-center text-center mb-10 sm:mx-2">
+          <div key={i} className="flex flex-col w-80 md:w-52 md:self-start items-center text-center mb-10 sm:mx-2">
             <div className="relative">
               <img src={item.src} className="mb-6" />
               {item.url && (
