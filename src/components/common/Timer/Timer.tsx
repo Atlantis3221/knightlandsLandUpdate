@@ -26,6 +26,7 @@ const renderTime = (dimension, time) => {
   );
 };
 
+const getTimeSeconds = (time) => (minuteSeconds - time) | 0;
 const getTimeMinutes = (time) => ((time % hourSeconds) / minuteSeconds) | 0;
 const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
@@ -74,6 +75,19 @@ const Timer = () => {
         >
           {({ elapsedTime }) =>
             renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))
+          }
+        </CountdownCircleTimer>
+      </div>
+
+      <div className="ml-2">
+        <CountdownCircleTimer
+          {...timerProps}
+          duration={minuteSeconds}
+          initialRemainingTime={remainingTime % minuteSeconds}
+          onComplete={(totalElapsedTime) => [remainingTime > totalElapsedTime, 0]}
+        >
+          {({ elapsedTime }) =>
+            renderTime("seconds", getTimeSeconds(elapsedTime))
           }
         </CountdownCircleTimer>
       </div>
