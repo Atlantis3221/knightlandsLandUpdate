@@ -22,6 +22,19 @@ module.exports = {
       },
       zIndex: {
         1: '1'
+      },
+      keyframes: {
+        levitate: {
+          '0%': {
+            transform: 'translate3d(0, 0, 0)'
+          },
+          '100%': {
+            transform: 'translate3d(0, 10px, 0)'
+          },
+        }
+      },
+      animation: {
+        levitate: 'levitate 0.5s linear alternate infinite',
       }
     },
     screens: {

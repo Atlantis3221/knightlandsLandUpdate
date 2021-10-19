@@ -1,0 +1,19 @@
+.text {
+    width: 100%
+}
+
+.image {
+    width: 120%;
+}
+
+@media (min-width: 1024px) {
+    .text {
+        width: 35%
+    }
+
+    .image {
+        width: 65%;
+    }
+}
+
+
