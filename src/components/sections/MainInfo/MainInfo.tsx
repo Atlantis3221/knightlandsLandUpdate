@@ -19,16 +19,16 @@ const MainInfo = () => {
         </div>
         <div className={styles.image + " flex h-full relative justify-center self-center items-center lg:pt-20 xl:pt-32"}>
           <div className="relative mt-16 z-1 -top-12 -right-20">
-            <img src="/sagittarius.png" className="animate-levitate absolute"/>
-            <img src="/sagittarius-back.png"/>
+            <img src="/main/sagittarius.png" className="animate-levitate absolute"/>
+            <img src="/main/sagittarius-back.png"/>
           </div>
           <div className="relative mt-16" style={{zIndex: 2}}>
-            <img src="/magma.png" className="animate-levitate absolute -top-16"/>
-            <img src="/magma-back.png"/>
+            <img src="/main/magma.png" className="animate-levitate absolute -top-16"/>
+            <img src="/main/magma-back.png"/>
           </div>
           <div className="relative  mt-16 z-1 -top-10 -left-20">
-            <img src="/father.png" className="animate-levitate absolute -top-24 left-4" style={{maxHeight: 250}}/>
-            <img src="/father-back.png"/>
+            <img src="/main/father.png" className="animate-levitate absolute -top-24 left-4" style={{maxHeight: 250}}/>
+            <img src="/main/father-back.png"/>
           </div>
         </div>
       </div>

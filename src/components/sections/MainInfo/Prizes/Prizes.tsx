@@ -12,7 +12,7 @@ const Prizes = () => {
           <Text type="h2" className={styles.h2}>30 000 USDC</Text>
         </div>
         <div className="self-end row-span-3 md:-mt-20 md:self-center">
-          <img src="/common/box.png" className=""/>
+          <img src="/main/box.png" className=""/>
         </div>
         <div className="col-span-2">
           <Text type="h5" color="#8A978C" maxWidth={332}>
@@ -30,7 +30,7 @@ const Prizes = () => {
           <Text type="h2">Earn FLESH token</Text>
         </div>
         <div className="self-end row-span-3 md:-mt-20 md:self-center">
-          <img src="/common/prize.png" className=""/>
+          <img src="/main/prize.png" className=""/>
         </div>
         <div className="col-span-2">
           <Text type="h5" color="#8A978C" maxWidth={332}>
