@@ -29,12 +29,12 @@ module.exports = {
             transform: 'translate3d(0, 0, 0)'
           },
           '100%': {
-            transform: 'translate3d(0, 10px, 0)'
+            transform: 'translate3d(0, 5px, 0)'
           },
         }
       },
       animation: {
-        levitate: 'levitate 0.5s linear alternate infinite',
+        levitate: 'levitate 1s linear alternate infinite',
       }
     },
     screens: {

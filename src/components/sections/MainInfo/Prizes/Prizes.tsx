@@ -6,7 +6,7 @@ import Text from "components/common/Text/Text";
 
 const Prizes = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full xl:max-w-screen-xxl">
+    <div data-aos="fade-up" data-aos-delay={500} className="flex flex-col lg:flex-row w-full xl:max-w-screen-xxl">
       <div className={styles.usdc + " grid grid-cols-3 lg:w-3/5 lg:mr-5 mb-8"}>
         <div className="col-span-2">
           <Text type="h2" className={styles.h2}>30 000 USDC</Text>
