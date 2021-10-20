@@ -6,8 +6,8 @@ import Text from "components/common/Text/Text";
 const events = [
   {src: '/events/event1.png', title: 'Champion tourney', text: 'Be one of the TOP-100 players to win a lot of FLESH'},
   {src: '/events/event2.png', title: 'Daily Tasks', text: 'Find useful resources and items that will help you in a game'},
-  {src: '/events/event3.png', title: 'Onyx Tower', text: 'Earn USDC prizes in a frequent gaming events'},
-  {src: '/events/event4.png', title: 'Trials', text: 'Go through difficult stages for unique resources in the game'},
+  {src: '/events/event3.png', title: 'USDC events', text: 'Earn USDC prizes in a frequent gaming events'},
+  {src: '/events/event4.png', title: 'Trials', text: 'Get through the difficult stages for unique resources in the game'},
 ];
 
 const Activities = () => {

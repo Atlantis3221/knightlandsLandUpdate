@@ -17,8 +17,8 @@ interface IArmy {
 
 const army:IArmy[] = [
   {src: '/army/aphylia.png', title: 'Aphylia', damage: [{value: 3, isPercent: true, description: ' damage per Light troop'}, {value: 100, isPercent: true, description: 'when Skor is a general'}]},
-  {src: '/army/scor.png', title: 'Skor', damage: [{value: 300, isPercent: true, description: '300% to dwarf troops'}, {value: 500, description: 'damage'}]},
-  {src: '/army/dalton.png', title: 'Dalton', damage: [{value: 45, description: 'Damage per Knight troop in reserve'}, {value: 50, description: 'damage to dark element generals'}]},
+  {src: '/army/scor.png', title: 'Skor', damage: [{value: 300, isPercent: true, description: 'damage to dwarf troops'}, {value: 500, description: 'damage'}]},
+  {src: '/army/dalton.png', title: 'Dalton', damage: [{value: 45, description: 'damage per Knight troop in reserve'}, {value: 50, description: 'damage to dark element generals'}]},
   {src: '/army/orkgre.png', title: 'Orkgre', damage: [{value: 40, description: 'damage to orcs per orc troop in reserve'}, {value: 78, isPercent: true, description: 'against Dream Slime raid'}]},
   {src: '/army/lucius.png', title: 'Lucius', damage: [{value: 20, description: 'damage to all troops per angel troop'}, {value: 100, isPercent: true, description: 'against Dream Slime raid'}]},
 ]

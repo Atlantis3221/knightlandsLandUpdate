@@ -18,7 +18,7 @@ const KLToken = () => {
     <div className="">
       <div className="flex flex-col mb-8 col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
         <Text type="h2">KL TOKEN</Text>
-        <Text type="h5" color="#8A978C" className="text-center max-w-lg">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
+        <Text type="h5" color="#8A978C" className="text-center max-w-lg">Maximum supply is 100 000 000. Primary use is a currency for Knightlands metaverse.</Text>
       </div>
       <div className="flex justify-center items-center flex-col xl:flex-row">
         <div className="flex w-full relative justify-center mb-20">

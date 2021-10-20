@@ -33,7 +33,7 @@ const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const Timer = () => {
   const startTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = +(new Date(2021, 11, 1)) / 1000; // use UNIX timestamp in seconds
+  const endTime = +(new Date(2021, 10, 29)) / 1000; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - startTime;
   const days = Math.ceil(remainingTime / daySeconds);

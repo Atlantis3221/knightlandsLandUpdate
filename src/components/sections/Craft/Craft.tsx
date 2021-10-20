@@ -6,8 +6,8 @@ import CraftBoard from "components/sections/Craft/Board/CraftBoard";
 import Text from "components/common/Text/Text";
 
 const crafts = [
-  {src: '/craft/craft1.png', bigText: '"300+ soldiers', smallText: 'to collect and combine'},
-  {src: '/craft/craft2.png', bigText: '1000+ items', smallText: 'to gather and craft'},
+  {src: '/craft/craft1.png', bigText: '300+ soldiers', smallText: 'to collect and combine'},
+  {src: '/craft/craft2.png', bigText: '500+ items', smallText: 'to gather and craft'},
   {src: '/craft/craft3.png', bigText: '10 ways', smallText: 'of crafting items'},
 ];
 

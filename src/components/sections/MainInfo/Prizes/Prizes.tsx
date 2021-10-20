@@ -16,10 +16,10 @@ const Prizes = () => {
         </div>
         <div className="col-span-2">
           <Text type="h5" color="#8A978C" maxWidth={332}>
-            Become one of a Top 100 Knights in Grand Royale and win prize pool on 1st December!
-            <span className="ml-1.5" style={{color: '#FFEB3D'}}>
+            Become one of a Top 100 Knights in Grand Royale and win USDC before 1st December!
+            {/* <span className="ml-1.5" style={{color: '#FFEB3D'}}>
                 Read Terms
-            </span>
+            </span> */}
             <Timer/>
           </Text>
         </div>

@@ -10,7 +10,7 @@ import { useMediaQuery } from "common/helpers/useMediaQuery";
 const Footer = () => {
   const {isMobile} = useMediaQuery();
   const whitepaperLink = useMemo(() => (
-    <a href="https://knightlands.gitbook.io/knightlands/" target="_blank">
+    <a href="https://silverblock-studios.gitbook.io/knightlands-whitepaper" target="_blank">
       <Text type="h5" isLink={true} className="mr-5 mt-5 md:mt-0 flex text-center">
         Whitepaper
       </Text>

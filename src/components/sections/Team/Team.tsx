@@ -11,11 +11,11 @@ interface ITeamMember {
 }
 
 const data: ITeamMember[] = [
-  {src: '/team/team1.png', name: 'Denis Ermolin', role: 'CEO, Senior Software Engineer', url: 'https://www.linkedin.com/in/imyourm8', description: '10 years of experience with previous notable stints at Animoca Brands and Coins & Steel, developer by trade but a gamer at heart. Hand-selected the team based on their passion for games and experience with game development'},
-  {src: '/team/team2.png', name: 'Andrey Pavlychev', role: 'Head of Design', url: 'https://linkedin.com/in/drawnpro', description: '14 years of experience being a 2D and User Interface artist, specializing in artwork production for mobile and social network games, has worked for notable companies and projects such as Gameloft and Coins & Steel'},
-  {src: '/team/team3.png', name: 'Denis Savin', role: 'Developer', url: 'https://www.linkedin.com/in/uniwertz/', description: '13 years of experience working with web technologies. Both with frontend and backend systems'},
-  {src: '/team/team4.png', name: 'Matvei', role: 'Developer', url: 'https://www.linkedin.com/in/matvey-bobkov-a7970b223/ ', description: '6 years of production experience with CrazyLabs and Gameloft on Dungeon Hunter 5'},
-  {src: '/team/team5.png', name: 'Yan Sean', role: 'Community builder', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance'},
+  {src: '/team/team1.png', name: 'Denis Ermolin', role: 'CEO', url: 'https://www.linkedin.com/in/imyourm8', description: '10 years of experience with previous notable stints at Animoca Brands and Polygon, developer by trade but a gamer at heart.'},
+  {src: '/team/team2.png', name: 'Andrey Pavlychev', role: 'Head of Design', url: 'https://linkedin.com/in/drawnpro', description: '14 years of experience being a 2D and User Interface artist, specializing in artwork production for mobile and social network games, ex-Gameloft.'},
+  {src: '/team/team3.png', name: 'Denis Savin', role: 'Fullstack Developer', url: 'https://www.linkedin.com/in/uniwertz/', description: '13 years of experience working with web technologies. Both with frontend and backend systems.'},
+  {src: '/team/team4.png', name: 'Matvei', role: 'Lead Game Designer', url: 'https://www.linkedin.com/in/matvey-bobkov-a7970b223/ ', description: '5 years of production experience with CrazyLabs and Gameloft on Dungeon Hunter 5.'},
+  {src: '/team/team5.png', name: 'Yan Sean', role: 'Community growth', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance.'},
 ];
 
 const Team = () => {
