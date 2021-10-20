@@ -34,7 +34,9 @@ module.exports = {
         }
       },
       animation: {
-        levitate: 'levitate 1s linear alternate infinite',
+        levitate: 'levitate 2s linear alternate infinite',
+        levitate2: 'levitate 1.6s linear alternate infinite',
+        levitate3: 'levitate 2.4s linear alternate infinite'
       }
     },
     screens: {

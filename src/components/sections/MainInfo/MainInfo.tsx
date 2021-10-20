@@ -23,11 +23,11 @@ const MainInfo = () => {
             <img src="/main/sagittarius-back.png"/>
           </div>
           <div className="relative mt-16" style={{zIndex: 2}}>
-            <img src="/main/magma.png" className="animate-levitate absolute -top-16"/>
+            <img src="/main/magma.png" className="animate-levitate3 absolute -top-16"/>
             <img src="/main/magma-back.png"/>
           </div>
           <div className="relative  mt-16 z-1 -top-10 -left-20">
-            <img src="/main/father.png" className="animate-levitate absolute -top-24 left-4" style={{maxHeight: 250}}/>
+            <img src="/main/father.png" className="animate-levitate2 absolute -top-24 left-4" style={{maxHeight: 250}}/>
             <img src="/main/father-back.png"/>
           </div>
         </div>
