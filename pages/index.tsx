@@ -31,9 +31,7 @@ export default function Home() {
           <Activities />
         </Container>
 
-        <Container disableVerticalPadding={true}>
-          <Sequel />
-        </Container>
+        <Sequel />
 
         <Token />
 
