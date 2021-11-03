@@ -3,6 +3,7 @@ import PlayNow from "components/common/PlayNow";
 import Dot from "components/common/Dot/Dot";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
+import Features from "components/sections/MainInfo/Features/Features";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { HeaderLink } from "common/constants/HeaderLinks";
@@ -51,6 +52,7 @@ const MainInfo = () => {
           <Text type="h5" color="#8A978C">No wallet needed</Text>
         </div>
       </div>
+      <Features />
       <Prizes />
     </div>
   );
