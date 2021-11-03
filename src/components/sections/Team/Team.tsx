@@ -16,8 +16,8 @@ const data: ITeamMember[] = [
   { src: '/team/team3.png', name: 'Denis Savin', role: 'Fullstack Developer', url: 'https://www.linkedin.com/in/uniwertz/', description: '13 years of experience working with web technologies. Both with frontend and backend systems.' },
   { src: '/team/team4.png', name: 'Matvei', role: 'Lead Game Designer', url: 'https://www.linkedin.com/in/matvey-bobkov-a7970b223/ ', description: '5 years of production experience with CrazyLabs and Gameloft on Dungeon Hunter 5.' },
   { src: '/team/team5.png', name: 'Yan Sean', role: 'Community growth', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance.' },
-  { src: '/team/team6.png', name: 'Vitaly Mikhailovsky', role: 'Developer', url: "test", description: '5 years of project management for software development for business process optimization. 6 years of work as a game designer, level designer, as well as experience in project development management in the gaming industry.' },
-  { src: '/team/team7.png', name: 'Dmitry Lebedev', role: 'Developer', url: "test", description: '20 years in software development, and most of them in Game Dev. Taked part in developing and shipping games at PlayStation 2, Playstation 3, PsP, PC, web and mobile.' },
+  { src: '/team/team6.png', name: 'Vitaly Mikhailovsky', role: 'Developer', url: "https://www.linkedin.com/in/snekflimes/", description: '5 years of project management for software development for business process optimization. 6 years of work as a game designer, level designer, as well as experience in project development management in the gaming industry.' },
+  { src: '/team/team7.png', name: 'Dmitry Lebedev', role: 'Developer', url: "https://www.linkedin.com/in/dmitry-lebedev-902551b3/", description: '20 years in software development, and most of them in Game Dev. Taked part in developing and shipping games at PlayStation 2, Playstation 3, PsP, PC, web and mobile.' },
 ];
 
 const Team = () => {
