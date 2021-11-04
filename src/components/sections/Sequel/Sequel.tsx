@@ -31,14 +31,14 @@ const Sequel = () => {
                         </Text>
                         <Text type="h4" className="mx-auto text-center max-w-2xl mb-4">Better gameplay, wider audience, more in line with the traditional mobile market and more P2E capabilities</Text>
                     </div>
-                    <div className='flex items-center'>
+                    {/* <div className='flex items-center'>
                         <a href="https://play.knightlands.com" target="_blank">
                             <Button className="w-full h-14 cursor-pointer flex justify-center items-center self-center">Participate in IDO</Button>
                         </a>
                         <Text type="h5" className='ml-6'>
                             20 november
                         </Text>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
