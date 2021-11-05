@@ -26,15 +26,15 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center pt-40 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
+      <div className="flex justify-center xl:pt-40 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => changeSection(Section.FLESH)}
             type={sectionType === Section.KL ? ButtonType.TERTIARY : ButtonType.PRIMARY}
             className="flex mr-2 items-center"
-            style={{width: 'max-content'}}
+            style={{ width: 'max-content' }}
           >
-            <img src="/common/flesh.png" className="mr-2.5" style={{width: 32, height: 32}}/>
+            <img src="/common/flesh.png" className="mr-2.5" style={{ width: 32, height: 32 }} />
             FLESH TOKEN
           </Button>
 
@@ -42,9 +42,9 @@ const Token = () => {
             onClick={() => changeSection(Section.KL)}
             type={sectionType === Section.FLESH ? ButtonType.TERTIARY : ButtonType.PRIMARY}
             className="flex items-center"
-            style={{width: 'max-content'}}
+            style={{ width: 'max-content' }}
           >
-            <img src="/common/kl.png" className="mr-2.5" style={{width: 32, height: 32}}/>
+            <img src="/common/kl.png" className="mr-2.5" style={{ width: 32, height: 32 }} />
             KL TOKEN
           </Button>
         </div>
@@ -53,23 +53,23 @@ const Token = () => {
   }, [sectionType]);
 
   const section = useMemo(() => {
-    if(sectionType === Section.FLESH) {
-      return <FleshToken/>
+    if (sectionType === Section.FLESH) {
+      return <FleshToken />
     }
 
-    return <KLToken/>
+    return <KLToken />
   }, [sectionType]);
 
-  if(isXl) {
+  if (isXl) {
     return (
       <div data-aos="fade-up" className="justify-center relative items-center self-center">
         <div className="overflow-hidden absolute">
-          <TokenBackground/>
+          <TokenBackground />
         </div>
         <Container disableVerticalPadding={true}>
           {buttons}
           {section}
-          <Supported/>
+          <Supported />
         </Container>
       </div>
     )
@@ -81,7 +81,7 @@ const Token = () => {
           {buttons}
           {section}
         </div>
-        <Supported/>
+        <Supported />
       </Container>
     </div>
   )
