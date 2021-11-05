@@ -11,18 +11,20 @@ interface ITeamMember {
 }
 
 const data: ITeamMember[] = [
-  {src: '/team/team1.png', name: 'Denis Ermolin', role: 'CEO', url: 'https://www.linkedin.com/in/imyourm8', description: '10 years of experience with previous notable stints at Animoca Brands and Polygon, developer by trade but a gamer at heart.'},
-  {src: '/team/team2.png', name: 'Andrey Pavlychev', role: 'Head of Design', url: 'https://linkedin.com/in/drawnpro', description: '14 years of experience being a 2D and User Interface artist, specializing in artwork production for mobile and social network games, ex-Gameloft.'},
-  {src: '/team/team3.png', name: 'Denis Savin', role: 'Fullstack Developer', url: 'https://www.linkedin.com/in/uniwertz/', description: '13 years of experience working with web technologies. Both with frontend and backend systems.'},
-  {src: '/team/team4.png', name: 'Matvei', role: 'Lead Game Designer', url: 'https://www.linkedin.com/in/matvey-bobkov-a7970b223/ ', description: '5 years of production experience with CrazyLabs and Gameloft on Dungeon Hunter 5.'},
-  {src: '/team/team5.png', name: 'Yan Sean', role: 'Community growth', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance.'},
+  { src: '/team/team1.png', name: 'Denis Ermolin', role: 'CEO', url: 'https://www.linkedin.com/in/imyourm8', description: '10 years of experience with previous notable stints at Animoca Brands and Polygon, developer by trade but a gamer at heart.' },
+  { src: '/team/team2.png', name: 'Andrey Pavlychev', role: 'Head of Design', url: 'https://linkedin.com/in/drawnpro', description: '14 years of experience being a 2D and User Interface artist, specializing in artwork production for mobile and social network games, ex-Gameloft.' },
+  { src: '/team/team3.png', name: 'Denis Savin', role: 'Fullstack Developer', url: 'https://www.linkedin.com/in/uniwertz/', description: '13 years of experience working with web technologies. Both with frontend and backend systems.' },
+  { src: '/team/team4.png', name: 'Matvei', role: 'Lead Game Designer', url: 'https://www.linkedin.com/in/matvey-bobkov-a7970b223/ ', description: '5 years of production experience with CrazyLabs and Gameloft on Dungeon Hunter 5.' },
+  { src: '/team/team5.png', name: 'Yan Sean', role: 'Community growth', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance.' },
+  { src: '/team/team6.png', name: 'Vitaly Mikhailovsky', role: 'Developer', url: "https://www.linkedin.com/in/snekflimes/", description: '5 years of project management for software development for business process optimization. 6 years of work as a game designer, level designer, as well as experience in project development management in the gaming industry.' },
+  { src: '/team/team7.png', name: 'Dmitry Lebedev', role: 'Developer', url: "https://www.linkedin.com/in/dmitry-lebedev-902551b3/", description: '20 years in software development, and most of them in Game Dev. Taked part in developing and shipping games at PlayStation 2, Playstation 3, PsP, PC, web and mobile.' },
 ];
 
 const Team = () => {
   return (
     <div data-aos="fade-up" className="flex flex-col justify-start w-full pb-36" id={HeaderLink.TEAM}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
-      <div className="flex w-full justify-center sm:flex-wrap lg:flex-nowrap md:justify-start flex-col items-center sm:flex-row">
+      <div className="flex justify-center sm:flex-wrap justify-center mx-auto flex-col items-center sm:flex-row">
         {data.map((item, i) => (
           <div key={i} className="flex flex-col w-80 md:w-52 md:self-start items-center text-center mb-10 sm:mx-2">
             <div className="relative">

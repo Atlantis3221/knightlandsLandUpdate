@@ -12,33 +12,36 @@ import Token from "components/sections/Token/Token";
 import Layout from "components/Layout";
 import Team from "components/sections/Team/Team";
 import Partners from "components/sections/Partners/Partners";
+import Sequel from "components/sections/Sequel/Sequel";
 
 export default function Home() {
   return (
     <Layout>
       <div className="w-full h-full">
-        <Header/>
+        <Header />
 
         <Container>
-          <MainInfo/>
+          <MainInfo />
         </Container>
 
-        <Army/>
+        <Army />
 
         <Container disableVerticalPadding={true}>
-          <Craft/>
-          <Activities/>
+          <Craft />
+          <Activities />
         </Container>
 
-        <Token/>
+        <Sequel />
+
+        <Token />
 
         <Container disableVerticalPadding={true}>
-          <Roadmap/>
-          <Team/>
-          <Partners/>
+          <Roadmap />
+          <Team />
+          <Partners />
         </Container>
 
-        <Footer/>
+        <Footer />
       </div>
     </Layout>
   )
