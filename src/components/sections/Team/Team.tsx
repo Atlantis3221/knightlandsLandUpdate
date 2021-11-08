@@ -37,7 +37,7 @@ const Team = () => {
             </div>
             <Text type="h4" className="mb-2 uppercase">{item.name}</Text>
             <Text type="h5" className="mb-2 flex justify-start ">{item.role}</Text>
-            <Text fontSize={13} lineHeight="20px" color="#8A978C" className="h-20 md:h-40">{item.description}</Text>
+            <Text fontSize={13} lineHeight="20px" color="#8A978C" className="min-h-20 md:h-40">{item.description}</Text>
           </div>
         ))}
       </div>
