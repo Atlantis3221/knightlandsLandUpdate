@@ -18,6 +18,8 @@ const data: ITeamMember[] = [
   { src: '/team/team5.png', name: 'Yan Sean', role: 'Community growth', url: null, description: 'Community builder by trade with a passion for DeFi, Games, and NFTs. His experience includes doing research and community growth for Coin98 Finance.' },
   { src: '/team/team6.png', name: 'Vitaly Mikhailovsky', role: 'Developer', url: "https://www.linkedin.com/in/snekflimes/", description: '5 years of project management for software development for business process optimization. 6 years of work as a game designer, level designer, as well as experience in project development management in the gaming industry.' },
   { src: '/team/team7.png', name: 'Dmitry Lebedev', role: 'Developer', url: "https://www.linkedin.com/in/dmitry-lebedev-902551b3/", description: '20 years in software development, and most of them in Game Dev. Taked part in developing and shipping games at PlayStation 2, Playstation 3, PsP, PC, web and mobile.' },
+  { src: '/team/team8.png', name: 'Hamilton Gilpin', role: 'Marketologyst', url: "https://www.linkedin.com/in/hamilton-gilpin-470538171/", description: '6 years of experience in Crypto Marketing in projects like eSports Org Management and Altcoin Investment. Built and runs Bitcoin Beats YouTube channel with successful conversion funnels. Heavily involved in the low cap altcoin space as a marketing advisor' },
+  { src: '/team/team9.png', name: 'Dmitry Gontarev', role: 'Developer', url: "https://www.linkedin.com/in/dmitry-gontarev-388423155/", description: 'Four years of experience in mobile games development. Worked on such games as Shadow Fight 3, The secret society' },
 ];
 
 const Team = () => {
