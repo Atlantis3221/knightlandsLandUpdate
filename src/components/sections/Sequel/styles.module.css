@@ -17,11 +17,11 @@
     }
 }
 .container {
-    padding: 120px 0 36px 0;
+    padding: 0px 0 36px 0;
 }
 @media (min-width: 768px) {
     .container {
-        padding: 130px 48px 36px 48px;
+        padding: 0px 48px 36px 48px;
     }
 }
 @media (min-width: 1024px) {
@@ -32,5 +32,21 @@
 @media (min-width: 1280px) {
     .container {
         padding: 120px 0 36px 0;
+    }
+}
+.logo {
+    height: 145%;
+}
+@media (max-width: 768px) {
+    .logo {
+        width: 140%;
+        margin-left: -20%;
+    }
+}
+@media (max-width: 1023px) {
+    .logo {
+        height: 120%;
+        width: 100%;
+        margin-left: 0%;
     }
 }
