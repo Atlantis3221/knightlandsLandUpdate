@@ -33,32 +33,28 @@ const MainInfo = () => {
             <img
               srcSet="/main/sagittariusM.png 213w, /main/sagittarius.png 669w"
               sizes="(max-width: 768px) 213px, 669px"
-              src="/main/sagittarius.png" className="animate-levitate absolute" />
+              className="animate-levitate absolute" />
             <img
               srcSet="/main/sagittarius-backM.png 238w, /main/sagittarius-back.png 482w"
-              sizes="(max-width: 768px) 238px, 482px"
-              src="/main/sagittarius-back.png" />
+              sizes="(max-width: 768px) 238px, 482px" />
           </div>
           <div className="relative mt-16" style={{ zIndex: 2 }}>
             <img
               srcSet="/main/magmaM.png 424w, /main/magma.png 976w"
               sizes="(max-width: 768px) 424px, 976px"
-              src="/main/magma.png"
               className="animate-levitate3 absolute -top-16" />
             <img
               srcSet="/main/magma-backM.png 424w, /main/magma-back.png 859w"
-              sizes="(max-width: 768px) 424px, 859px"
-              src="/main/magma-back.png" />
+              sizes="(max-width: 768px) 424px, 859px" />
           </div>
           <div className="relative  mt-16 z-1 -top-10 -left-20">
             <img
               srcSet="/main/fatherM.png 180w, /main/father.png 435w"
               sizes="(max-width: 768px) 180px, 435px"
-              src="/main/father.png" className="animate-levitate2 absolute -top-24 left-4" style={{ maxHeight: 250 }} />
+              className="animate-levitate2 absolute -top-24 left-4" style={{ maxHeight: 250 }} />
             <img
               srcSet="/main/sagittarius-backM.png 238w, /main/sagittarius-back.png 482w"
-              sizes="(max-width: 768px) 238px, 482px"
-              src="/main/sagittarius-back.png" />
+              sizes="(max-width: 768px) 238px, 482px" />
           </div>
         </div>
       </div>
