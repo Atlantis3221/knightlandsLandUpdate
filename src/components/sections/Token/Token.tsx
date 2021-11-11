@@ -18,7 +18,7 @@ enum Section {
 const Token = () => {
   const isXl = useMatchMediaQuery(`(min-width: ${Breakpoints.xl}px)`)
 
-  const [sectionType, setSectionType] = useState(Section.FLESH);
+  const [sectionType, setSectionType] = useState(Section.KL);
 
   const changeSection = useCallback((section: Section) => {
     setSectionType(section);
@@ -26,8 +26,17 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center xl:pt-40 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
+      <div className="flex justify-center xl:pt-10 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
         <div className={styles.buttonContainer}>
+          <Button
+            onClick={() => changeSection(Section.KL)}
+            type={sectionType === Section.FLESH ? ButtonType.TERTIARY : ButtonType.PRIMARY}
+            className="flex items-center"
+            style={{ width: 'max-content' }}
+          >
+            <img src="/common/kl.png" className="mr-2.5" style={{ width: 32, height: 32 }} />
+            KL TOKEN
+          </Button>
           <Button
             onClick={() => changeSection(Section.FLESH)}
             type={sectionType === Section.KL ? ButtonType.TERTIARY : ButtonType.PRIMARY}
@@ -38,15 +47,7 @@ const Token = () => {
             FLESH TOKEN
           </Button>
 
-          <Button
-            onClick={() => changeSection(Section.KL)}
-            type={sectionType === Section.FLESH ? ButtonType.TERTIARY : ButtonType.PRIMARY}
-            className="flex items-center"
-            style={{ width: 'max-content' }}
-          >
-            <img src="/common/kl.png" className="mr-2.5" style={{ width: 32, height: 32 }} />
-            KL TOKEN
-          </Button>
+
         </div>
       </div>
     )
@@ -69,19 +70,19 @@ const Token = () => {
         <Container disableVerticalPadding={true}>
           {buttons}
           {section}
-          <Supported />
+          {/* <Supported /> */}
         </Container>
       </div>
     )
   }
   return (
-    <div data-aos="fade-up" className="justify-center items-center flex self-center py-36">
+    <div data-aos="fade-up" className="justify-center items-center flex self-center pt-20 xl:pb-36">
       <Container disableVerticalPadding={true}>
         <div className="flex flex-col">
           {buttons}
           {section}
         </div>
-        <Supported />
+        {/* <Supported /> */}
       </Container>
     </div>
   )
