@@ -13,15 +13,23 @@ import Layout from "components/Layout";
 import Team from "components/sections/Team/Team";
 import Partners from "components/sections/Partners/Partners";
 import Sequel from "components/sections/Sequel/Sequel";
+import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 
 export default function Home() {
   return (
     <Layout>
       <div className="w-full h-full">
         <Header />
+        <div className=" overflow-hidden">
+          <Container>
+            <MainInfo />
+          </Container>
+        </div>
 
-        <Container>
-          <MainInfo />
+        <Token />
+        <Sequel />
+        <Container disableVerticalPadding={true}>
+          <Prizes />
         </Container>
 
         <Army />
@@ -31,9 +39,7 @@ export default function Home() {
           <Activities />
         </Container>
 
-        <Sequel />
 
-        <Token />
 
         <Container disableVerticalPadding={true}>
           <Roadmap />
