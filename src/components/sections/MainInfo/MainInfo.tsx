@@ -1,9 +1,10 @@
 import React from "react";
-import PlayNow from "components/common/PlayNow";
 import Dot from "components/common/Dot/Dot";
 import { smoothAutoScroll } from "common/helpers/smoothAutoScroll";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Features from "components/sections/MainInfo/Features/Features";
+import FreeToPlay from "components/sections/MainInfo/FreeToPlay/FreeToPlay";
+import AngleButton from "components/svg/Main/angleButton";
 import Text from "components/common/Text/Text";
 import Button, { ButtonType } from "components/common/Button/Button";
 import { HeaderLink } from "common/constants/HeaderLinks";
@@ -11,10 +12,10 @@ import styles from "./styles.module.css";
 
 const MainInfo = () => {
   return (
-    <div className="flex flex-col items-center mb-36" id={HeaderLink.MAIN}>
+    <div className="flex flex-col items-center" id={HeaderLink.MAIN}>
       <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-52 items-center lg:flex-row w-full text-center md:items-start lg:items-center md:text-left overflow-x-hidden lg:overflow-x-visible">
         <div className={styles.text + " flex flex-col justify-center max-w-xl"}>
-          <Text className="mb-2" fontSize={18} lineHeight="24px" fontWeight="bold" letterSpacing="0.18em" color="#8A978C">IDLE ONLINE RPG</Text>
+          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Realtime online Action RPG</Text>
           <Text type="h1" className="mb-4">Win group raids, craft items and earn crypto</Text>
           <div className='flex flex-col md:flex-row'>
             <div
@@ -43,17 +44,25 @@ const MainInfo = () => {
         </div>
       </div>
       <div data-aos="fade-up" className="flex flex-col items-center lg:items-start w-full lg:-mt-12 xl:-mt-28 mb-16">
-        <div className="flex flex-row">
-          <PlayNow />
-          <Button type={ButtonType.SECONDARY} className="flex justify-center items-center ml-4" onClick={() => smoothAutoScroll(HeaderLink.GAMEPLAY)}>LEARN MORE</Button>
-        </div>
-        <div data-aos="fade-up" className="flex flex-row items-center mt-4">
-          <Dot color="#FFEB3D" />
-          <Text type="h5" color="#8A978C">No wallet needed</Text>
+        <div className="flex flex-col md:flex-row  -mt-2">
+          <a href="https://play.knightlands.com" className="relative ml-4 flex md:-ml-2" target="_blank">
+            <div style={{ height: "84px", width: "295px" }} className="relative">
+              <div className={styles.buttonText + " top-0 absolute w-full uppercase h-full flex items-center"}>
+                Release in December 2022
+              </div>
+              <AngleButton /></div>
+          </a>
+          <div className="flex flex-col">
+            <Button type={ButtonType.SECONDARY} className="flex justify-center uppercase items-center h-14 md:mt-4" onClick={() => smoothAutoScroll(HeaderLink.GAMEPLAY)}>Play now in knightlands: prologue</Button>
+            <div data-aos="fade-up" className="mx-auto flex flex-row items-center mt-4">
+              <Dot color="#FFEB3D" />
+              <Text type="h5" color="#8A978C">No wallet needed</Text>
+            </div>
+          </div>
         </div>
       </div>
+      <FreeToPlay />
       <Features />
-      <Prizes />
     </div>
   );
 }
