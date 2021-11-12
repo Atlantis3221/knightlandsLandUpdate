@@ -6,9 +6,9 @@ import CraftBoard from "components/sections/Craft/Board/CraftBoard";
 import Text from "components/common/Text/Text";
 
 const crafts = [
-  {src: '/craft/craft1.png', bigText: '300+ soldiers', smallText: 'to collect and combine'},
-  {src: '/craft/craft2.png', bigText: '500+ items', smallText: 'to gather and craft'},
-  {src: '/craft/craft3.png', bigText: '10 ways', smallText: 'of crafting items'},
+  { src: '/craft/craft1.png', bigText: '300+ soldiers', smallText: 'to collect and combine' },
+  { src: '/craft/craft2.png', bigText: '500+ items', smallText: 'to gather and craft' },
+  { src: '/craft/craft3.png', bigText: '10 ways', smallText: 'of crafting items' },
 ];
 
 const Craft = () => {
@@ -22,9 +22,13 @@ const Craft = () => {
       <div className="flex w-full flex-wrap pt-3 sm:pt-10 sm:flex-nowrap justify-around xl:pt-0 xl:-mt-16">
         {crafts.map((craft, i) => (
           <div key={i} className={`${styles.img} flex flex-col relative md:mx-1.5`}>
-            <img src={craft.src} />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={craft.src.slice(0, -4) + "M.png"} />
+              <source media="(min-width: 769px)" src={craft.src} />
+              <img src={craft.src} />
+            </picture>
             <div className="relative flex justify-center w-full -top-6 md:-top-8">
-              <CraftBoard bigText={craft.bigText} smallText={craft.smallText}/>
+              <CraftBoard bigText={craft.bigText} smallText={craft.smallText} />
             </div>
           </div>
         ))}

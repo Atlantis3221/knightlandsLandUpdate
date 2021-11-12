@@ -48,7 +48,7 @@ const MainInfo = () => {
               <img src="/main/magma.png"
                 className="animate-levitate3 absolute -top-16" />
             </picture>
-            <picture  >
+            <picture>
               <source media="(max-width: 768px)" srcSet="/main/magma-backM.png" />
               <source media="(min-width: 769px)" srcSet="/main/magma-back.png" />
               <img src="/main/magma-back.png" />
