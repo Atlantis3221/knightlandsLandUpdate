@@ -20,7 +20,7 @@ const KLToken = () => {
         <Text type="h2">KL TOKEN</Text>
         <Text type="h5" color="#8A978C" className="text-center max-w-lg mt-1">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
       </div>
-      <div className="flex justify-center items-center flex-col xl:flex-row">
+      <div className="flex justify-center items-center flex-col xl:flex-row-reverse">
         <div className="flex w-full relative justify-center mb-20">
           <img className={styles.coin} src="/common/coin.png" />
         </div>
