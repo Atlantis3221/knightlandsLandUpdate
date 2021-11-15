@@ -40,7 +40,7 @@ const Token = () => {
           <Button
             onClick={() => changeSection(Section.FLESH)}
             type={sectionType === Section.KL ? ButtonType.TERTIARY : ButtonType.PRIMARY}
-            className="flex mr-2 items-center"
+            className="flex ml-2 items-center"
             style={{ width: 'max-content' }}
           >
             <img src="/common/flesh.png" className="mr-2.5" style={{ width: 32, height: 32 }} />
