@@ -26,12 +26,12 @@
 }
 @media (min-width: 1024px) {
     .container {
-        padding: 120px 64px 36px 64px;
+        padding: 0px 64px 36px 64px;
     }
 }
 @media (min-width: 1280px) {
     .container {
-        padding: 120px 0 36px 0;
+        padding: 0px 0 36px 0;
     }
 }
 .logo {

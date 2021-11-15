@@ -28,7 +28,7 @@ const MainInfo = () => {
 
           </div>
         </div>
-        <div className={styles.image + " flex h-full relative justify-center self-center items-center lg:pt-20 xl:pt-32"}>
+        <div className={styles.image + " flex h-full relative justify-center self-center items-center lg:pt-20 xl:pt-32 pointer-events-none"}>
           <div className="relative mt-16 z-1 -top-12 -right-20">
             <picture  >
               <source media="(max-width: 768px)" srcSet="/main/sagittariusM.png" />
@@ -70,13 +70,13 @@ const MainInfo = () => {
       </div>
       <div data-aos="fade-up" className="flex flex-col items-center lg:items-start w-full lg:-mt-12 xl:-mt-28 mb-16">
         <div className="flex flex-col md:flex-row  -mt-2">
-          <a href="https://play.knightlands.com" className="relative ml-4 flex md:-ml-2" target="_blank">
+          <div className="relative ml-4 flex md:-ml-2">
             <div style={{ height: "84px", width: "295px" }} className="relative">
               <div className={styles.buttonText + " top-0 absolute w-full uppercase h-full flex items-center"}>
                 Release in December 2022
               </div>
               <AngleButton /></div>
-          </a>
+          </div>
           <div className="flex flex-col">
             <Button type={ButtonType.SECONDARY} className="flex justify-center uppercase items-center h-14 md:mt-4" onClick={() => smoothAutoScroll(HeaderLink.GAMEPLAY)}>Play now in knightlands: prologue</Button>
             <div data-aos="fade-up" className="mx-auto flex flex-row items-center mt-4">

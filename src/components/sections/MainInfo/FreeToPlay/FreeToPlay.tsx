@@ -16,7 +16,7 @@ const FreeToPlay = () => {
                     </Text>
                 </div>
             </div>
-            <div className="absolute z-20 right-0 hidden md:block -mt-4 xl:mt-0 -right-24 lg:-right-36 xl:-right-56 xl:-bottom-20 w-5/6 xl:w-full">
+            <div className="absolute z-20 right-0 hidden md:block -mt-4 xl:mt-0 -right-24 lg:-right-36 xl:-right-56 xl:-bottom-20 w-5/6 xl:w-full pointer-events-none">
                 <img className={styles.cardImage} src="/main/cards.png" />
             </div>
             <div className="w-full h-80 md:w-1/2 absolute top-0 md:h-full right-0">
