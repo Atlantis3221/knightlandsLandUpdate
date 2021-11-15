@@ -16,7 +16,7 @@ enum Section {
 }
 
 const Token = () => {
-  const isXl = useMatchMediaQuery(`(min-width: ${Breakpoints.xl}px)`)
+  const isXl = useMatchMediaQuery(`(min-width: ${Breakpoints.lg}px)`)
 
   const [sectionType, setSectionType] = useState(Section.KL);
 
