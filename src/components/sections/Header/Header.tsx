@@ -49,7 +49,10 @@ const Header = () => {
           </div>
           {HeaderLinks.map((item, i) => {
             if (!item.isVisible) return;
-            const isCurrentSection = currentSectionId === item.id;
+            let isCurrentSection = currentSectionId === item.id;
+            if (scrollY < 500) {
+              isCurrentSection = currentSectionId === "0";
+            }
             return (
               <div className="mr-5 hidden lg:flex cursor-pointer items-center text-center" key={i}>
                 {isCurrentSection && <Dot color="#A2921D" />}
