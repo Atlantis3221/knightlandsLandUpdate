@@ -78,7 +78,7 @@ const MainInfo = () => {
               <AngleButton /></div>
           </div>
           <div className="flex flex-col">
-            <Button type={ButtonType.SECONDARY} className="flex justify-center uppercase items-center h-14 md:mt-4" onClick={() => smoothAutoScroll(HeaderLink.GAMEPLAY)}>Play now in knightlands: prologue</Button>
+            <Button type={ButtonType.SECONDARY} className="flex justify-center uppercase items-center h-14 md:mt-4" onClick={() => smoothAutoScroll(HeaderLink.PROLOGUE)}>Play now in knightlands: prologue</Button>
             <div data-aos="fade-up" className="mx-auto flex flex-row items-center mt-4">
               <Dot color="#FFEB3D" />
               <Text type="h5" color="#8A978C">No wallet needed</Text>
