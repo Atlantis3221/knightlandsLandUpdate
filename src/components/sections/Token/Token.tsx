@@ -26,7 +26,7 @@ const Token = () => {
 
   const buttons = useMemo(() => {
     return (
-      <div className="flex justify-center xl:pt-10 relative col-start-1 col-span-full row-start-1" id={HeaderLink.PLAY_TO_EARN}>
+      <div className="flex justify-center xl:pt-10 relative col-start-1 col-span-full row-start-1">
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => changeSection(Section.KL)}

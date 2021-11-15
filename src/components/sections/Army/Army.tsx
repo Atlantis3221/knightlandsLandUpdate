@@ -25,7 +25,7 @@ const army: IArmy[] = [
 
 const Army = () => {
   return (
-    <div className="flex w-full flex-col justify-center items-center self-center mb-36 max-w-6xl mx-auto" data-aos="fade-up" id={HeaderLink.GAMEPLAY}>
+    <div className="flex w-full flex-col justify-center items-center self-center mb-36 max-w-6xl mx-auto pt-24" data-aos="fade-up" id={HeaderLink.GAMEPLAY}>
       <div className="flex flex-col text-center max-w-3xl mb-5 mx-2">
         <Text type="h2">Build your own Army and win raids</Text>
         <Text type="h4" color="#8A978C">

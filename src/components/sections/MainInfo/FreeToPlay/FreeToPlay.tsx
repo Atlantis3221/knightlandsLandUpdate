@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
 import Text from "components/common/Text/Text";
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 const FreeToPlay = () => {
     return (
-        <div data-aos="fade-up" data-aos-delay={500} className="w-full flex flex-col justify-center z-10 relative md:pb-24 pt-0 md:pt-20 lg:pt-36 pb-16">
+        <div data-aos="fade-up" id={HeaderLink.PLAY_TO_EARN} data-aos-delay={500} className="w-full flex flex-col justify-center z-10 relative md:pb-24 pt-0 md:pt-20 lg:pt-36 pb-16">
             <div className={styles.background + " w-full p-8 md:p-12 z-10 relative  flex items-center"}>
                 <div className=" w-full md:w-1/2 flex flex-col">
                     <div className={styles.cardImage2 + " mx-auto mb-4 block md:hidden z-20 relative"}>

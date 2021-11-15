@@ -71,7 +71,7 @@ const MainInfo = () => {
       <div data-aos="fade-up" className="flex flex-col items-center lg:items-start w-full lg:-mt-12 xl:-mt-28 mb-16">
         <div className="flex flex-col md:flex-row  -mt-2">
           <div className="relative ml-4 flex md:-ml-2">
-            <div style={{ height: "84px", width: "295px" }} className="relative">
+            <div style={{ height: "90px", width: "295px" }} className="relative">
               <div className={styles.buttonText + " top-0 absolute w-full uppercase h-full flex items-center"}>
                 Release in December 2022
               </div>
