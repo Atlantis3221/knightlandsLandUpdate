@@ -26,7 +26,7 @@ const Team = () => {
   return (
     <div data-aos="fade-up" className="flex flex-col justify-start w-full pb-36" id={HeaderLink.TEAM}>
       <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
-      <div className="flex justify-center sm:flex-wrap justify-center mx-auto flex-col items-center sm:flex-row">
+      <div className="flex sm:flex-wrap justify-center md:justify-around  xl:justify-center mx-auto flex-col w-full items-center sm:flex-row">
         {data.map((item, i) => (
           <div key={i} className="flex flex-col w-80 md:w-52 md:self-start items-center text-center mb-10 sm:mx-2">
             <div className="relative">
