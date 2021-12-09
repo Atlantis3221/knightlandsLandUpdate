@@ -20,6 +20,9 @@ module.exports = {
         mobile: "375px",
         "8xl": "1440px",
       },
+      width: {
+        "120p": "120%"
+      },
       zIndex: {
         1: '1'
       },
