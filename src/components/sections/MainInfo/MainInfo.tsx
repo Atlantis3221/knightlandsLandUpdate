@@ -13,10 +13,10 @@ import styles from "./styles.module.css";
 const MainInfo = () => {
   return (
     <div className="flex flex-col items-center" id={HeaderLink.MAIN}>
-      <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-52 items-center lg:flex-row w-full text-center md:items-start lg:items-center md:text-left overflow-x-hidden lg:overflow-x-visible">
+      <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-36 items-center lg:flex-row w-full text-center md:items-start lg:items-center md:text-left overflow-x-hidden lg:overflow-x-visible">
         <div className={styles.text + " flex flex-col justify-center max-w-xl"}>
-          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Realtime online Action RPG</Text>
-          <Text type="h1" className="mb-4">Win group raids, craft items and earn crypto</Text>
+          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text>
+          <Text type="h1" className="mb-4">Conquer lands, mine token and fight for resourses</Text>
           <div className='flex flex-col md:flex-row'>
             <div
               className='h-12 ml-auto mr-auto mb-2.5 md:mb-0 md:ml-0 md:mr-2.5'>
@@ -65,24 +65,6 @@ const MainInfo = () => {
               <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
               <img src="/main/sagittarius-back.png" />
             </picture>
-          </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" className="flex flex-col items-center lg:items-start w-full lg:-mt-12 xl:-mt-28 mb-16">
-        <div className="flex flex-col md:flex-row  -mt-2">
-          <div className="relative ml-4 flex md:-ml-2">
-            <div style={{ height: "90px", width: "295px" }} className="relative">
-              <div className={styles.buttonText + " top-0 absolute w-full uppercase h-full flex items-center"}>
-                Release in December 2022
-              </div>
-              <AngleButton /></div>
-          </div>
-          <div className="flex flex-col">
-            <Button type={ButtonType.SECONDARY} className="flex justify-center uppercase items-center h-14 md:mt-4" onClick={() => smoothAutoScroll(HeaderLink.PROLOGUE)}>Play now in knightlands: prologue</Button>
-            <div data-aos="fade-up" className="mx-auto flex flex-row items-center mt-4">
-              <Dot color="#FFEB3D" />
-              <Text type="h5" color="#8A978C">No wallet needed</Text>
-            </div>
           </div>
         </div>
       </div>

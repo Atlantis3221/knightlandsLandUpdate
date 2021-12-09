@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 import styles from "./styles.module.css";
-import PlayNow from "components/common/PlayNow";
 import { HeaderLink, HeaderLinks } from "common/constants/HeaderLinks";
 import UserMenu from "components/sections/Header/UserMenu/UserMenu";
 import { useMediaQuery } from "common/helpers/useMediaQuery";
@@ -45,7 +44,7 @@ const Header = () => {
       <div className="flex w-full justify-between max-w-6xl">
         <div className="flex items-center">
           <div className="w-28 md:w-30 mr-10 cursor-pointer" onClick={() => onClickToLink(HeaderLink.MAIN)}>
-            <img src="/common/logo.svg" className="mr-0" />
+            <img src="/common/klLogo.png" className="mr-0" />
           </div>
           {HeaderLinks.map((item, i) => {
             if (!item.isVisible) return;
@@ -67,7 +66,6 @@ const Header = () => {
           <div className="hidden md:flex mr-5">
             <ContactMenu />
           </div>
-          <PlayNow />
           <div className="flex cursor-pointer lg:hidden ml-7 w-5" onClick={openUserMenu}>
             <img src="/common/menu.svg" />
           </div>
