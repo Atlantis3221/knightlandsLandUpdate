@@ -44,7 +44,7 @@ const Header = () => {
       <div className="flex w-full justify-between max-w-6xl">
         <div className="flex items-center">
           <div className="w-28 md:w-30 mr-10 cursor-pointer" onClick={() => onClickToLink(HeaderLink.MAIN)}>
-            <img src="/common/logo.svg" className="mr-0" />
+            <img src="/common/klLogo.png" className="mr-0" />
           </div>
           {HeaderLinks.map((item, i) => {
             if (!item.isVisible) return;
