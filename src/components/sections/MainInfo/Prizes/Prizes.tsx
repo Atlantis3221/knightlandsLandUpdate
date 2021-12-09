@@ -24,7 +24,7 @@ const Prizes = () => {
             {/* <span className="ml-1.5" style={{color: '#FFEB3D'}}>
                 Read Terms
             </span> */}
-            <Timer />
+            {/* <Timer /> */}
           </Text>
         </div>
       </div>
