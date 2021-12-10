@@ -11,7 +11,7 @@ const Prizes = () => {
         <div className="col-span-2">
           <Text type="h2">Win NFT and Knightland tokens</Text>
         </div>
-        <div className="self-end row-span-3 md:self-center relative md:h-full">
+        <div className="row-span-3 self-center relative md:h-full">
           <div className="mx-2 xl:mx-0 xl:absolute xl:-top-12 flex justify-center">
             <picture>
               <source media="(min-width: 769px)" srcSet="/main/nft.png" />
