@@ -22,13 +22,13 @@ const FreeToPlay = () => {
             </div>
             <div className="w-full h-80 md:w-1/2 absolute top-0 md:h-full right-0">
                 <div className="relative w-full h-full">
-                    <img src="/sequel/coin1.png" className="absolute z-0 h-24 top-8 left-12 lg:h-36 md:-left-36 lg:top-16" />
-                    <img src="/sequel/coin4.png" className="absolute z-10 h-12 left-0 top-0 lg:h-16 md:-left-24 lg:-left-56 md:top-24" />
-                    <img src="/sequel/coin8.png" className="absolute z-0 h-24 -top-8 right-0 md:top-8 md:right-44" />
-                    <img src="/sequel/coin3.png" className="absolute z-10 h-12 lg:h-16 z-10 top-44 -left-6 lg:-left-28" />
-                    <img src="/sequel/coin5.png" className="absolute z-20 h-12 z-10 -bottom-6 left-0 md:bottom-24 lg:-left-44" />
-                    <img src="/sequel/coin6.png" className="absolute z-20 h-12 bottom-0 right-0 md:bottom-20 md:-right-8" />
-                    <img src="/sequel/coinGroup.png" className="absolute z-10 w-72 top-44 md:top-24 md:w-96 -right-64" />
+                    <img src="/sequel/coin1.png" className="absolute z-0 h-28 top-8 left-12 lg:h-44 md:-left-44 lg:top-4" />
+                    <img src="/sequel/coin4.png" className="absolute z-10 h-16 left-0 top-0 lg:h-24 md:-left-24 lg:-left-64 md:top-24" />
+                    <img src="/sequel/coin8.png" className="absolute z-0 h-36 top-0 right-0 md:top-0 md:right-36" />
+                    <img src="/sequel/coin3.png" className="absolute z-10 h-12 lg:h-24 z-10 top-44 left-0 md:-left-10 lg:-left-32" />
+                    <img src="/sequel/coin5.png" className="absolute z-20 h-16 z-10 -bottom-6 left-0 md:-left-24 md:bottom-24 lg:-left-44" />
+                    <img src="/sequel/coin6.png" className="absolute z-20 h-20 -bottom-12 right-0 md:bottom-16 md:-right-10" />
+                    <img src="/sequel/coinGroup.png" className="absolute z-10 w-44 -top-24 -right-24 md:top-0 md:w-72 md:-right-64" />
                 </div>
             </div>
         </div>
