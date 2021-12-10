@@ -12,12 +12,11 @@ const Prizes = () => {
           <Text type="h2">Win NFT and Knightland tokens</Text>
         </div>
         <div className="self-end row-span-3 md:self-center relative md:h-full">
-          <div className="lg:absolute lg:-top-12">
-            {/* <picture>
-              <source media="(max-width: 768px)" srcSet="/main/prizeM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/prize.png" />
-              <img src="/main/prize.png" className="" />
-            </picture> */}
+          <div className="mx-2 xl:mx-0 xl:absolute xl:-top-12 flex justify-center">
+            <picture>
+              <source media="(min-width: 769px)" srcSet="/main/nft.png" />
+              <img src="/main/nft.png" className="" />
+            </picture>
           </div>
         </div>
         <div className="col-span-2">
@@ -32,7 +31,7 @@ const Prizes = () => {
           <Text type="h2">Earn FLESH token</Text>
         </div>
         <div className="self-end row-span-3 md:self-center relative md:h-full">
-          <div className="lg:absolute lg:-top-12">
+          <div className="lg:absolute lg:-top-4 xl:-top-12">
             <picture>
               <source media="(max-width: 768px)" srcSet="/main/prizeM.png" />
               <source media="(min-width: 769px)" srcSet="/main/prize.png" />
