@@ -12,9 +12,9 @@ import styles from "./styles.module.css";
 
 const MainInfo = () => {
   return (
-    <div className="flex flex-col items-center" id={HeaderLink.MAIN}>
-      <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-36 items-center lg:flex-row w-full text-center md:items-start lg:items-center md:text-left overflow-x-hidden lg:overflow-x-visible">
-        <div className={styles.text + " flex flex-col justify-center max-w-xl"}>
+    <div className="flex flex-col items-center lg:pt-20 xl:pt-32 " id={HeaderLink.MAIN}>
+      <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-36 items-center lg:flex-row w-full text-center md:items-start  md:text-left overflow-x-hidden lg:overflow-x-visible">
+        <div className={styles.text + " flex flex-col justify-center max-w-xl lg:mt-8 xl:mt-16"}>
           <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text>
           <Text type="h1" className="mb-4">Conquer lands, mine token and fight for resourses</Text>
           <div className='flex flex-col md:flex-row'>
@@ -28,8 +28,8 @@ const MainInfo = () => {
 
           </div>
         </div>
-        <div className={styles.image + " flex h-full relative justify-center self-center items-center lg:pt-20 xl:pt-32 pointer-events-none"}>
-          <div className="relative mt-16 z-1 -top-12 -right-20">
+        <div className={styles.image + " flex h-full relative justify-center self-center items-center pointer-events-none"}>
+          {/* <div className="relative mt-16 z-1 -top-12 -right-20">
             <picture  >
               <source media="(max-width: 768px)" srcSet="/main/sagittariusM.png" />
               <source media="(min-width: 769px)" srcSet="/main/sagittarius.png" />
@@ -40,13 +40,13 @@ const MainInfo = () => {
               <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
               <img src="/main/sagittarius-back.png" />
             </picture>
-          </div>
-          <div className="relative mt-16" style={{ zIndex: 2 }}>
+          </div> */}
+          <div className="relative ml-12 mt-16" style={{ zIndex: 2 }}>
             <picture  >
               <source media="(max-width: 768px)" srcSet="/main/magmaM.png" />
               <source media="(min-width: 769px)" srcSet="/main/magma.png" />
               <img src="/main/magma.png"
-                className="animate-levitate3 absolute -top-16" />
+                className="animate-levitate3 absolute -top-8 sm:-top-16" />
             </picture>
             <picture>
               <source media="(max-width: 768px)" srcSet="/main/magma-backM.png" />
@@ -54,11 +54,11 @@ const MainInfo = () => {
               <img src="/main/magma-back.png" />
             </picture>
           </div>
-          <div className="relative  mt-16 z-1 -top-10 -left-20">
+          <div className="relative  mt-16 z-1 -top-10 -left-12 sm:-left-20">
             <picture  >
               <source media="(max-width: 768px)" srcSet="/main/fatherM.png" />
               <source media="(min-width: 769px)" srcSet="/main/father.png" />
-              <img src="/main/father.png" className="animate-levitate2 absolute -top-24 left-4" style={{ maxHeight: 250 }} />
+              <img src="/main/father.png" className="animate-levitate2 absolute -top-16 left-2 sm:-top-12 sm:left-12 lg:-top-20 lg:left-2 xl:-top-16 xl:left-6" style={{ maxHeight: 250 }} />
             </picture>
             <picture  >
               <source media="(max-width: 768px)" srcSet="/main/sagittarius-backM.png" />
