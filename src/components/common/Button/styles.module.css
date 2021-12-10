@@ -49,3 +49,9 @@
     background: #A2921D;
     color: #000000;
 }
+
+@media (max-width: 768px) {
+    .root {
+        padding: 10px;
+    }
+}
