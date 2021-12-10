@@ -20,6 +20,7 @@ const Features = () => {
       </div>
       <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
         <div className="absolute bottom-0 -right-4 sm:right-0 w-56 sm:w-2/5 lg:w-120p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative">
+          <img src="/main/economy.png" className="absolute z-20 bottom-0 lg:-bottom-4 mr-4 sm:mr-0 w-44 sm:w-auto h-auto sm:h-full lg:h-auto lg:w-48 xl:w-auto" />
           <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
         </div>
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
@@ -43,6 +44,7 @@ const Features = () => {
       </div>
       <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
         <div className="absolute bottom-0 -right-4 sm:right-0 w-56 sm:w-2/5 lg:w-120p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative">
+          <img src="/main/axe.png" className="absolute z-20 bottom-2 mr-10 sm:mr-0 lg:bottom-0 w-36 sm:w-auto h-auto sm:h-full lg:h-auto lg:w-36 xl:w-auto" />
           <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
         </div>
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
