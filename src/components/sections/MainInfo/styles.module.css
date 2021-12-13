@@ -4,12 +4,6 @@
 .image {
     width: 120%;
 }
-
-@media (min-width: 768px) {
-    .image {
-        width: 100%;
-    }
-}
 @media (min-width: 1024px) {
     .text {
         width: 45%

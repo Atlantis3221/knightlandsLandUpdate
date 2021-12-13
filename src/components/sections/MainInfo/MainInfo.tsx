@@ -28,42 +28,42 @@ const MainInfo = () => {
 
           </div>
         </div>
-        <div className={styles.image + " flex h-full relative justify-center self-center items-center pointer-events-none"}>
-          {/* <div className="relative mt-16 z-1 -top-12 -right-20">
+        <div className={styles.image + "px-28 md:px-0 flex mb-14 h-full relative justify-center self-center items-center pointer-events-none"}>
+          <div className="relative z-1 -mr-20 sm:-mr-28 -mt-12 md:-mt-24 flex justify-center">
             <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittariusM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius.png" />
-              <img src="/main/sagittarius.png" className="animate-levitate absolute" />
+              <source media="(max-width: 768px)" srcSet="/main/character2M.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character2.png" />
+              <img src="/main/character2.png" className="animate-levitate absolute mx-auto right-0 left-0 my-auto -top-2 bottom-0" />
             </picture>
             <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittarius-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
-              <img src="/main/sagittarius-back.png" />
-            </picture>
-          </div> */}
-          <div className="relative ml-12 mt-16" style={{ zIndex: 2 }}>
-            <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/magmaM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/magma.png" />
-              <img src="/main/magma.png"
-                className="animate-levitate3 absolute -top-8 sm:-top-16" />
-            </picture>
-            <picture>
-              <source media="(max-width: 768px)" srcSet="/main/magma-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/magma-back.png" />
-              <img src="/main/magma-back.png" />
+              <source media="(max-width: 768px)" srcSet="/main/secondaryBackM.png" />
+              <source media="(min-width: 769px)" srcSet="/main/secondaryBack.png" />
+              <img src="/main/secondaryBack.png" />
             </picture>
           </div>
-          <div className="relative  mt-16 z-1 -top-10 -left-12 sm:-left-20">
+          <div className="relative -mt-2 sm:-mt-14 flex justify-center" style={{ zIndex: 2 }}>
+            <picture >
+              <source media="(max-width: 768px)" srcSet="/main/character1M.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character1.png" />
+              <img src="/main/character1.png"
+                className="animate-levitate3 absolute mx-auto right-0 left-0 my-auto -top-2 sm:-top-4 bottom-0" />
+            </picture>
+            <picture>
+              <source media="(max-width: 768px)" srcSet="/main/primaryBackM.png" />
+              <source media="(min-width: 769px)" srcSet="/main/primaryBack.png" />
+              <img src="/main/primaryBack.png" />
+            </picture>
+          </div>
+          <div className="relative -ml-20 sm:-ml-28 z-1 -mt-12 md:-mt-24 flex justify-center">
             <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/fatherM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/father.png" />
-              <img src="/main/father.png" className="animate-levitate2 absolute -top-16 left-2 sm:-top-12 sm:left-12 lg:-top-20 lg:left-2 xl:-top-16 xl:left-6" style={{ maxHeight: 250 }} />
+              <source media="(max-width: 768px)" srcSet="/main/character3M.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character3.png" />
+              <img src="/main/character3.png" className="animate-levitate2 absolute mx-auto right-0 left-0 my-auto -top-6 sm:top-0 bottom-0" style={{ maxHeight: 250 }} />
             </picture>
             <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittarius-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
-              <img src="/main/sagittarius-back.png" />
+              <source media="(max-width: 768px)" srcSet="/main/secondaryBackM.png" />
+              <source media="(min-width: 769px)" srcSet="/main/secondaryBack.png" />
+              <img src="/main/secondaryBack.png" />
             </picture>
           </div>
         </div>
