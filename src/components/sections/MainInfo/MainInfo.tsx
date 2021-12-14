@@ -15,8 +15,8 @@ const MainInfo = () => {
     <div className="flex flex-col items-center lg:pt-20 xl:pt-32 " id={HeaderLink.MAIN}>
       <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-36 items-center lg:flex-row w-full text-center md:items-start  md:text-left overflow-x-hidden lg:overflow-x-visible">
         <div className={styles.text + " flex flex-col justify-center max-w-xl lg:mt-8 xl:mt-16"}>
-          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text>
-          <Text type="h1" className="mb-4">Conquer lands, mine token and fight for resourses</Text>
+          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world MMORPG</Text>
+          <Text type="h1" className="mb-4">Own land, explore, craft and earn crypto</Text>
           <div className='flex flex-col md:flex-row'>
             <div
               className='h-12 ml-auto mr-auto mb-2.5 md:mb-0 md:ml-0 md:mr-2.5'>
@@ -24,8 +24,9 @@ const MainInfo = () => {
                 style={{ maxWidth: '3.2rem' }}
                 src='/main/terra.png' />
             </div>
-            <Text type="h4" className="">Online browser role-playing game on Terra Blockchain</Text>
-
+            <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
+              <Text type="h4" className="">The Worlds First MMORPG on Terra</Text>
+            </div>
           </div>
         </div>
         <div className={styles.image + " flex h-full relative justify-center self-center items-center pointer-events-none"}>

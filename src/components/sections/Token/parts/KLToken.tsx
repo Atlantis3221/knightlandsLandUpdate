@@ -3,7 +3,7 @@ import Text from "components/common/Text/Text";
 import styles from "./styles.module.css";
 
 const data = [
-  { title: 'Game rewards', percent: 29, width: 100 },
+  { title: 'Mining', percent: 29, width: 100 },
   { title: 'Team', percent: 20, width: 90 },
   { title: 'Private round', percent: 16, width: 57 },
   { title: 'Private Liquidity, MM, and LP Incentives', percent: 15, width: 55 },
@@ -18,7 +18,7 @@ const KLToken = () => {
     <div className="">
       <div className="flex flex-col mb-8 col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
         <Text type="h2">KL TOKEN</Text>
-        <Text type="h5" color="#8A978C" className="text-center max-w-lg mt-1">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
+        {/* <Text type="h5" color="#8A978C" className="text-center max-w-lg mt-1">Fixed supply token</Text> */}
       </div>
       <div className="flex justify-center items-center flex-col lg:flex-row-reverse">
         <div className="flex w-full relative justify-center mb-20">

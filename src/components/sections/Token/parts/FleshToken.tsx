@@ -27,7 +27,7 @@ const FleshToken = () => {
     return (
       <div className="flex flex-col mb-8 xl:mb-0 col-start-5 row-start-1 col-span-4 self-center justify-center items-center">
         <Text type="h2">FLESH TOKEN</Text>
-        <Text type="h5" color="#8A978C">FLESH is a play-to-earn inflationary token</Text>
+        {/* <Text type="h5" color="#8A978C">FLESH is a play-to-earn inflationary token</Text> */}
       </div>
     )
   }, []);
