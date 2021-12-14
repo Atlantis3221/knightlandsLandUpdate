@@ -24,8 +24,11 @@ const MainInfo = () => {
                 style={{ maxWidth: '3.2rem' }}
                 src='/main/terra.png' />
             </div>
-            <Text type="h4" className="text-center px-4 sm:px-0">Open world PVP browser role-playing game on Terra Blockchain</Text>
+            <Text type="h4" className="text-center px-4 sm:px-0">The Worlds First MMORPG on Terra</Text>
 
+            {/* <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
+              <Text type="h4" className="">The Worlds First MMORPG on Terra</Text>
+            </div> */}
           </div>
         </div>
         <div className={styles.image + " w-full h-full px-0 md:px-10 lg:px-4 mb-6 h-full flex justify-center relative pointer-events-none flex-col"}>

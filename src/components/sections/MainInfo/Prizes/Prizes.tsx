@@ -9,7 +9,7 @@ const Prizes = () => {
     <div data-aos="fade-up" className="flex mx-auto flex-col lg:flex-row w-full xl:max-w-screen-xxl mt-12 z-40">
       <div className={styles.usdc + " grid grid-cols-3 lg:w-1/2 lg:mr-5 mb-8"}>
         <div className="col-span-2">
-          <Text type="h2">Win NFT and Knightland tokens</Text>
+          <Text type="h2">Win NFTs and earn tokens</Text>
         </div>
         <div className="row-span-3 self-center relative md:h-full">
           <div className="mx-2 xl:mx-0 xl:absolute xl:-top-12 flex justify-center">
@@ -21,7 +21,7 @@ const Prizes = () => {
         </div>
         <div className="col-span-2">
           <Text type="h5" color="#8A978C" maxWidth={332}>
-            text
+            Earn tokens in raids, and NFTs in frequent themed events
           </Text>
         </div>
       </div>
