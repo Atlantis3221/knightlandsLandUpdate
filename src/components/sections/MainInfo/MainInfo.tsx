@@ -63,7 +63,9 @@ const MainInfo = () => {
         </div>
       </div>
       <FreeToPlay />
-      <Features />
+      <div className="grid w-full">
+        <Features />
+      </div>
     </div>
   );
 }
