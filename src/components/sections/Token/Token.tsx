@@ -64,7 +64,7 @@ const Token = () => {
   if (isXl) {
     return (
       <div data-aos="fade-up" className="justify-center relative items-center self-center">
-        <div className="overflow-hidden absolute">
+        <div className="overflow-hidden absolute left-0 right-0">
           <TokenBackground />
         </div>
         <Container disableVerticalPadding={true}>
