@@ -45,7 +45,7 @@ const MainInfo = () => {
                   className="animate-levitate3 mx-auto right-0 left-0 my-auto -top-2 sm:-top-4 bottom-0" />
               </picture>
             </div>
-            <div className="relative -ml-20 sm:-ml-28 z-1 -mt-12 md:-mt-24 flex justify-center">
+            <div className="relative -ml-20 sm:-ml-28 z-1 -mt-10 md:-mt-20 flex justify-center">
               <picture  >
                 <source media="(max-width: 768px)" srcSet="/main/character3.png" />
                 <source media="(min-width: 769px)" srcSet="/main/character3.png" />
