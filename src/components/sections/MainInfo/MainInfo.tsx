@@ -13,60 +13,48 @@ import styles from "./styles.module.css";
 const MainInfo = () => {
   return (
     <div className="flex flex-col items-center lg:pt-20 xl:pt-32 " id={HeaderLink.MAIN}>
-      <div data-aos="fade-up" className="flex flex-col lg:-mt-24 xl:-mt-36 items-center lg:flex-row w-full text-center md:items-start  md:text-left overflow-x-hidden lg:overflow-x-visible">
-        <div className={styles.text + " flex flex-col justify-center max-w-xl lg:mt-8 xl:mt-16"}>
-          <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world MMORPG</Text>
-          <Text type="h1" className="mb-4">Own land, explore, craft and earn crypto</Text>
-          <div className='flex flex-col md:flex-row'>
+      <div data-aos="fade-up" className={styles.screen + " flex flex-col lg:-mt-24 xl:-mt-36 items-center w-full text-center md:items-start  md:text-left overflow-x-hidden md:overflow-x-visible relative"}>
+        <div className={styles.text + " mb-6 sm:mb-20 flex flex-col justify-center z-20 right-0 left-0 mx-auto"}>
+          {/* <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text> */}
+          <Text type="h1" className="mb-4 text-center">Conquer lands, mine token and fight for resourses</Text>
+          <div className='flex flex-col md:flex-row max-w-md mx-auto'>
             <div
               className='h-12 ml-auto mr-auto mb-2.5 md:mb-0 md:ml-0 md:mr-2.5'>
               <img
                 style={{ maxWidth: '3.2rem' }}
                 src='/main/terra.png' />
             </div>
-            <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
+            <Text type="h4" className="text-center px-4 sm:px-0">The Worlds First MMORPG on Terra</Text>
+
+            {/* <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
               <Text type="h4" className="">The Worlds First MMORPG on Terra</Text>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className={styles.image + " flex h-full relative justify-center self-center items-center pointer-events-none"}>
-          {/* <div className="relative mt-16 z-1 -top-12 -right-20">
+        <div className={styles.image + " w-full h-full px-0 md:px-10 xl:px-4 flex mb-6 h-full relative justify-center self-center items-center pointer-events-none"}>
+          <div className="relative z-1 -mr-20 sm:-mr-36 -mt-4 md:-mt-16 flex justify-center">
             <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittariusM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius.png" />
-              <img src="/main/sagittarius.png" className="animate-levitate absolute" />
-            </picture>
-            <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittarius-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
-              <img src="/main/sagittarius-back.png" />
-            </picture>
-          </div> */}
-          <div className="relative ml-12 mt-16" style={{ zIndex: 2 }}>
-            <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/magmaM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/magma.png" />
-              <img src="/main/magma.png"
-                className="animate-levitate3 absolute -top-8 sm:-top-16" />
-            </picture>
-            <picture>
-              <source media="(max-width: 768px)" srcSet="/main/magma-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/magma-back.png" />
-              <img src="/main/magma-back.png" />
+              <source media="(max-width: 768px)" srcSet="/main/character2.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character2.png" />
+              <img src="/main/character2.png" className="animate-levitate mx-auto right-0 left-0 my-auto -top-2 bottom-0" />
             </picture>
           </div>
-          <div className="relative  mt-16 z-1 -top-10 -left-12 sm:-left-20">
-            <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/fatherM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/father.png" />
-              <img src="/main/father.png" className="animate-levitate2 absolute -top-16 left-2 sm:-top-12 sm:left-12 lg:-top-20 lg:left-2 xl:-top-16 xl:left-6" style={{ maxHeight: 250 }} />
-            </picture>
-            <picture  >
-              <source media="(max-width: 768px)" srcSet="/main/sagittarius-backM.png" />
-              <source media="(min-width: 769px)" srcSet="/main/sagittarius-back.png" />
-              <img src="/main/sagittarius-back.png" />
+          <div className="relative -mt-2 sm:-mt-20 flex justify-center" style={{ zIndex: 2 }}>
+            <picture >
+              <source media="(max-width: 768px)" srcSet="/main/character1.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character1.png" />
+              <img src="/main/character1.png"
+                className="animate-levitate3 mx-auto right-0 left-0 my-auto -top-2 sm:-top-4 bottom-0" />
             </picture>
           </div>
+          <div className="relative -ml-20 sm:-ml-28 z-1 -mt-12 md:-mt-24 flex justify-center">
+            <picture  >
+              <source media="(max-width: 768px)" srcSet="/main/character3.png" />
+              <source media="(min-width: 769px)" srcSet="/main/character3.png" />
+              <img src="/main/character3.png" className="animate-levitate2 mx-auto right-0 left-0 my-auto -top-6 sm:top-0 bottom-0" />
+            </picture>
+          </div>
+          <img src="/main/shadow.png" className={styles.shadow + " w-full absolute"} />
         </div>
       </div>
       <FreeToPlay />

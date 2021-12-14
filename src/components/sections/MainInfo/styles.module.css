@@ -1,21 +1,38 @@
 .text {
     width: 100%
 }
-.image {
-    width: 120%;
+.image{
+    top:0;
 }
-
-@media (min-width: 768px) {
-    .image {
-        width: 100%;
-    }
+.shadow{
+    bottom: 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .text {
-        width: 45%
-    }
-    .image {
         width: 65%;
+        position:absolute;
+        margin-bottom: 0;
+        bottom: 27%;
+    }
+    .screen{
+        height: 100vh;
+        margin-bottom: -8rem;
+    }
+    .image{
+        top:-6.5rem;
+    }
+    .shadow{
+        bottom: 15%;
+    }
+}
+@media (min-width: 1440px) {
+    .shadow{
+        bottom: 18%;
+    }
+}
+@media (min-width: 1580px) {
+    .shadow{
+        bottom: 22%;
     }
 }
 .buttonText {
