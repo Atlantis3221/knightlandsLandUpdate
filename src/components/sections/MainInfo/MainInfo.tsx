@@ -17,7 +17,7 @@ const MainInfo = () => {
         <div className={styles.text + " mb-6 sm:mb-20 flex flex-col justify-center z-20 right-0 left-0 mx-auto"}>
           {/* <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text> */}
           <Text type="h1" className="mb-4 text-center">Conquer lands, mine token and fight for resourses</Text>
-          <div className='flex flex-col md:flex-row max-w-md mx-auto'>
+          <div className='flex flex-col md:flex-row max-w-md mx-auto items-center'>
             <div
               className='h-12 ml-auto mr-auto mb-2.5 md:mb-0 md:ml-0 md:mr-2.5'>
               <img
