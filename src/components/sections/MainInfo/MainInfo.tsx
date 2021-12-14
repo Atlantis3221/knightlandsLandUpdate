@@ -29,7 +29,7 @@ const MainInfo = () => {
           </div>
         </div>
         <div className={styles.image + " w-full h-full px-0 md:px-10 lg:px-4 mb-6 h-full flex justify-center relative pointer-events-none flex-col"}>
-          <div className="flex relative justify-center self-center items-center h-auto w-full mt-0 ">
+          <div className={styles.imageContainer + " flex relative justify-center self-center items-center h-auto mt-0 "}>
             <div className="relative z-1 -mr-20  sm:-mr-24 md:-mr-36 -mt-4 sm:-mt-10 md:-mt-16 flex justify-center">
               <picture  >
                 <source media="(max-width: 768px)" srcSet="/main/character2M.png" />

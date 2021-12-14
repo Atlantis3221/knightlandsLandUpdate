@@ -7,12 +7,18 @@
 .shadow{
     bottom:0%;
 }
+.imageContainer{
+    width: 100%;
+}
 @media (min-width: 1025px) {
     .text {
         width: 70%;
         position:absolute;
         margin-bottom: 0;
         bottom: 27%;
+    }
+    .imageContainer{
+        width: 73%;
     }
     .screen{
         height: 100vh;
@@ -39,6 +45,16 @@
     }
     .text {
         bottom: 23%;
+    }
+}
+@media (min-width: 1280px) {
+    .imageContainer{
+        width: 80%;
+    }
+}
+@media (min-width: 1440px) {
+    .imageContainer{
+        width: 90%;
     }
 }
 .buttonText {
