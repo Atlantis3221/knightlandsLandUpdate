@@ -12,6 +12,14 @@ body,
   color: #FFF;
   font-family: "Poppins";
   font-style: normal;
+  font-size: 16px;
+}
+@media (min-width: 1921px) {
+  html,
+  body,
+  #__next {
+    font-size: 20px;
+  }
 }
 
 a {

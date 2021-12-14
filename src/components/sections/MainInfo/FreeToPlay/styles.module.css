@@ -5,6 +5,7 @@
 }
 .cardImage {
     max-height: 830px;
+    margin:auto;
 }
 .cardImage2 {
     width: 150%;

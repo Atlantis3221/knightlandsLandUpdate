@@ -46,6 +46,7 @@ module.exports = {
     screens: {
       ...defaultTheme.screens,
       xxl: "1440px",
+      huge: "1921px",
     },
   },
   variants: {

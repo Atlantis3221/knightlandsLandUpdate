@@ -57,6 +57,17 @@
         width: 90%;
     }
 }
+@media (min-width: 1620px) {
+    .imageContainer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1921px){
+    .text {
+        bottom: 23%;
+    }
+}
 .buttonText {
     padding-left: 33px;
     border-radius: 40px;
