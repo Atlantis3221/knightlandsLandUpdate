@@ -58,7 +58,7 @@ const MainInfo = () => {
                 <img src="/main/character3.png" className="animate-levitate2 mx-auto right-0 left-0 my-auto -top-6 sm:top-0 bottom-0" />
               </picture>
             </div>
-            <img src="/main/shadowM.png" className={" w-full absolute -bottom-4"} />
+            <img src="/main/shadowM.png" className={" w-full absolute bottom-0 sm:-bottom-4"} />
           </div>
         </div>
       </div>

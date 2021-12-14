@@ -12,7 +12,7 @@ const Prizes = () => {
           <Text type="h2">Win NFTs and earn tokens</Text>
         </div>
         <div className="row-span-3 self-center relative md:h-full">
-          <div className="mx-2 xl:mx-0 xl:absolute xl:-top-12 flex justify-center">
+          <div className="mx-2 xl:mx-0 right-0 left-0 xl:absolute xl:-top-12 huge:-top-10 flex justify-center">
             <picture>
               <source media="(min-width: 769px)" srcSet="/main/nft.png" />
               <img src="/main/nft.png" className="" />
