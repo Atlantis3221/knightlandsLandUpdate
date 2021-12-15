@@ -73,22 +73,6 @@
 }
 @media (min-width: 1280px) and (min-height: 900px) {
     .imageContainer{
-        width: 85%;
-    }
-    .textShadow{
-        width: 85%;
-    }
-}
-@media (min-width: 1440px) and (min-height: 900px) {
-    .imageContainer{
-        width: 90%;
-    }
-    .textShadow{
-        width: 90%;
-    }
-}
-@media (min-width: 1620px) and (min-height: 900px) {
-    .imageContainer{
         width: 100%;
     }
     .textShadow{
