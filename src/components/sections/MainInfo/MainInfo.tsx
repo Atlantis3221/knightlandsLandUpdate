@@ -31,9 +31,9 @@ const MainInfo = () => {
             </div>
           </div>
         </div>
-        <div className={styles.image + " w-full h-full px-0 md:px-10 lg:px-4 mb-6 h-full flex justify-end relative pointer-events-none flex-col"}>
+        <div className={styles.image + " w-full h-full px-0 md:px-6 lg:px-4 mb-6 h-full flex justify-end relative pointer-events-none flex-col"}>
           <div className={styles.imageContainer + " flex relative justify-center self-center items-center h-auto mt-0"}>
-            <div className="relative z-10 -mr-20  sm:-mr-24 md:-mr-36 -mt-4 sm:-mt-10 md:-mt-4 flex justify-center">
+            <div className="relative z-10 -mr-20  sm:-mr-24 md:-mr-36 -mt-4 sm:-mt-14 md:-mt-8 lg:-mt-4 flex justify-center">
               <picture  >
                 <source media="(max-width: 768px)" srcSet="/main/character2M.png" />
                 <source media="(max-width: 1921px)" srcSet="/main/character2.png" />
