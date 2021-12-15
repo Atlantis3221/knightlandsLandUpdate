@@ -14,7 +14,7 @@ const MainInfo = () => {
   return (
     <div className="flex flex-col items-center lg:pt-20 xl:pt-32 " id={HeaderLink.MAIN}>
       <div data-aos="fade-up" className={styles.screen + " flex flex-col lg:-mt-24 xl:-mt-36 items-center w-full text-center md:items-start  md:text-left overflow-x-hidden md:overflow-x-visible relative"}>
-        <div className={styles.text + " mb-6 sm:mb-20 flex flex-col justify-center right-0 left-0 mx-auto relative"}>
+        <div className={styles.text + " mb-6 sm:mb-20 flex xl:px-4 flex-col justify-center right-0 left-0 mx-auto relative"}>
           <img src="/main/shadowT.png" className={styles.textShadow + " z-0 hidden lg:block absolute -top-16 right-0 left-0 mx-auto"} />
           <Text type="h1" className="text-center z-30">Own Land, Craft Weapons,</Text>
           <Text type="h1" className="mb-4 text-center z-30">Earn Crypto</Text>
@@ -31,7 +31,7 @@ const MainInfo = () => {
             </div>
           </div>
         </div>
-        <div className={styles.image + " w-full h-full px-0 md:px-6 lg:px-4 mb-6 h-full flex justify-end relative pointer-events-none flex-col"}>
+        <div className={styles.image + " w-full h-full px-0 md:px-6 lg:px-0 xl:px-4 mb-6 h-full flex justify-end relative pointer-events-none flex-col"}>
           <div className={styles.imageContainer + " flex relative justify-center self-center items-center h-auto mt-0"}>
             <div className="relative z-10 -mr-20  sm:-mr-24 md:-mr-36 -mt-4 sm:-mt-14 md:-mt-8 lg:-mt-4 flex justify-center">
               <picture  >

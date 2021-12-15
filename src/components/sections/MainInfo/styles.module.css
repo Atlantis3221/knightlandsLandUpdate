@@ -21,7 +21,7 @@
         bottom: 27%;
     }
     .imageContainer{
-        width: 83%;
+        width: 93%;
         bottom: 24%;
     }
     .screen{
@@ -36,7 +36,7 @@
     }
     .textShadow{
         display: block;
-        width: 83%;
+        width: 93%;
     }
 }
 @media (max-height: 860px) and (min-width: 1025px){
@@ -52,10 +52,10 @@
         bottom: 23%;
     }
     .imageContainer{
-        width: 75%;
+        width: 85%;
     }
     .textShadow{
-        width: 75%;
+        width: 85%;
         margin-top: -1rem;
     }
 }
@@ -64,10 +64,10 @@
         bottom: 23%;
     }
     .imageContainer{
-        width: 67%;
+        width: 75%;
     }
     .textShadow{
-        width: 67%;
+        width: 75%;
         margin-top: -0.75rem;
     }
 }
