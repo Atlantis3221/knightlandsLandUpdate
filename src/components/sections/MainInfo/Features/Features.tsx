@@ -14,7 +14,7 @@ const Features = () => {
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
           <Text type="h3" className='text-left mb-2'>Vast open world, owned by players</Text>
           <Text type="h5" color="#8A978C" className='text-left'>
-            text
+             Buy and sell land with real value on the blockchain
           </Text>
         </div>
       </div>
@@ -26,7 +26,7 @@ const Features = () => {
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
           <Text type="h3" className='text-left mb-2'>Player-driven economy</Text>
           <Text type="h5" color="#8A978C" className='text-left'>
-            text
+          Sustainable and fluid economic trading between players
           </Text>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Features = () => {
         <div className="w-full h-72 sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
           <Text type="h3" className='text-left mb-2'>Real-time, skill-based gameplay</Text>
           <Text type="h5" color="#8A978C" className='text-left'>
-            text
+          Team up to fight monsters or hunt other players for resources
           </Text>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Features = () => {
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
           <Text type="h3" className='text-left mb-2'>Earn tokens and NFTs for free</Text>
           <Text type="h5" color="#8A978C" className='text-left'>
-            text
+          Get tokens for owning land, beating bosses and collecting items
           </Text>
         </div>
       </div>

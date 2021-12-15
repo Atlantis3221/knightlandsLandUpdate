@@ -41,7 +41,7 @@ const Prizes = () => {
         </div>
         <div className="col-span-2">
           <Text type="h5" color="#8A978C" maxWidth={332}>
-            Daily prize for participate in Raids, even for free-to-pay users
+            Daily prizes for participating in raids, even for free-to-play users
           </Text>
         </div>
       </div>

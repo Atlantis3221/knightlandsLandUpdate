@@ -12,11 +12,11 @@ const Layout = ({children}: React.PropsWithChildren<any>) => {
           rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Play:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
         {/*<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />*/}
-        <meta property="og:title" content="Win group raids, craft items and earn crypto" />
-        <meta name="description" content="Online browser role-playing game with integrated blockchain technology" />
-        <meta property="og:description" content="Online browser role-playing game with integrated blockchain technology" />
-        <meta name="og:keywords" content="Crypto, online browser role-playing game, integrated blockchain technology"/>
-        <meta name="og:image" content="https://knightland.vercel.app/meta.png" />
+        <meta property="og:title" content="Own Land,Craft Weapons, Earn Crypto" />
+        <meta name="description" content="Get Ready For The Worlds First MMORPG On Terra" />
+        <meta property="og:description" content="Get Ready For The Worlds First MMORPG On Terra" />
+        <meta name="og:keywords" content="Crypto, MMORPG, Terra, NFT, Token"/>
+        <meta name="og:image" content="/meta.png" />
         <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"/>
         {/*<script src="https://unpkg.com/aos@next/dist/aos.js"/>*/}
       </Head>

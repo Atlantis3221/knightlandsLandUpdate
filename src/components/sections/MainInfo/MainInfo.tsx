@@ -16,7 +16,8 @@ const MainInfo = () => {
       <div data-aos="fade-up" className={styles.screen + " flex flex-col lg:-mt-24 xl:-mt-36 items-center w-full text-center md:items-start  md:text-left overflow-x-hidden md:overflow-x-visible relative"}>
         <div className={styles.text + " mb-6 sm:mb-20 flex flex-col justify-center z-20 right-0 left-0 mx-auto"}>
           {/* <Text className="mb-2 uppercase mx-auto sm:mx-0" fontSize={18} lineHeight="24px" fontWeight="bold" maxWidth="90%" letterSpacing="0.18em" color="#8A978C">Open world PVP game</Text> */}
-          <Text type="h1" className="mb-4 text-center">Conquer lands, mine token and fight for resourses</Text>
+          <Text type="h1" className="mb-4 text-center">Own Land, Craft Weapons,</Text>
+          <Text type="h1" className="mb-4 text-center">Earn Crypto</Text>
           <div className='flex flex-col md:flex-row max-w-md mx-auto items-center'>
             <div
               className='h-12 ml-auto mr-auto mb-2.5 md:mb-0 md:ml-0 md:mr-2.5'>
@@ -24,11 +25,11 @@ const MainInfo = () => {
                 style={{ maxWidth: '3.2rem' }}
                 src='/main/terra.png' />
             </div>
-            <Text type="h4" className="text-center px-4 sm:px-0">The Worlds First MMORPG on Terra</Text>
+            {/* <Text type="h4" className="text-center">Get Ready For The Worlds First MMORPG On Terra</Text> */}
 
-            {/* <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
-              <Text type="h4" className="">The Worlds First MMORPG on Terra</Text>
-            </div> */}
+            <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
+              <Text type="h4" className="">Get Ready For The Worlds First MMORPG On Terra</Text>
+            </div>
           </div>
         </div>
         <div className={styles.image + " w-full h-full px-0 md:px-10 lg:px-4 mb-6 h-full flex justify-center relative pointer-events-none flex-col"}>

@@ -42,8 +42,8 @@ const UserMenu = (props: IProps) => {
           if(!item.isVisible) return;
           return (
             <div key={i} className="flex items-center p-3 cursor-pointer" onMouseEnter={() => enableHover(i)} onMouseLeave={disableHover}>
-              {currentHoverItem === i && <Dot color="#A2921D"/>}
-              <Text type="h5" color={currentHoverItem === i ? "#A2921D" : '#000'} onClick={() => onClickToLinkHandler(item.id)}>
+              {currentHoverItem === i && <Dot color="#6bd6e0"/>}
+              <Text type="h5" color={currentHoverItem === i ? "#6bd6e0" : '#000'} onClick={() => onClickToLinkHandler(item.id)}>
                 {item.title}
               </Text>
             </div>

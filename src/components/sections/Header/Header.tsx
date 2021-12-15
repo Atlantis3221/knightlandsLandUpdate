@@ -56,8 +56,8 @@ const Header = () => {
             }
             return (
               <div className="mr-5 hidden lg:flex cursor-pointer items-center text-center" key={i}>
-                {isCurrentSection && <Dot color="#A2921D" />}
-                <Text type="h5" isLink={true} color={isCurrentSection && '#A2921D'} onClick={() => onClickToLink(item.id)}>
+                {isCurrentSection && <Dot color="#6bd6e0" />}
+                <Text type="h5" isLink={true} color={isCurrentSection && '#6bd6e0'} onClick={() => onClickToLink(item.id)}>
                   {item.title}
                 </Text>
               </div>

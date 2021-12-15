@@ -38,8 +38,8 @@ module.exports = {
         }
       },
       animation: {
-        levitate: 'levitate 2s linear alternate infinite',
-        levitate2: 'levitate 1.6s linear alternate infinite',
+        levitate: 'levitate 3s linear alternate infinite',
+        levitate2: 'levitate 2.6s linear alternate infinite',
         levitate3: 'levitate 2.4s linear alternate infinite'
       }
     },

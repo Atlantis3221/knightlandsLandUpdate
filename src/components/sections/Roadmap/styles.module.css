@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(67.24% 67.24% at 50% 100%, rgba(112, 194, 253, 0.4) 0%, rgba(28, 91, 136, 0.4) 100%), #0E1634;
+    background: radial-gradient(67.24% 67.24% at 50% 100%, rgba(12,294,253,.4) 0%, rgba(86,115,176,.4) 100%), #0E1634;
     box-shadow: 0 4px 20px rgba(170, 224, 255, 0.37);
     border-radius: 50%;
 }

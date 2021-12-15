@@ -16,45 +16,45 @@ const road: {year: string, items: IRoad[]}[] = [
   {
     year: '2019',
     items: [
-      {step: 'Q2', description: 'Start of the Knightlands development.', isChecked: true},
-      {step: 'Q3', description: 'Early Knightlands concept.', isChecked: true},
-      {step: 'Q4', description: 'First raids implemented.', isChecked: true}
+      {step: 'Q2', description: 'Start of the Knights: Prologue development', isChecked: true},
+      {step: 'Q3', description: 'Early Knights: Prologue concept', isChecked: true},
+      {step: 'Q4', description: 'First raids implemented', isChecked: true}
     ]
   },
   {
     year: '2020',
     items: [
-      {step: 'Q1', description: 'More gameplay features.', isChecked: true},
-      {step: 'Q2', description: 'Upgrade art style.', isChecked: true},
-      {step: 'Q3', description: 'Adding more competitive gameplay.', isChecked: true},
-      {step: 'Q4', description: 'Redone game balance.', isChecked: true},
+      {step: 'Q1', description: 'More gameplay features', isChecked: true},
+      {step: 'Q2', description: 'Art improvements', isChecked: true},
+      {step: 'Q3', description: 'Adding competitive gameplay', isChecked: true},
+      {step: 'Q4', description: 'Redone game balance', isChecked: true},
     ]
   },
   {
     year: '2021',
     items: [
-      {step: 'Q1', description: 'Preparing to alpha test, improved blockchain interactions.', isChecked: true},
-      {step: 'Q2', description: 'Alpha public test, new art, polishing.', isChecked: true},
-      {step: 'Q3', description: 'Public Beta launch, preparation to IDO.', isChecked: true},
-      {step: 'Q4', description: 'IDO, Listings on DEX/CEX.'},
+      {step: 'Q1', description: 'Preparing to alpha test, improved blockchain interactions', isChecked: true},
+      {step: 'Q2', description: 'Alpha public test, new art, polishing', isChecked: true},
+      {step: 'Q3', description: 'Public launch', isChecked: true},
+      {step: 'Q4', description: 'Preproduction of Knight Lands started', isChecked: true},
     ]
   },
   {
     year: '2022',
     items: [
-      {step: 'Q1', description: 'New gameplay (cooperative and single), finish Beta, lock KL for in-game advantages. Job system.'},
-      {step: 'Q2', description: 'NFTs, pet system, use KL to breed and purchase pets, create NFTs.'},
-      {step: 'Q3', description: 'Auction house launch, KL is a currency of the market.'},
-      {step: 'Q4', description: 'PvP, more PvE content, vote with KL to decide PvP, PvE rules.'},
+      {step: 'Q1', description: 'IDO, DEX/CEX Listings'},
+      {step: 'Q2', description: 'Knights: Prologue NFT events'},
+      {step: 'Q3', description: 'Knights: Prologue extra content'},
+      {step: 'Q4', description: 'Land Sale in Knight Lands'},
     ]
   },
   {
     year: '2023',
     items: [
-      {step: 'Q1', description: 'Expand to Google play, and other platforms. Guilds - cooperate with other players.'},
-      {step: 'Q2', description: 'Guild wars. Compete with other guilds, and win huge prizes.'},
-      {step: 'Q3', description: 'Kingdom wars, phase 1. Initial world map, land sale. guilds able to capture territories.'},
-      {step: 'Q4', description: 'Kingdom wars, phase 2. Expand content of the map, captured territories can generate tokenized assets.'},
+      {step: 'Q1', description: 'Early Launch of Knight Lands'},
+      {step: 'Q2', description: 'Expansion of the Lands, New buildings'},
+      {step: 'Q3', description: 'Pets system, PvP arenas'},
+      {step: 'Q4', description: 'Guilds'},
     ]
   }
 ]

@@ -36,7 +36,7 @@ export default function Home() {
 
         <Container disableVerticalPadding={true}>
           <Craft />
-          <Activities />
+          {/* <Activities /> */}
         </Container>
 
 

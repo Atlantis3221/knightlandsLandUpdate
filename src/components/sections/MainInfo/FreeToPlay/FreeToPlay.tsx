@@ -13,7 +13,7 @@ const FreeToPlay = () => {
                     </div>
                     <Text type="h2" className=" text-center md:text-left">Free to play <br />and Play to earn</Text>
                     <Text type="h4" color="white" className="mt-5 text-center md:text-left">
-                        Knight Lands isn't only a fun<br className="hidden md:block" />  game — it lets you earn<br className="hidden md:block" />  crypto just by playing
+                        Knight Lands is perfect for casual,<br className="hidden md:block" /> competitive and business-minded gamers <br className="hidden md:block" />- everyone earns crypto just by playing
                     </Text>
                 </div>
             </div>
