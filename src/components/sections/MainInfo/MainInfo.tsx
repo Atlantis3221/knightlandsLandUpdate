@@ -41,13 +41,13 @@ const MainInfo = () => {
                 <img src="/main/character2.png" className="animate-levitate mx-auto right-0 left-0 my-auto -top-2 bottom-0" />
               </picture>
             </div>
-            <div className="relative z-20 -mt-2 sm:-mt-20 flex justify-center">
+            <div className="relative z-20 -mt-2 sm:-mt-20 sm:top-3 flex justify-center">
               <picture >
                 <source media="(max-width: 768px)" srcSet="/main/character1M.png" />
                 <source media="(max-width: 1921px)" srcSet="/main/character1.png" />
                 <source media="(min-width: 1921px)" srcSet="/main/character1B.png" />
                 <img src="/main/character1.png"
-                  className="animate-levitate3 mx-auto right-0 left-0 my-auto -top-2 sm:-top-4 bottom-0" />
+                  className="animate-levitate3 mx-auto right-0 left-0 my-auto -top-2 bottom-0" />
               </picture>
             </div>
             <div className="relative -ml-20 sm:-ml-24 md:-ml-28 z-10 -mt-10 sm:-mt-16 md:-mt-20 flex justify-center">
