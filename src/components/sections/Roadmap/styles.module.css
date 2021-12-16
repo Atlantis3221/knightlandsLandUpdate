@@ -7,16 +7,9 @@
 @media (min-width: 1024px) {
     .container {
         flex-flow: column wrap;
-        height: 820px;
+        height: 51rem;
     }
 }
-@media (min-width: 1921px) {
-    .container {
-        flex-flow: column wrap;
-        height: 1020px;
-    }
-}
-
 .checked {
     width: 31px;
     height: 31px;
