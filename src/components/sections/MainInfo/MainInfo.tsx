@@ -27,7 +27,7 @@ const MainInfo = () => {
                 src='/main/terra.png' />
             </div>
             <div className="flex flex-col col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
-              <Text type="h4" className="">Get Ready For The Worlds First <br />MMORPG On Terra</Text>
+              <Text type="h4" className="text-center">Get Ready For The Worlds First <br />MMORPG On Terra</Text>
             </div>
           </div>
         </div>
