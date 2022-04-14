@@ -14,6 +14,7 @@ import Team from "components/sections/Team/Team";
 import Partners from "components/sections/Partners/Partners";
 import Sequel from "components/sections/Sequel/Sequel";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
+import Classes from "components/sections/MainInfo/Classes/Classes";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
           <Container>
             <MainInfo />
           </Container>
+        </div>
+
+        <div className=" m-0">
+        <Classes />
         </div>
 
         <Token />
@@ -38,8 +43,6 @@ export default function Home() {
           <Craft />
           {/* <Activities /> */}
         </Container>
-
-
 
         <Container disableVerticalPadding={true}>
           <Roadmap />

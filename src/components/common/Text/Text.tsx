@@ -7,12 +7,13 @@ interface IProps {
   onClick?(): void;
   isLink?: boolean;
   isSpan?: boolean;
+  font?: "stoke";
 }
 
 const Text = (props: React.PropsWithChildren<IProps & React.CSSProperties>) => {
-  const {type, className, onClick, isLink, children, isSpan, ...rest} = props;
+  const {type, className, onClick, isLink, children, font, isSpan, ...rest} = props;
 
-  const classNames = (type ? styles[type] : '') + (className ? ` ${className}` : '');
+  const classNames = (type ? styles[type] : '') + (className ? ` ${className}` : '') + " " + (font ? styles[font] : '');
 
   if(isSpan) {
     return (

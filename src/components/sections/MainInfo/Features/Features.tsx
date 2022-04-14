@@ -5,57 +5,109 @@ import Text from "components/common/Text/Text";
 
 const Features = () => {
   return (
-    <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-4 w-full mb-8 gap-x-4 gap-y-8 w-full pt-10">
-      <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
-        <div className="absolute bottom-0 -right-4 sm:right-0 w-56 sm:w-2/5 lg:w-120p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative">
-          <img src="/main/map.png" className="absolute z-20 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
-          <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
+    <>
+    <Text type="h2" font="stoke" className="text-center">Game Features</Text>
+    <div
+      data-aos="fade-up"
+      className="grid grid-cols-1 w-full mb-8 gap-x-4 -gap-y-16 pt-10"
+    >
+      <div className="flex items-center justify-between -ml-16 -mb-16">
+        <div className="">
+          <img src="/main/feature1.png" className="max-w-none" />
         </div>
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
-          <Text type="h3" className='text-left mb-2'>Vast open world, owned by players</Text>
-          <Text type="h5" color="#8A978C" className='text-left'>
-             Buy and sell land with real value on the blockchain
+
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0">
+          <div className="flex items-center justify-center mb-3">
+            <div
+              className={styles.line + " mr-5"}
+              style={{ transform: "rotate(180deg)" }}
+            />
+            <div className={styles.line} />
+          </div>
+          <Text type="h4" className="text-center mb-2" font="stoke">
+            COMPETITIVE COMBAT
+          </Text>
+          <Text type="h5" color="#8A978C" className="text-center">
+            Players can use various types of dragons in battles <br /> and
+            complete the quests in story mode. By playing, players will be
+            rewarded with SB tokens and NFT
           </Text>
         </div>
       </div>
-      <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
-        <div className="absolute bottom-0 -right-4 sm:right-0 w-56 sm:w-2/5 lg:w-120p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative">
-          <img src="/main/economy.png" className="absolute z-20 bottom-0 lg:-bottom-4 mr-4 sm:mr-0 w-44 sm:w-auto h-auto sm:h-full lg:h-auto lg:w-48 xl:w-auto" />
-          <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
+
+      <div className="flex items-center justify-between -mr-16 -my-16">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
+          <div className="flex items-center justify-center mb-3">
+            <div
+              className={styles.line + " mr-5"}
+              style={{ transform: "rotate(180deg)" }}
+            />
+            <div className={styles.line} />
+          </div>
+          <Text type="h4" className="text-center mb-2" font="stoke">
+            PLAYER DRIVEN ECONOMY
+          </Text>
+          <Text type="h5" color="#8A978C" className="text-center">
+            Players can use various types of dragons in battles <br /> and
+            complete the quests in story mode. By playing, players will be
+            rewarded with SB tokens and NFT
+          </Text>
         </div>
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
-          <Text type="h3" className='text-left mb-2'>Player-driven economy</Text>
-          <Text type="h5" color="#8A978C" className='text-left'>
-          Sustainable and fluid economic trading between players
+
+        <div className="">
+          <img src="/main/feature2.png" className="max-w-none" />
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between -ml-16 -my-16">
+        <div className="">
+          <img src="/main/feature3.png" className="max-w-none" />
+        </div>
+
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0">
+          <div className="flex items-center justify-center mb-3">
+            <div
+              className={styles.line + " mr-5"}
+              style={{ transform: "rotate(180deg)" }}
+            />
+            <div className={styles.line} />
+          </div>
+          <Text type="h4" className="text-center mb-2" font="stoke">
+            OWN YOUR ASSETS
+          </Text>
+          <Text type="h5" color="#8A978C" className="text-center">
+            Players can use various types of dragons in battles <br /> and
+            complete the quests in story mode. By playing, players will be
+            rewarded with SB tokens and NFT
           </Text>
         </div>
       </div>
-      <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
-        <div className="flex absolute bottom-0 right-0 sm:right-0 w-56 sm:w-2/5 lg:w-110p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative ">
-          <img src="/main/battle.png" className="absolute z-20 bottom-0 lg:-bottom-2 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg::w-auto" />
-          <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
-        </div>
-        <div className="w-full h-72 sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
-          <Text type="h3" className='text-left mb-2'>Real-time, skill-based gameplay</Text>
-          <Text type="h5" color="#8A978C" className='text-left'>
-          Team up to fight monsters or hunt other players for resources
+      <div className="flex items-center justify-between -mr-16 -mt-16">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
+          <div className="flex items-center justify-center mb-3">
+            <div
+              className={styles.line + " mr-5"}
+              style={{ transform: "rotate(180deg)" }}
+            />
+            <div className={styles.line} />
+          </div>
+          <Text type="h4" className="text-center mb-2" font="stoke">
+              LAND MANAGEMENT
+          </Text>
+          <Text type="h5" color="#8A978C" className="text-center">
+            Players can use various types of dragons in battles <br /> and
+            complete the quests in story mode. By playing, players will be
+            rewarded with SB tokens and NFT
           </Text>
         </div>
-      </div>
-      <div className={styles.feature + " h-full pt-8 pb-8 lg:pt-0 flex flex-row-reverse lg:flex-col relative overflow-hidden lg:overflow-visible lg:items-center"}>
-        <div className="absolute bottom-0 -right-4 sm:right-0 w-56 sm:w-2/5 lg:w-120p my-auto lg:my-0 h-48 flex items-center justify-end lg:justify-center md:h-full lg:h-32 sm:relative">
-          <img src="/main/axe.png" className="absolute z-20 bottom-2 mr-10 sm:mr-0 lg:bottom-0 w-36 sm:w-auto h-auto sm:h-full lg:h-auto lg:w-36 xl:w-auto" />
-          <img src="/main/fog.png" className="absolute z-10 bottom-0 lg:-bottom-4 xl:-bottom-2 w-full sm:w-auto h-auto sm:h-full lg:h-auto lg:w-auto" />
-        </div>
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full pl-12 pr-12 sm:pr-0 lg:pl-8 lg:pr-8">
-          <Text type="h3" className='text-left mb-2'>Earn tokens and NFTs for free</Text>
-          <Text type="h5" color="#8A978C" className='text-left'>
-          Get tokens for owning land, beating bosses and collecting items
-          </Text>
+
+        <div className="">
+          <img src="/main/feature4.png" className="max-w-none" />
         </div>
       </div>
     </div>
-  )
-}
+    </>
+  );
+};
 
 export default Features;
