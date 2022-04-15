@@ -1,7 +1,7 @@
 html,
 body,
 #__next {
-  background: no-repeat url("../../public/common/background.png"), no-repeat url("../../public/common/background2.png") #0D1420;
+  background:#0D1420;
   background-size: 100% 100%;
   padding: 0;
   margin: 0;

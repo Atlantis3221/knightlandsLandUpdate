@@ -21,6 +21,12 @@ export default function Home() {
     <Layout>
       <div className="w-full h-full">
         <Header />
+        <div className="relative top-0 left-0">
+          <img src="/common/background.png" className="absolute z-1"/>
+        </div>
+        <div className="relative bottom-0 left-0">
+          <img src="/common/background2.png" className="absolute z-0"/>
+        </div>
         <div className=" overflow-hidden">
           <Container>
             <MainInfo />
