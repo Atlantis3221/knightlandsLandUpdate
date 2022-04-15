@@ -46,7 +46,8 @@ const Classes = () => {
 
           <Text type="h5" className="text-center opacity-60">
             Players can use variuos types of dragons in battles
-            <br /> and complete the quests in story mode
+            <br /> and complete the quests in story mode. By playing,
+            players will be rewarded with SB tokens and NFT
           </Text>
         </div>
 
@@ -63,8 +64,7 @@ const Classes = () => {
           </div>
 
           <Text type="h5" className="text-center opacity-60">
-            Players can use variuos types of dragons in battles
-            <br /> and complete the quests in story mode
+            Players can use variuos types of dragons
           </Text>
         </div>
       </div>
