@@ -1,23 +1,4 @@
 .background {
-    background: radial-gradient(50% 50% at 50.04% 0%, rgba(74, 111, 167, 0.2) 0%, rgba(13, 20, 32, 0.2) 100%), #0E1D36;
-    border-radius: 40px;
-    min-height: 303px;
-}
-.cardImage {
-    max-height: 830px;
-    margin:auto;
-}
-.cardImage2 {
-    width: 150%;
-    margin-left: -25%;
-    margin-bottom: -10%;
-    margin-top: -20%
-}
-@media (max-width: 700px) {
-    .cardImage2 {
-        width: 200%;
-        margin-left: -50%;
-        margin-bottom: -20%;
-        margin-top: -30%
-    }
+    height: 90vh;
+    padding: -7.5rem 8rem 0 8rem;
 }

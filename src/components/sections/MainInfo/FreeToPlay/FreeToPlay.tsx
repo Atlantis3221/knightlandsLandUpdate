@@ -9,9 +9,9 @@ const FreeToPlay = () => {
       data-aos="fade-up"
       id={HeaderLink.PLAY_TO_EARN}
       data-aos-delay={500}
-      className="w-full flex flex-col justify-center z-10 relative md:pb-24 pt-0 md:pt-20 lg:pt-36 pb-16"
+      className={styles.background + " w-full flex flex-col justify-end z-10 relative md:pb-24 pt-0 md:pt-20 lg:pt-36 pb-16 px-32"}
     >
-      <div className=" w-full md:w-1/2 flex flex-col">
+      <div className=" w-full md:w-1/2 flex flex-col ">
         <Text type="h2" className=" text-center md:text-left" font="stoke">
           Free to play — <br />
           play to earn

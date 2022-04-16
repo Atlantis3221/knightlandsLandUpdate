@@ -1,7 +1,7 @@
 .backgroundmain {
-    height: 120vh;
+    height: 100vh;
     background: url(../../../../public/common/background.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center top;
     z-index: 1;
     padding: 7.5rem 8rem 0 8rem;

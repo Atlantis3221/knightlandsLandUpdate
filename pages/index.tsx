@@ -17,6 +17,7 @@ import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Classes from "components/sections/MainInfo/Classes/Classes";
 import FreeToPlay from "components/sections/MainInfo/FreeToPlay/FreeToPlay";
 import NewMainInfo from "components/sections/NewMainInfo/FirstSection";
+import Features from "components/sections/MainInfo/Features/Features";
 
 
 export default function Home() {
@@ -34,12 +35,13 @@ export default function Home() {
           <MainInfo />
           </Container>
         </div> */}
+        <Container>
+          <Features />
+        </Container>
 
-        
-
-        {/* <div className=" m-0">
+        <div className=" m-0 px-16">
         <Classes />
-        </div> */}
+        </div>
 
         <Token />
         <Sequel />
