@@ -30,3 +30,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fixed_back{
+  height: 150vh;
+}

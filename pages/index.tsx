@@ -15,27 +15,31 @@ import Partners from "components/sections/Partners/Partners";
 import Sequel from "components/sections/Sequel/Sequel";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Classes from "components/sections/MainInfo/Classes/Classes";
+import FreeToPlay from "components/sections/MainInfo/FreeToPlay/FreeToPlay";
+import NewMainInfo from "components/sections/NewMainInfo/FirstSection";
+
 
 export default function Home() {
   return (
     <Layout>
       <div className="w-full h-full">
         <Header />
-        <div className="relative top-0 left-0">
-          <img src="/common/background.png" className="absolute z-1"/>
-        </div>
-        <div className="relative bottom-0 left-0">
-          <img src="/common/background2.png" className="absolute z-0"/>
-        </div>
-        <div className=" overflow-hidden">
-          <Container>
-            <MainInfo />
-          </Container>
-        </div>
+        <div className="overflow-hidden">
 
-        <div className=" m-0">
-        <Classes />
+          <NewMainInfo />
+
         </div>
+        {/* <div className=" overflow-hidden">
+          <Container>
+          <MainInfo />
+          </Container>
+        </div> */}
+
+        
+
+        {/* <div className=" m-0">
+        <Classes />
+        </div> */}
 
         <Token />
         <Sequel />

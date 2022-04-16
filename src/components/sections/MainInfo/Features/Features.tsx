@@ -11,7 +11,7 @@ const Features = () => {
       
       className="grid grid-cols-1 w-full mb-8 gap-x-4 -gap-y-16 pt-10"
     >
-      <div data-aos="fade-up" className="flex items-center justify-between -ml-16 -mb-16">
+      <div data-aos="fade-up" className="flex items-center justify-between lg:-ml-16 lg:-mb-16 lg:flex-row sm:flex-col-reverse sm:m-0">
         <div className="">
           <img src="/main/feature1.png" className="max-w-none" />
         </div>
@@ -35,7 +35,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className="flex items-center justify-between -mr-16 -my-16">
+      <div data-aos="fade-up" className="flex items-center justify-between lg:-mr-16 lg:-my-16 lg:flex-row sm:flex-col sm:m-0">
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
           <div className="flex items-center justify-center mb-3">
             <div
@@ -59,7 +59,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className="flex items-center justify-between -ml-16 -my-16">
+      <div data-aos="fade-up" className="flex items-center justify-between lg:-ml-16 lg:-my-16 lg:flex-row sm:flex-col-reverse sm:m-0">
         <div className="">
           <img src="/main/feature3.png" className="max-w-none" />
         </div>
@@ -82,7 +82,7 @@ const Features = () => {
           </Text>
         </div>
       </div>
-      <div data-aos="fade-up" className="flex items-center justify-between -mr-16 -mt-16">
+      <div data-aos="fade-up" className="flex items-center justify-between lg:-mr-16 lg:-mt-16 lg:flex-row sm:flex-col sm:m-0">
         <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
           <div className="flex items-center justify-center mb-3">
             <div
