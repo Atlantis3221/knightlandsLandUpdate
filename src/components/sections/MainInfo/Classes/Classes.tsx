@@ -12,9 +12,12 @@ const Classes = () => {
       <Text type="h1" font="stoke" className="">
         Player Classes
       </Text>
-      <img src="/common/classes.png" />
-      <div className="absolute bottom-52 flex justify-between">
+
+      {/* <img src="/common/class-frame.svg"> */}
+      
+      <div className={styles.ground + " bottom-52 flex justify-between"}>
         <div className="flex flex-col mr-4">
+          <img src="/common/archer.png" />
           <div className="flex items-center justify-center mb-2">
             <div
               className={styles.line + " mr-4"}
@@ -32,7 +35,8 @@ const Classes = () => {
           </Text>
         </div>
 
-        <div className="flex flex-col mr-4 justify-center">
+        <div className="flex flex-col mr-4">
+        <img src="/common/mage.png" />
           <div className="flex items-center justify-center mb-2">
             <div
               className={styles.line + " mr-4"}
@@ -52,6 +56,8 @@ const Classes = () => {
         </div>
 
         <div className="flex flex-col">
+        <img src="/common/fighter.png"/>
+        <div>
           <div className="flex items-center justify-center mb-2">
             <div
               className={styles.line + " mr-4"}
@@ -67,7 +73,9 @@ const Classes = () => {
             Players can use variuos types of dragons
           </Text>
         </div>
+        </div>
       </div>
+
     </div>
   );
 };

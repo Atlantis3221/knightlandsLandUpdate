@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./styles.module.css";
 import Timer from "components/common/Timer/Timer";
 import Text from "components/common/Text/Text";
+import { HeaderLink } from "common/constants/HeaderLinks";
 
 const Features = () => {
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" id={HeaderLink.FEATURES}>
     <Text type="h2" font="stoke" className="text-center">Game Features</Text>
     <div
       

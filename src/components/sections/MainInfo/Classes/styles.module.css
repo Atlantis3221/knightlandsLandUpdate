@@ -8,3 +8,9 @@
     background: -ms-linear-gradient(left, #35CFD5 0%, #0D1420 100%);
     background: linear-gradient(to right, #35CFD5 0%, #0D1420 100%);
 }
+
+.ground {
+    background: url(../../../../../public/common/class-frame.svg);
+    background-size: cover;
+    height: 100%;
+}

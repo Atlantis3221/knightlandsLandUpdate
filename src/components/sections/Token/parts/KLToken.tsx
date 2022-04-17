@@ -17,7 +17,7 @@ const KLToken = () => {
   return (
     <div className="">
       <div className="flex flex-col mb-8 col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
-        <Text type="h2">KL TOKEN</Text>
+        <Text type="h1" font="stoke">Knight Lands (KL)</Text>
         {/* <Text type="h5" color="#8A978C" className="text-center max-w-lg mt-1">Fixed supply token</Text> */}
       </div>
       <div className="flex justify-center items-center flex-col lg:flex-row-reverse">

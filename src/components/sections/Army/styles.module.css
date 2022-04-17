@@ -10,6 +10,25 @@
     text-transform: uppercase;
     color: #8A978C;
 }
+
+.monsterCard {
+    background:linear-gradient(180deg, rgba(34, 95, 104, 0.08) 0%, #05161C 98.83%);
+    border-radius: 20px;
+    height: 216px;
+    width: 184px;
+}
+
+.monsterCard:hover {
+    background: linear-gradient(180deg, #335256 0%, #062D38 98.83%);
+    transform: scale(1.2);
+    z-index: 30;
+}
+
+/* .img {
+    position: absolute;
+    size: 120%;
+} */
+
 @media (max-width: 767px){
     .img {
         min-width: 150px;

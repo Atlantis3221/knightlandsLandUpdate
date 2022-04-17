@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "components/sections/Header/Header";
-import MainInfo from "components/sections/MainInfo/MainInfo";
 import Army from "components/sections/Army/Army";
 import Craft from "components/sections/Craft/Craft";
 import Activities from "components/sections/Events/Events";
@@ -15,8 +14,7 @@ import Partners from "components/sections/Partners/Partners";
 import Sequel from "components/sections/Sequel/Sequel";
 import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Classes from "components/sections/MainInfo/Classes/Classes";
-import FreeToPlay from "components/sections/MainInfo/FreeToPlay/FreeToPlay";
-import NewMainInfo from "components/sections/NewMainInfo/FirstSection";
+import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
 
 
@@ -39,9 +37,11 @@ export default function Home() {
           <Features />
         </Container>
 
-        <div className=" m-0 px-16">
+        {/* <Container>
         <Classes />
-        </div>
+        </Container> */}
+
+        <Army />
 
         <Token />
         <Sequel />
@@ -49,7 +49,6 @@ export default function Home() {
           <Prizes />
         </Container>
 
-        <Army />
 
         <Container disableVerticalPadding={true}>
           <Craft />

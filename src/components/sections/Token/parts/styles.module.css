@@ -52,5 +52,9 @@
     border-radius: 4px;
     padding: 12px 20px;
     border: 2px solid #284F93;
-    background: radial-gradient(50% 9500.87% at 98.81% 0%, rgba(148, 169, 200, 0.2) 0%, rgba(148, 163, 200, 0.2) 0.01%, rgba(16, 20, 40, 0.2) 100%), #0A1B38;
+    /* background: radial-gradient(50% 9500.87% at 98.81% 0%, rgba(148, 169, 200, 0.2) 0%, rgba(148, 163, 200, 0.2) 0.01%, rgba(16, 20, 40, 0.2) 100%), #0A1B38; */
+    background: radial-gradient(50% 9500.87% at 98.81% 0%, rgba(215, 215, 215, 0.2) 0%, rgba(149, 164, 203, 0.2) 0.01%, rgba(4, 20, 21, 0.2) 100%, rgba(3, 53, 56, 0.2) 100%);
+    background: linear-gradient(0deg, #0C3C50, #0C3C50);
+
+
 }
