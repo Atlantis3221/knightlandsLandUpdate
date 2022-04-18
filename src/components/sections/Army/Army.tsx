@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-
-import Damage from "components/svg/Damage/Damage";
 import Text from "components/common/Text/Text";
-import { HeaderLink } from "common/constants/HeaderLinks";
+
 
 interface IArmy {
   src: string;
@@ -24,7 +22,6 @@ const Army = () => {
     <div
       className="flex w-full flex-col justify-center items-center self-center max-w-6xl mx-auto"
       data-aos="fade-up"
-      id={HeaderLink.GAMEPLAY}
     >
       <div className="flex flex-col text-center max-w-3xl mx-2">
         <Text type="h1" font="stoke">

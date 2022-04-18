@@ -8,3 +8,11 @@
     background: -ms-linear-gradient(left, #35CFD5 0%, #0D1420 100%);
     background: linear-gradient(to right, #35CFD5 0%, #0D1420 100%);
 }
+
+@media (max-width:639px){
+      
+    .image_wrapper {
+        max-width: none;
+        transform: scale(0.8);
+    }
+}
