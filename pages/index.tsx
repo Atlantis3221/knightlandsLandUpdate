@@ -7,7 +7,7 @@ import Activities from "components/sections/Events/Events";
 import Footer from "components/sections/Footer/Footer";
 import Container from "components/common/Container/Container";
 import Roadmap from "components/sections/Roadmap/Roadmap";
-import Token from "components/sections/Token/Token";
+import KLToken from "components/sections/Token/parts/KLToken";
 import Layout from "components/Layout";
 import Team from "components/sections/Team/Team";
 import Partners from "components/sections/Partners/Partners";
@@ -28,22 +28,22 @@ export default function Home() {
           <NewMainInfo />
 
         </div>
-        {/* <div className=" overflow-hidden">
-          <Container>
-          <MainInfo />
-          </Container>
-        </div> */}
+
         <Container>
           <Features />
         </Container>
 
-        {/* <Container>
+        
         <Classes />
-        </Container> */}
-
+        
+        <Container>
         <Army />
+        </Container>
 
-        <Token />
+        <Container>
+        <KLToken />
+        </Container>
+
         <Sequel />
         <Container disableVerticalPadding={true}>
           <Prizes />
