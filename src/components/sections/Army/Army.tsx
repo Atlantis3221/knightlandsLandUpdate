@@ -23,7 +23,7 @@ const Army = () => {
       className="flex w-full flex-col justify-center items-center self-center max-w-6xl mx-auto"
       data-aos="fade-up"
     >
-      <div className="flex flex-col text-center max-w-3xl mx-2">
+      <div className="flex flex-col text-center max-w-3xl mx-2 mb-20">
         <Text type="h1" font="stoke">
           Diverse World
         </Text>
@@ -35,10 +35,10 @@ const Army = () => {
         }
       >
         {army.map((monster, i) => (
-          <div key={i} className={styles.cardWrapper +" px-1 lg:mx-0"}>
+          <div key={i} className={styles.cardWrapper + " px-1 lg:mx-0"}>
             <div
               className={
-                styles.monsterCard + " flex justify-center items-center mt-20"
+                styles.monsterCard + " flex justify-center items-center"
               }
             >
               <div className={styles.monsterCardInner}>
