@@ -24,6 +24,7 @@ const Army = () => {
     <div
       className="flex w-full flex-col justify-center items-center self-center max-w-6xl mx-auto"
       data-aos="fade-up"
+      id={HeaderLink.GAMEPLAY}
     >
       <div className="flex flex-col text-center max-w-3xl mx-2">
         <Text type="h1" font="stoke">
