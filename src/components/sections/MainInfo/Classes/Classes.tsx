@@ -16,13 +16,13 @@ const Classes = () => {
       <div className="flex flex-col">
         <img
           src="/common/player-classes-image.png"
-          className={styles.image + " hidden md:block"}
+          className={styles.image + " hidden sm:block"}
         />
 
         <div className="flex flex-col items-end -mt-0 lg:-mt-48 px-0 lg:px-16">
-          <div className="flex justify-center flex-col md:flex-row">
+          <div className="flex justify-center flex-col sm:flex-row">
             <div className={styles.class_text + " mr-4"}>
-              <img src="/common/mobile-archer.png" className="md:hidden mb-2 md:mb-0" />
+              <img src="/common/mobile-archer.png" className="sm:hidden mb-2 md:mb-0" />
               <div className="flex items-center justify-center mb-2">
                 <div
                   className={styles.line + " mr-4"}
@@ -41,7 +41,7 @@ const Classes = () => {
             </div>
 
             <div className={styles.class_text + " mr-4"}>
-              <img src="/common/mobile-mage.png" className="md:hidden mb-2 md:mb-0" />
+              <img src="/common/mobile-mage.png" className="sm:hidden mb-2 md:mb-0" />
               <div className="flex items-center justify-center mb-2">
                 <div
                   className={styles.line + " mr-4"}
@@ -61,7 +61,7 @@ const Classes = () => {
             </div>
 
             <div className={styles.class_text}>
-              <img src="/common/mobile-fighter.png" className="md:hidden mb-2 md:mb-0" />
+              <img src="/common/mobile-fighter.png" className="sm:hidden mb-2 md:mb-0" />
               <div className="flex items-center justify-center mb-2">
                 <div
                   className={styles.line + " mr-4"}

@@ -52,7 +52,7 @@ const Army = () => {
               </div>
             </div>
             <Text
-              type="h4"
+              type="h5"
               font="stoke"
               className="flex items-center justify-center text-center mt-6 mb-4 uppercase"
             >

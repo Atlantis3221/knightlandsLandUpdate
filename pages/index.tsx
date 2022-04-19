@@ -24,9 +24,7 @@ export default function Home() {
       <div className="w-full h-full">
         <Header />
         <div className="overflow-hidden">
-
           <NewMainInfo />
-
         </div>
 
         <Container>
