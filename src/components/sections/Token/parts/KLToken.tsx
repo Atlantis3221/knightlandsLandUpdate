@@ -18,7 +18,7 @@ const KLToken = () => {
     <div className="">
       <div className="flex flex-col mb-8 col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
         <Text type="h1" font="stoke">Knight Lands (KL)</Text>
-        {/* <Text type="h5" color="#8A978C" className="text-center max-w-lg mt-1">Fixed supply token</Text> */}
+        <Text type="h5" color="#8A978C" className="text-center max-w-lg my-2">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
       </div>
       <div className="flex justify-center items-center flex-col lg:flex-row-reverse">
         <div className="flex w-full relative justify-center mb-20">
@@ -27,8 +27,8 @@ const KLToken = () => {
         <div className="flex flex-col w-full">
           {data.map((item, i) => (
             <div key={i} className={styles.percent + ' flex justify-between my-1'} style={{ width: `${item.width}%` }}>
-              <Text type="h5" className="uppercase break-words">{item.title}</Text>
-              <Text type="h5" className="ml-4">{item.percent}%</Text>
+              <Text type="h5" className="uppercase break-words" font="stoke">{item.title}</Text>
+              <Text type="h5" className="ml-4" font="stoke">{item.percent}%</Text>
             </div>
           ))}
         </div>

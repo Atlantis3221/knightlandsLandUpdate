@@ -15,3 +15,35 @@
     background-position: center top;
     background-attachment: fixed;
 }
+
+@media (max-width:640px) {
+    .backgroundmain{
+        background: url(../../../../public/common/background-mobile.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        padding: 0 20px;
+    }
+
+    .backgroundfree{
+        background: url(../../../../public/common/backgroundfree-mobile.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:1023px) and (min-width:641px) {
+    .backgroundmain{
+        background: url(../../../../public/common/background-tablet.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        padding: 0 50px;
+    }
+
+    .backgroundfree{
+        background: url(../../../../public/common/backgroundfree-tablet.png) no-repeat;
+        background-size: 100% 100%;
+        background-position: center top;
+        background-attachment: fixed;    
+    }
+}

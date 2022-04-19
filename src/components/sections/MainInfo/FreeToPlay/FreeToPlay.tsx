@@ -12,11 +12,11 @@ const FreeToPlay = () => {
       className={styles.background + " w-full flex flex-col justify-end z-10 relative md:pb-24 pt-0 md:pt-20 lg:pt-36 pb-16 px-32"}
     >
       <div className=" w-full md:w-1/2 flex flex-col ">
-        <Text type="h2" className=" text-center md:text-left" font="stoke">
+        <Text type="h2" className="text-left" font="stoke">
           Free to play — <br />
           play to earn
         </Text>
-        <Text type="h4" color="white" className="mt-5 text-center md:text-left">
+        <Text type="h4" color="white" className="mt-5 text-left">
           Knight Lands is perfect for casual,
           <br className="hidden md:block" /> competitive and business-minded
           gamers <br className="hidden md:block" />- everyone earns crypto by

@@ -45,15 +45,15 @@ export default function Home() {
         </Container>
 
         <Sequel />
-        <Container disableVerticalPadding={true}>
+        {/* <Container disableVerticalPadding={true}>
           <Prizes />
         </Container>
 
 
         <Container disableVerticalPadding={true}>
           <Craft />
-          {/* <Activities /> */}
-        </Container>
+          <Activities />
+        </Container> */}
 
         <Container disableVerticalPadding={true}>
           <Roadmap />
