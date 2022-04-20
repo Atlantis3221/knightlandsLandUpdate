@@ -1,11 +1,10 @@
 .backgroundmain {
-    height: 100vh;
-    background: url(../../../../public/common/background.png) no-repeat;
+    height: 90vh;
+    background: url(../../../../public/common/newbackground-desc.png) no-repeat;
     background-size: 100% 100%;
     background-position: center top;
     z-index: 1;
     padding: 7.5rem 8rem 0 8rem;
-
 }
 
 .backgroundfree {
@@ -18,7 +17,7 @@
 
 @media (max-width:640px) {
     .backgroundmain{
-        background: url(../../../../public/common/background-mobile.png) no-repeat;
+        background: url(../../../../public/common/newbackground-mobile.png) no-repeat;
         background-size: 100% 100%;
         background-position: center top;
         padding: 0 20px;
@@ -34,7 +33,7 @@
 
 @media (max-width:1023px) and (min-width:641px) {
     .backgroundmain{
-        background: url(../../../../public/common/background-tablet.png) no-repeat;
+        background: url(../../../../public/common/newbackground-tablet.png) no-repeat;
         background-size: 100% 100%;
         background-position: center top;
         padding: 0 50px;
