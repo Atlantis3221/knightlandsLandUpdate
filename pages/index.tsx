@@ -2,8 +2,6 @@ import React from "react";
 
 import Header from "components/sections/Header/Header";
 import Army from "components/sections/Army/Army";
-import Craft from "components/sections/Craft/Craft";
-import Activities from "components/sections/Events/Events";
 import Footer from "components/sections/Footer/Footer";
 import Container from "components/common/Container/Container";
 import Roadmap from "components/sections/Roadmap/Roadmap";
@@ -16,6 +14,7 @@ import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Classes from "components/sections/MainInfo/Classes/Classes";
 import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
+import ArmySlider from "components/sections/ArmySlider/ArmySlider";
 
 
 export default function Home() {
@@ -31,11 +30,10 @@ export default function Home() {
           <Features />
         </Container>
 
-        
         <Classes />
         
         <Container>
-        <Army />
+        <ArmySlider />
         </Container>
 
         <Container>
