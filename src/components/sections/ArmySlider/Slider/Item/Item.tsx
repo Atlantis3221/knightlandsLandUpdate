@@ -13,9 +13,7 @@ const Item: React.FC<any> = ({ movie }) => (
       return (
         <div
           ref={elementRef}
-          className={cx('item', {
-            'item--open': isActive,
-          })}
+          className={styles.item}
         >
           <img src={movie.image} alt="" />
           <ShowDetailsButton onClick={() => onSelectSlide(movie)} />
