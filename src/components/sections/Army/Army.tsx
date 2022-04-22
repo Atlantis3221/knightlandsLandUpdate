@@ -9,12 +9,12 @@ interface IArmy {
 }
 
 const army: IArmy[] = [
-  { src: "/army/Mushroom-Knight.png", title: "Mushroom knight" },
-  { src: "/army/Forest-Creature.png", title: "Forest creature" },
-  { src: "/army/Crocodile.png", title: "Crocodile" },
-  { src: "/army/Archer.png", title: "Archer" },
-  { src: "/army/Drowned.png", title: "Drowned" },
-  { src: "/army/Ice-Creature.png", title: "Ice creature" },
+  { src: "/army/mushroomKnight.png", title: "Mushroom knight" },
+  { src: "/army/forestCreature.png", title: "Forest creature" },
+  { src: "/army/crocodile.png", title: "Crocodile" },
+  { src: "/army/archer.png", title: "Archer" },
+  { src: "/army/drowned.png", title: "Drowned" },
+  { src: "/army/iceCreature.png", title: "Ice creature" },
 ];
 
 const Army = () => {

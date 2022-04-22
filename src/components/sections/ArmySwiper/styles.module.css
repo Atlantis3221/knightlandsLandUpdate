@@ -1,0 +1,50 @@
+.img_frame {
+    background: url(../../../../public/army/img_frame.png);
+    height: 216px;
+    width: 184px;
+}
+
+.img {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.monster_card {
+    position: relative;
+}
+
+.card_inner {
+    position: relative;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.monster_card:hover .card_inner {
+    position: absolute;
+    transform: scale(1.25);
+    transition: 0.1ms;
+    z-index: 30;
+    transition: transform 1s;
+}
+
+.monster_card:hover .img_frame {
+    background: linear-gradient(180deg, #335256 0%, #062D38 98.83%);    
+    border-radius: 20px;
+    z-index: 30;
+}
+
+.slide {
+    opacity: 0.5;
+}
+
+.slide:hover {
+    opacity: 1;
+}
+
+.swiper {
+    overflow: unset !important;
+ 
+}
+
+

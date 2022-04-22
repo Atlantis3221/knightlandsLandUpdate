@@ -14,7 +14,7 @@ import Prizes from "components/sections/MainInfo/Prizes/Prizes";
 import Classes from "components/sections/MainInfo/Classes/Classes";
 import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
-import ArmySlider from "components/sections/ArmySlider/ArmySlider";
+import ArmySwiper from "components/sections/ArmySwiper/ArmySwiper";
 
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
         <Classes />
         
         <Container>
-        <ArmySlider />
+        <ArmySwiper />
         </Container>
 
         <Container>

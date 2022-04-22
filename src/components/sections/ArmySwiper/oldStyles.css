@@ -1,20 +1,3 @@
-.removeScrollbar::-webkit-scrollbar {
-    width: 0;
-}
-
-.removeScrollbar {
-    -ms-overflow-style: none;
-}
-
-.damageDescription {
-    max-width: 140px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #8A978C;
-}
 
 .monsterCard {
 
@@ -33,8 +16,8 @@
     position: relative;
     background: linear-gradient(180deg, rgba(34, 95, 104, 0.08) 0%, #05161C 98.83%);
     border-radius: 20px;
-    height: inherit;
-    width: inherit;
+    height: 216px;
+    width: 184px;
 }
 
 .monsterCard:hover .monsterCardInner {
