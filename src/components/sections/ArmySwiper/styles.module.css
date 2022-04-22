@@ -1,7 +1,8 @@
 .img_frame {
-    background: url(../../../../public/army/img_frame.png);
+    background: linear-gradient(180deg, rgba(34, 95, 104, 0.08) 0%, #05161C 98.83%);
     height: 216px;
-    width: 184px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .img {
@@ -21,6 +22,7 @@
 }
 
 .monster_card:hover .card_inner {
+    width: 100%;
     position: absolute;
     transform: scale(1.25);
     transition: 0.1ms;
@@ -45,7 +47,22 @@
 
 .swiper {
     overflow: unset !important;
- 
+}
+
+@media (max-width:767px) {
+    .swiper{
+        overflow: hidden !important;
+    }
+
+    .monster_card:hover .card_inner {
+        transform: scale(1);
+    }
+}
+
+@media (min-width:768px) and (max-width:1014px) {
+    .img_frame{
+        height: 150px;
+    }
 }
 
 

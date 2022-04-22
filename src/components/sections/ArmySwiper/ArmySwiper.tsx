@@ -34,15 +34,14 @@ const ArmySwiper = () => {
       spaceBetween={12}
       slidesPerView={1}
       breakpoints={{
-        // when window width is >= 640px
-        640: {
+        320: {
           slidesPerView: 1,
         },
         768: {
           slidesPerView: 6,
         },
       }}
-      className={styles.swiper + " max-w-full"}
+      className={styles.swiper + " max-w-full max-h-full"}
     >
       {army.map((monster, i) => (
         <SwiperSlide className={styles.slide + " w-1/6"}>
