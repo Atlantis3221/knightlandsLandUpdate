@@ -62,13 +62,13 @@ const road: {year: string, items: IRoad[]}[] = [
 const Roadmap = () => {
   return (
     <div data-aos="fade-up" className="flex flex-col justify-center w-full my-24 px-4 md:pl-0" id={HeaderLink.ROADMAP}>
-      <Text type="h2" className="text-center">Roadmap</Text>
+      <Text type="h2" className="text-center" font="stoke">Roadmap</Text>
       <div className={styles.container + " flex mt-10 w-full"}>
         {road.map(({year, items}, i) => (
           <div key={i} className="mb-14 flex flex-col items-start self-start w-full md:w-auto">
             <div className="flex items-center">
               <div className={styles.line} style={{transform: 'rotate(180deg)'}}/>
-              <Text type="h4" className="mx-4">{year}</Text>
+              <Text type="h4" className="mx-4" font="stoke">{year}</Text>
               <div className={styles.line}/>
             </div>
             {items.map((item, j) => (
@@ -79,9 +79,9 @@ const Roadmap = () => {
                   </div>
                 </div>
                 <div className="flex items-baseline ">
-                  <Text type="h5" fontWeight={700} color="#8A978C" className="mr-1 max-w-full lg:max-w-sm xl:max-w-md">
+                  <Text type="h5" fontWeight={700} font="stoke" color="#8A978C" className="mr-1 max-w-full lg:max-w-sm xl:max-w-md">
                     {item.step}
-                    <Text fontWeight={400} color="#FFFFFF" isSpan={true}>— {item.description}</Text>
+                    <Text fontWeight={400} font="poppins" color="#FFFFFF" isSpan={true}>— {item.description}</Text>
                   </Text>
                 </div>
               </div>

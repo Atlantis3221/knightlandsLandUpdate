@@ -7,7 +7,7 @@ interface IProps {
   onClick?(): void;
   isLink?: boolean;
   isSpan?: boolean;
-  font?: "stoke";
+  font?: "stoke" | "poppins";
 }
 
 const Text = (props: React.PropsWithChildren<IProps & React.CSSProperties>) => {

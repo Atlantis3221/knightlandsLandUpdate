@@ -26,7 +26,7 @@ const data: ITeamMember[] = [
 const Team = () => {
   return (
     <div data-aos="fade-up" className="flex flex-col justify-start w-full pb-36 huge:pb-20" id={HeaderLink.TEAM}>
-      <Text type="h2" className="w-full justify-center text-center mb-10">Team</Text>
+      <Text type="h2" className="w-full justify-center text-center mb-10" font="stoke">Team</Text>
       <div className="flex sm:flex-wrap justify-center md:justify-around  xl:justify-center mx-auto flex-col w-full items-center sm:flex-row">
         {data.map((item, i) => (
           <div key={i} className="flex flex-col w-80 md:w-48 xl:w-52 md:self-start items-center text-center mb-10 sm:mx-2">
@@ -38,9 +38,9 @@ const Team = () => {
                 </a>
               )}
             </div>
-            <Text type="h4" className="mb-2 uppercase font-bold">{item.name}</Text>
-            <Text type="h5" className="mb-2 flex justify-start ">{item.role}</Text>
-            <Text fontSize={"0.8125rem"} lineHeight="1.25rem" color="white" className="min-h-20 md:h-40">{item.description}</Text>
+            <Text type="h4" className="mb-2 uppercase font-bold" font="stoke">{item.name}</Text>
+            <Text type="h5" className="mb-2 flex justify-start " font="stoke">{item.role}</Text>
+            <Text fontSize={"0.8125rem"} lineHeight="1.25rem" color="white" font="poppins" className="min-h-20 md:h-40">{item.description}</Text>
           </div>
         ))}
       </div>

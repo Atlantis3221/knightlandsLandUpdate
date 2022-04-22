@@ -45,11 +45,11 @@ const ArmySwiper = () => {
       className={styles.swiper + " max-w-full"}
     >
       {army.map((monster, i) => (
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide className={styles.slide + " w-1/6"}>
           <div className={styles.monster_card}>
             <div key={i} className= {styles.card_inner + " flex flex-col items-center justify-center"}>
               <div className={styles.img_frame}>
-                <img className={styles.img + " absolute"} src={monster.src} />
+                <img className={styles.img + " absolute "} src={monster.src} />
               </div>
               <Text type="h5" font="stoke" className="text-center uppercase">
                 {monster.title}

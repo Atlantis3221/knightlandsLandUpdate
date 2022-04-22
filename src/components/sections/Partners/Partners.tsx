@@ -12,7 +12,7 @@ const data = [
 const Partners = () => {
   return (
     <div data-aos="fade-up" className="flex flex-col justify-start w-full px-12 py-5" id={HeaderLink.PARTNERS}>
-      <Text type="h2" className="w-full justify-center text-center mb-10">Partners</Text>
+      <Text type="h2" className="w-full justify-center text-center mb-10" font="stoke">Partners</Text>
       <div className="flex w-full justify-center flex-col items-center md:flex-row">
         {data.map((item, i) => (
           <a href={item.url} key={i} target="_blank" className={styles.root + " flex flex-col px-4 py-4 w-80 md:w-64 md:w-72 mb-10 h-24 md:h-auto md:self-stretch" + (i === 0 ? ' ' : ' md:ml-6 lg:ml-12')}>
