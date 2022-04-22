@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "components/sections/Header/Header";
-import Army from "components/sections/Army/Army";
 import Footer from "components/sections/Footer/Footer";
 import Container from "components/common/Container/Container";
 import Roadmap from "components/sections/Roadmap/Roadmap";
