@@ -24,10 +24,10 @@
 .monster_card:hover .card_inner {
     width: 100%;
     position: absolute;
-    transform: scale(1.25);
+    transform: scale(1.7);
     transition: 0.1ms;
     z-index: 30;
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 
 .monster_card:hover .img_frame {
@@ -46,6 +46,7 @@
 }
 
 .swiper {
+    height: 264px;
     overflow: unset !important;
 }
 
