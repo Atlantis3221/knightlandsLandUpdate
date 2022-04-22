@@ -13,9 +13,9 @@ interface IArmy {
 const army: IArmy[] = [
   { src: "/army/mushroom_knight.png", title: "Mushroom knight" },
   { src: "/army/forest_creature.png", title: "Forest creature" },
-  { src: "/army/crocodile.png", title: "Crocodile" },
-  { src: "/army/archer.png", title: "Archer" },
-  { src: "/army/drowned.png", title: "Drowned" },
+  { src: "/army/crocodile_e.png", title: "Crocodile" },
+  { src: "/army/archer_r.png", title: "Archer" },
+  { src: "/army/drowned_d.png", title: "Drowned" },
   { src: "/army/ice_creature.png", title: "Ice creature" },
 ];
 
