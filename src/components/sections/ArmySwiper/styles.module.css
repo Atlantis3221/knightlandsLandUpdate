@@ -2,7 +2,7 @@
     background: linear-gradient(180deg, rgba(34, 95, 104, 0.08) 0%, #05161C 98.83%);
     height: 216px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .img {
@@ -17,7 +17,7 @@
 
 .card_inner {
     position: relative;
-    border-radius: 20px;
+    border-radius: 8px;
     z-index: 10;
 }
 
@@ -31,14 +31,19 @@
     transform-origin: bottom;
 }
 
+.monster_card:hover .slide {
+    
+}
+
 .monster_card:hover .img_frame {
     background: linear-gradient(180deg, #335256 0%, #062D38 98.83%);    
-    border-radius: 20px;
+    border-radius: 8px;
     z-index: 30;
 }
 
 .slide {
     opacity: 0.5;
+    min-width: 16.666667%;
 }
 
 .slide:hover {
@@ -49,6 +54,7 @@
 
 .swiper {
     height: 264px;
+    min-width: 100% !important;
     overflow: unset !important;
 }
 
