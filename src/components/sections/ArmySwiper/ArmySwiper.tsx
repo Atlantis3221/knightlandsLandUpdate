@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Text from "components/common/Text/Text";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation } from "swiper";
 
 import styles from "./styles.module.css";
 import "swiper/css";
@@ -11,12 +11,12 @@ interface IArmy {
 }
 
 const army: IArmy[] = [
-  { src: "/army/mushroom_knight.png", title: "Mushroom knight" },
-  { src: "/army/forest_creature.png", title: "Forest creature" },
+  { src: "/army/mushroom_knight.png", title: "Mushroom Knight" },
+  { src: "/army/forest_creature.png", title: "Forest Creature" },
   { src: "/army/crocodile_e.png", title: "Crocodile" },
   { src: "/army/archer_r.png", title: "Archer" },
   { src: "/army/drowned_d.png", title: "Drowned" },
-  { src: "/army/ice_creature.png", title: "Ice creature" },
+  { src: "/army/ice_creature.png", title: "Ice Creature" },
 ];
 
 const ArmySwiper = () => {
@@ -31,7 +31,9 @@ const ArmySwiper = () => {
         </Text>
       </div>
     <Swiper
-      spaceBetween={12}
+      modules={[Navigation]}
+      navigation
+      spaceBetween={16}
       slidesPerView={1}
       breakpoints={{
         320: {
@@ -52,7 +54,7 @@ const ArmySwiper = () => {
               <div className={styles.img_frame}>
                 <img className={styles.img + " absolute "} src={monster.src} />
               </div>
-              <Text type="h5" font="stoke" className="text-center uppercase">
+              <Text type="h5" font="stoke" className="text-center ">
                 {monster.title}
               </Text>
             </div>

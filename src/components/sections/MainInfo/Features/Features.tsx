@@ -10,13 +10,13 @@ const Features = () => {
     <Text type="h2" font="stoke" className="text-center">Game Features</Text>
     <div
       
-      className="grid grid-cols-1 w-full mb-8 gap-x-4 -gap-y-16 pt-10"
+      className="grid grid-cols-1 w-full mb-8 gap-x-4 -gap-y-16 pt-10 "
     >
       <div data-aos="fade-up" className="flex items-center justify-between lg:-ml-16 lg:-mb-16 lg:flex-row flex-col-reverse sm:m-0 overflow-hidden mb-16">
 
           <img src="/main/feature1.png" className={styles.image_wrapper + " max-width-none"} />
         
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:px-0 px-4">
           <div className="flex items-center justify-center mb-3">
             <div
               className={styles.line + " mr-5"}
@@ -36,7 +36,7 @@ const Features = () => {
       </div>
 
       <div data-aos="fade-up" className="flex items-center justify-between lg:-mr-16 lg:-my-16 lg:flex-row flex-col sm:m-0 overflow-hidden mb-16">
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:px-0 px-4 flex flex-col ">
           <div className="flex items-center justify-center mb-3">
             <div
               className={styles.line + " mr-5"}
@@ -61,7 +61,7 @@ const Features = () => {
 
           <img src="/main/feature3.png" className={styles.image_wrapper + " max-width-none"} />
 
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:px-0 px-4">
           <div className="flex items-center justify-center mb-3">
             <div
               className={styles.line + " mr-5"}
@@ -80,7 +80,7 @@ const Features = () => {
         </div>
       </div>
       <div data-aos="fade-up" className="flex items-center justify-between lg:-mr-16 lg:-mt-16 lg:flex-row flex-col sm:m-0 overflow-hidden mb-16">
-        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:pr-0 flex flex-col">
+        <div className="w-full sm:h-auto sm:w-3/5 lg:w-full sm:px-0 px-4 flex flex-col">
           <div className="flex items-center justify-center mb-3">
             <div
               className={styles.line + " mr-5"}
