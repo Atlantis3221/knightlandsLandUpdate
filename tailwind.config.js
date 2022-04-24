@@ -35,12 +35,21 @@ module.exports = {
           '100%': {
             transform: 'translate3d(0, 5px, 0)'
           },
+        },
+        scalecard: {
+          '0%': {
+            transform: 'scale(1.0)'
+          },
+          '100%': {
+            transform: 'scale(1.2)'
+          },
         }
       },
       animation: {
         levitate: 'levitate 3s linear alternate infinite',
         levitate2: 'levitate 2.6s linear alternate infinite',
-        levitate3: 'levitate 2.4s linear alternate infinite'
+        levitate3: 'levitate 2.4s linear alternate infinite',
+        scalecard: "scalecard 1s linear"
       }
     },
     screens: {
@@ -50,7 +59,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      height: ["hover"],
+      zIndex: ["hover"]
+    },
   },
   plugins: [filters],
 };

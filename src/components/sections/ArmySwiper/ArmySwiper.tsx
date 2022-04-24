@@ -1,14 +1,13 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import Text from "components/common/Text/Text";
-import { Navigation } from "swiper";
 import ModalProvider, {
   useModalContext,
 } from "components/context/ModalContext";
-
-import styles from "./styles.module.css";
 import "swiper/css";
+import { useEffect, useRef, useState } from "react";
+import { ArmySlide } from "./ArmySwiperSlide";
 
-interface IArmy {
+export interface IArmy {
   src: string;
   title: string;
 }
@@ -23,18 +22,51 @@ const army: IArmy[] = [
 ];
 
 const ArmySwiper = () => {
+  const elemCount = army.length
   const { isModalOpen, handleClose, handleOpen } = useModalContext();
+  const [ hoverState, setHoverState ] = useState(0)
+  const [ elemWidth, setElemWidth ] = useState(100)
+  const [ videoSurplus, setVideoSurplus ] = useState(0)
+  const [ defaultWidth, setDefaultWidth ] = useState(0)
+  const mainRef = useRef<HTMLDivElement>()
+
+  useEffect(() => {
+    const {width} = mainRef.current.getBoundingClientRect()
+    setElemWidth(((width - 16*(elemCount - 1))/(elemCount)))
+    setDefaultWidth(width)
+  }, [])
+
+  useEffect(() => {
+    if (hoverState) {
+      mainRef.current.style.width = `${defaultWidth + videoSurplus}px`
+    }
+    else {
+      mainRef.current.style.width = `${defaultWidth}px`
+      mainRef.current.style.marginLeft = "0px"
+      mainRef.current.style.marginRight = "0px"
+    }
+  }, [hoverState, videoSurplus, defaultWidth])
+
+  useEffect(() => {
+    console.log(videoSurplus)
+  }, [videoSurplus])
+  
   return (
+      <>
+      <div className="flex items-center justify-center">
+        <Text type="h1" font="stoke">
+          Diverse World
+        </Text>
+      </div>
+
       <div
-        className="flex w-full flex-col justify-center items-center self-center max-w-6xl mx-auto"
+        className="flex w-full flex-col items-center justify-center max-w-6xl"
         data-aos="fade-up"
       >
         <div className="flex flex-col text-center max-w-3xl mx-2 mb-20">
-          <Text type="h1" font="stoke">
-            Diverse World
-          </Text>
+
         </div>
-        <Swiper
+        {/* <Swiper
           spaceBetween={16}
           slidesPerView={1}
           breakpoints={{
@@ -48,37 +80,22 @@ const ArmySwiper = () => {
             },
           }}
           className={styles.swiper + " max-w-full max-h-full"}
-        >
-          {army.map((monster, i) => (
-            <SwiperSlide className={styles.slide + " w-1/6"} >
-              <div className={styles.monster_card} >
-                <div
-                  key={i}
-                  className={
-                    styles.card_inner +
-                    " flex flex-col items-center justify-center"
-                  }
-                >
-                  <div className={styles.img_frame}>
-                    <img
-                      className={styles.img + " absolute "}
-                      src={monster.src}
-                    />
-                    <img
-                      className={styles.play_icon + " absolute + left-1/2"}
-                      onClick={handleOpen}
-                      src="/army/play.svg"
-                    />
-                  </div>
-                  <Text type="h5" font="stoke" className="text-center ">
-                    {monster.title}
-                  </Text>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        {isModalOpen && (
+        > */}
+        <div ref={mainRef} className="flex w-full justify-between transition-all duration-300">
+        {army.map((monster, _i) => (
+            <ArmySlide 
+            setHoverState={setHoverState} 
+            index={_i} 
+            monster={monster} 
+            width={elemWidth} 
+            key={`armyslide${_i}`}
+            setVideoSurplus={setVideoSurplus}
+            />
+            ))}
+        </div>
+
+        {/* </Swiper> */}
+        {/* {isModalOpen && (
           <div
             className={
               styles.absolute_wrapper + " absolute + top-0 + w-full + h-full z-40"
@@ -95,8 +112,9 @@ const ArmySwiper = () => {
             </div>
           </div>
         )}
-        {isModalOpen && (<div className={styles.overlay} onClick={handleClose}/>)}
+        {isModalOpen && (<div className={styles.overlay} onClick={handleClose}/>)} */}
       </div>
+      </>
   );
 };
 

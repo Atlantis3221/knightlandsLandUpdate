@@ -35,8 +35,8 @@ export default function Home() {
         <Classes />
         
         <Container>
-        <div className=" sm:hidden">
-        <ArmySwiper />
+        <div className="">
+          <ArmySwiper />
         </div>
         </Container>
         
