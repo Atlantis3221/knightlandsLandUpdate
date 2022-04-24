@@ -20,7 +20,7 @@ const army: IArmy[] = [
 ];
 
 const ArmySwiper = () => {
-  return (
+  return ( 
     <div
       className="flex w-full flex-col justify-center items-center self-center max-w-6xl mx-auto"
       data-aos="fade-up"

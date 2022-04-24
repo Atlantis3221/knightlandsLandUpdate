@@ -23,16 +23,12 @@
 
 .monster_card:hover .card_inner {
     width: 100%;
-    /* position: absolute;
-    transform: scale(1.7); */
+    position: absolute;
+    transform: scale(1.05);
     transition: 0.1ms;
     z-index: 30;
     transition: transform 1.5s;
     transform-origin: bottom;
-}
-
-.monster_card:hover .slide {
-    
 }
 
 .monster_card:hover .img_frame {
