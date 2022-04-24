@@ -1,9 +1,0 @@
-.slide {
-    background: linear-gradient(180deg, rgba(34, 95, 104, 0.08) 0%, #05161C 98.83%);
-    height: 216px;
-    border-radius: 8px;
-}
-
-.slide:hover {
-    transform: scale(1.1) !important;
-}

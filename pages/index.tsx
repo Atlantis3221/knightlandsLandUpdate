@@ -14,7 +14,6 @@ import Classes from "components/sections/MainInfo/Classes/Classes";
 import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
 import ArmySwiper from "components/sections/ArmySwiper/ArmySwiper";
-import ArmyDesktop from "components/sections/ArmyDesktop/ArmyDesktop";
 import ModalProvider from "components/context/ModalContext";
 
 
