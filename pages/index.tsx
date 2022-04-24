@@ -15,22 +15,20 @@ import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
 import ArmySwiper from "components/sections/ArmySwiper/ArmySwiper";
 import ArmyDesktop from "components/sections/ArmyDesktop/ArmyDesktop";
+import ModalProvider from "components/context/ModalContext";
 
 
 export default function Home() {
+  
   return (
+    <ModalProvider>
     <Layout>
       <div className="w-full h-full">
         <Header />
         <div className="overflow-hidden">
           <NewMainInfo />
         </div>
-        
-        <Container>
-        <ArmyDesktop />
-        </Container>
-        
-
+              
         <Container>
           <Features />
         </Container>
@@ -38,8 +36,11 @@ export default function Home() {
         <Classes />
         
         <Container>
+        <div className=" sm:hidden">
         <ArmySwiper />
+        </div>
         </Container>
+        
 
         <Container>
         <KLToken />
@@ -65,5 +66,6 @@ export default function Home() {
         <Footer />
       </div>
     </Layout>
+    </ModalProvider>
   )
 }
