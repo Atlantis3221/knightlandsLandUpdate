@@ -2,7 +2,6 @@ import Text from "components/common/Text/Text";
 import { Dispatch, FC, SetStateAction, useEffect, useRef, useState } from "react";
 import { SwiperSlide } from "swiper/react";
 import { IArmy } from "./ArmySwiper";
-import styles from "./styles.module.css";
 
 interface IArmySlideProps {
     monster: IArmy

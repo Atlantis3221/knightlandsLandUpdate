@@ -15,6 +15,7 @@ import NewMainInfo from "components/sections/MainInfo/MainInfo";
 import Features from "components/sections/MainInfo/Features/Features";
 import ArmySwiper from "components/sections/ArmySwiper/ArmySwiper";
 import ModalProvider from "components/context/ModalContext";
+import ArmySwiperMobile from "components/sections/ArmySwiper/ArmySwiperMobile";
 
 
 export default function Home() {
@@ -35,8 +36,11 @@ export default function Home() {
         <Classes />
         
         <Container>
-        <div className="">
+        <div className="hidden sm:block">
           <ArmySwiper />
+        </div>
+        <div className="sm:hidden">
+          <ArmySwiperMobile />
         </div>
         </Container>
         

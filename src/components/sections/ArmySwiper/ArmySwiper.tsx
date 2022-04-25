@@ -66,21 +66,7 @@ const ArmySwiper = () => {
         <div className="flex flex-col text-center max-w-3xl mx-2 mb-20">
 
         </div>
-        {/* <Swiper
-          spaceBetween={16}
-          slidesPerView={1}
-          breakpoints={{
-            320: {
-              slidesPerView: 2,
-              centeredSlides: true,
-              initialSlide: 2,
-            },
-            768: {
-              slidesPerView: 6,
-            },
-          }}
-          className={styles.swiper + " max-w-full max-h-full"}
-        > */}
+
         <div ref={mainRef} className="flex w-full justify-between transition-all duration-300">
         {army.map((monster, _i) => (
             <ArmySlide 
@@ -93,26 +79,6 @@ const ArmySwiper = () => {
             />
             ))}
         </div>
-
-        {/* </Swiper> */}
-        {/* {isModalOpen && (
-          <div
-            className={
-              styles.absolute_wrapper + " absolute + top-0 + w-full + h-full z-40"
-            }
-          >
-            <div className="flex flex-col w-full items-end">
-              <div className="flex">
-                <img src="/army/close.svg" className="mr-2"/>
-                <Text color="#35CFD5" font="stoke">Close</Text>
-              </div>
-            <video className="w-full h-full z-50" autoPlay muted>
-              <source src="/army/video1.mp4" type="video/mp4" />
-            </video>
-            </div>
-          </div>
-        )}
-        {isModalOpen && (<div className={styles.overlay} onClick={handleClose}/>)} */}
       </div>
       </>
   );
