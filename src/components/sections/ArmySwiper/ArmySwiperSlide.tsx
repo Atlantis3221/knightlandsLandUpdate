@@ -20,7 +20,7 @@ export const ArmySlide: FC<IArmySlideProps> = ({monster, width, setHoverState, i
     useEffect(() => {
         const videoRect = videoRef.current.getBoundingClientRect()
         setVideoSurplus(videoRect.width - width)
-        setRectWidth(videoRect.width)
+        setRectWidth(videoRect.width*1.67)
     }, [])
 
     useEffect(() => {
