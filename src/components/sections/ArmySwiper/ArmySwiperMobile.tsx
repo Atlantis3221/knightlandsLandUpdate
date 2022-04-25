@@ -24,11 +24,6 @@ const army: IArmy[] = [
 
 const ArmySwiperMobile = () => {
 
-  const handleOpenVideo = (arg) => {
-    handleOpen();
-    setVideoName(arg.video);
-  }
-
   const { isModalOpen, handleClose, handleOpen } = useModalContext();
   const [videoName, setVideoName] = useState("");
   return (

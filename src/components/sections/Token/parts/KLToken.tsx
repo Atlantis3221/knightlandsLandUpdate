@@ -15,9 +15,9 @@ const data = [
 
 const KLToken = () => {
   return (
-    <div className="">
+    <div className="px-4 sm:px-0">
       <div className="flex flex-col mb-8 col-start-5 row-start-2 col-span-4 self-center justify-center items-center">
-        <Text type="h1" font="stoke">Knight Lands (KL)</Text>
+        <Text type="h1" font="stoke" className="text-center">Knight Lands (KL)</Text>
         <Text type="h5" color="#97A3B9" className="text-center max-w-lg my-2">Deflationary governance token focused on investors, can be staked for earning dividends from the game revenue</Text>
       </div>
       <div className="flex justify-center items-center flex-col lg:flex-row-reverse">
