@@ -1,5 +1,6 @@
 import React, { useContext, createContext } from "react";
 
+
 const DEFAULT_PROPS = {
   isModalOpen: false,
   handleClose: () => {},

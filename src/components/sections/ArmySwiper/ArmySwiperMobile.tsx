@@ -24,6 +24,11 @@ const army: IArmy[] = [
 
 const ArmySwiperMobile = () => {
 
+  const handleOpenVideo = (arg) => {
+    handleOpen();
+    setVideoName(arg.video);
+  }
+
   const { isModalOpen, handleClose, handleOpen } = useModalContext();
   const [videoName, setVideoName] = useState("");
   return (
@@ -65,11 +70,11 @@ const ArmySwiperMobile = () => {
                   <img
                     className={styles.img + " absolute "}
                     src={monster.src}
-                    onClick={()=> setVideoName(monster.video)}
+                    
                   />
                   <img
                     className={styles.play_icon + " absolute left-1/2"}
-                    onClick={handleOpen}
+                    onClick={()=> {handleOpen(); setVideoName(monster.video)}}
                     src="/army/play.svg"
                   />
                 </div>
@@ -86,14 +91,14 @@ const ArmySwiperMobile = () => {
           className=" w-screen absolute top-0 h-full z-40"
           style={{padding: "55% 2% 0% 2%"}}
         >
-          <div className="flex flex-col w-full items-end">
+          <div className=" z-60 flex flex-col w-full items-end">
             <div className="flex">
               <img src="/army/close.svg" className="mr-2" />
               <Text color="#35CFD5" font="stoke">
                 Close
               </Text>
             </div>
-            <video className="w-full h-full z-60 brightness-100" autoPlay muted>
+            <video className=" w-full h-full" autoPlay muted>
               <source src={videoName} type="video/mp4" />
             </video>
           </div>
