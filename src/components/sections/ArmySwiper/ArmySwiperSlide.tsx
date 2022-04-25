@@ -39,7 +39,7 @@ export const ArmySlide: FC<IArmySlideProps> = ({monster, width, setHoverState, i
         style={{
             ...(isHovered && rectWidth ? {width: rectWidth} : {width})
         }}
-        className={"transition-all duration-300 hover:scale-110 hover:z-30 origin-bottom transform "} >
+        className={"transition-all duration-300 hover:scale-150 hover:z-30 origin-bottom transform "} >
           <div
 
             className={
